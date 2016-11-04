@@ -55,12 +55,12 @@ var SearchSection = function (_Component) {
   };
 
   SearchSection.prototype.render = function render() {
-    var _state = this.state;
-    var query = _state.query;
-    var results = _state.results;
-    var isOpen = _state.isOpen;
-    var isExpanded = _state.isExpanded;
-    var isSearching = _state.isSearching;
+    var _state = this.state,
+        query = _state.query,
+        results = _state.results,
+        isOpen = _state.isOpen,
+        isExpanded = _state.isExpanded,
+        isSearching = _state.isSearching;
 
     var searchClassName = (0, _classnames2.default)('search', {
       'search--opened': isOpen,

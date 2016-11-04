@@ -166,9 +166,9 @@ var DropZone = function (_Component) {
   };
 
   DropZone.prototype.render = function render() {
-    var _state = this.state;
-    var isActive = _state.isActive;
-    var isHovered = _state.isHovered;
+    var _state = this.state,
+        isActive = _state.isActive,
+        isHovered = _state.isHovered;
 
 
     if (!isActive) {

@@ -35,12 +35,12 @@ var Contact = function (_Component) {
   }
 
   Contact.prototype.render = function render() {
-    var _props = this.props;
-    var name = _props.name;
-    var photo64 = _props.photo64;
-    var emails = _props.emails;
-    var pones = _props.pones;
-    var className = _props.className;
+    var _props = this.props,
+        name = _props.name,
+        photo64 = _props.photo64,
+        emails = _props.emails,
+        pones = _props.pones,
+        className = _props.className;
 
     var contactClassName = (0, _classnames2.default)(className, 'row');
     var isContactEmpty = emails.length === 0 && pones.length === 0;

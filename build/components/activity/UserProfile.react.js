@@ -135,9 +135,9 @@ var UserProfile = function (_Component) {
 
   UserProfile.prototype.render = function render() {
     var user = this.props.user;
-    var _state = this.state;
-    var isNotificationsEnabled = _state.isNotificationsEnabled;
-    var message = _state.message;
+    var _state = this.state,
+        isNotificationsEnabled = _state.isNotificationsEnabled,
+        message = _state.message;
 
 
     return _react2.default.createElement(

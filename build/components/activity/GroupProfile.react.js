@@ -140,7 +140,7 @@ var GroupProfile = function (_Component) {
         'div',
         { className: 'group_profile__meta__created' },
         _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'createdBy' }),
-        ' ',
+        '\xA0',
         _react2.default.createElement('span', { dangerouslySetInnerHTML: { __html: (0, _EmojiUtils.escapeWithEmoji)(admin.name) } })
       )
     );
@@ -202,9 +202,9 @@ var GroupProfile = function (_Component) {
 
   GroupProfile.prototype.render = function render() {
     var group = this.props.group;
-    var _state = this.state;
-    var isNotificationsEnabled = _state.isNotificationsEnabled;
-    var message = _state.message;
+    var _state = this.state,
+        isNotificationsEnabled = _state.isNotificationsEnabled,
+        message = _state.message;
 
     var isMember = _DialogStore2.default.isMember();
 

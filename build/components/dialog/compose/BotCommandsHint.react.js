@@ -147,8 +147,8 @@ var BotCommandsHint = function (_Component) {
 
 
     return this.props.commands.map(function (_ref, index) {
-      var command = _ref.command;
-      var description = _ref.description;
+      var command = _ref.command,
+          description = _ref.description;
 
       var className = (0, _classnames2.default)('mention__list__item', {
         'mention__list__item--active': selectedIndex === index
@@ -202,18 +202,18 @@ var BotCommandsHint = function (_Component) {
               null,
               'tab'
             ),
-            '  or  ',
+            '\xA0 or \xA0',
             _react2.default.createElement(
               'strong',
               null,
-              '↑'
+              '\u2191'
             ),
             _react2.default.createElement(
               'strong',
               null,
-              '↓'
+              '\u2193'
             ),
-            '  to navigate'
+            '\xA0 to navigate'
           ),
           _react2.default.createElement(
             'div',
@@ -221,9 +221,9 @@ var BotCommandsHint = function (_Component) {
             _react2.default.createElement(
               'strong',
               null,
-              '↵'
+              '\u21B5'
             ),
-            '  to select'
+            '\xA0 to select'
           ),
           _react2.default.createElement(
             'div',
@@ -233,7 +233,7 @@ var BotCommandsHint = function (_Component) {
               null,
               'esc'
             ),
-            '  to close'
+            '\xA0 to close'
           )
         ),
         _react2.default.createElement(

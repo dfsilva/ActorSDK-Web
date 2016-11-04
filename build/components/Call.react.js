@@ -143,9 +143,9 @@ var Call = function (_Component) {
   };
 
   Call.prototype.renderContactInfo = function renderContactInfo() {
-    var _state = this.state;
-    var call = _state.call;
-    var peerInfo = _state.peerInfo;
+    var _state = this.state,
+        call = _state.call,
+        peerInfo = _state.peerInfo;
 
     if (!peerInfo || call.peer.type === _ActorAppConstants.PeerTypes.GROUP) return null;
 
@@ -157,10 +157,10 @@ var Call = function (_Component) {
   };
 
   Call.prototype.render = function render() {
-    var _state2 = this.state;
-    var isOpen = _state2.isOpen;
-    var call = _state2.call;
-    var peerInfo = _state2.peerInfo;
+    var _state2 = this.state,
+        isOpen = _state2.isOpen,
+        call = _state2.call,
+        peerInfo = _state2.peerInfo;
 
     if (!isOpen) {
       return _react2.default.createElement('section', { className: 'activity' });

@@ -70,9 +70,9 @@ var BlockedUsers = function (_Component) {
   };
 
   BlockedUsers.prototype.getUsers = function getUsers() {
-    var _state = this.state;
-    var users = _state.users;
-    var query = _state.query;
+    var _state = this.state,
+        users = _state.users,
+        query = _state.query;
 
 
     if (!query || query === '') return users;

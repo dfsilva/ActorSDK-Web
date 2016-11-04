@@ -39,11 +39,11 @@ var Fold = function (_Component) {
   }
 
   Fold.prototype.render = function render() {
-    var _props = this.props;
-    var icon = _props.icon;
-    var iconClassName = _props.iconClassName;
-    var title = _props.title;
-    var iconElement = _props.iconElement;
+    var _props = this.props,
+        icon = _props.icon,
+        iconClassName = _props.iconClassName,
+        title = _props.title,
+        iconElement = _props.iconElement;
 
     var titleIconClassName = (0, _classnames2.default)('material-icons icon', iconClassName);
     var className = (0, _classnames2.default)({

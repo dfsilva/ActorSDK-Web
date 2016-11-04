@@ -49,10 +49,10 @@ var Join = function (_Component) {
   }
 
   Join.prototype.renderStatus = function renderStatus() {
-    var _state = this.state;
-    var status = _state.status;
-    var token = _state.token;
-    var error = _state.error;
+    var _state = this.state,
+        status = _state.status,
+        token = _state.token,
+        error = _state.error;
 
     switch (status) {
       case _ActorAppConstants.AsyncActionStates.PROCESSING:

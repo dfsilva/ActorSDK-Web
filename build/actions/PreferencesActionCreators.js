@@ -31,12 +31,12 @@ exports.default = {
     _ComposeActionCreators2.default.toggleAutoFocus(true);
   },
   save: function save(preferences) {
-    var isSendByEnterEnabled = preferences.isSendByEnterEnabled;
-    var isSoundEffectsEnabled = preferences.isSoundEffectsEnabled;
-    var isGroupsNotificationsEnabled = preferences.isGroupsNotificationsEnabled;
-    var isOnlyMentionNotifications = preferences.isOnlyMentionNotifications;
-    var isShowNotificationsTextEnabled = preferences.isShowNotificationsTextEnabled;
-    var isAnimationAutoPlayEnabled = preferences.isAnimationAutoPlayEnabled;
+    var isSendByEnterEnabled = preferences.isSendByEnterEnabled,
+        isSoundEffectsEnabled = preferences.isSoundEffectsEnabled,
+        isGroupsNotificationsEnabled = preferences.isGroupsNotificationsEnabled,
+        isOnlyMentionNotifications = preferences.isOnlyMentionNotifications,
+        isShowNotificationsTextEnabled = preferences.isShowNotificationsTextEnabled,
+        isAnimationAutoPlayEnabled = preferences.isAnimationAutoPlayEnabled;
 
 
     _ActorClient2.default.changeSendByEnter(isSendByEnterEnabled);

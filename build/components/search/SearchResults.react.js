@@ -43,10 +43,10 @@ var SearchResults = function (_Component) {
   }
 
   SearchResults.prototype.renderResults = function renderResults() {
-    var _props = this.props;
-    var query = _props.query;
-    var results = _props.results;
-    var isSearching = _props.isSearching;
+    var _props = this.props,
+        query = _props.query,
+        results = _props.results,
+        isSearching = _props.isSearching;
 
 
     if (!query) {

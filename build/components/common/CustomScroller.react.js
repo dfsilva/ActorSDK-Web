@@ -126,12 +126,10 @@ var CustomScroller = function (_Component) {
   };
 
   CustomScroller.prototype.getThumbStyle = function getThumbStyle() {
-    var _getDimensions = this.getDimensions();
-
-    var scrollTop = _getDimensions.scrollTop;
-    var scrollHeight = _getDimensions.scrollHeight;
-    var offsetHeight = _getDimensions.offsetHeight;
-
+    var _getDimensions = this.getDimensions(),
+        scrollTop = _getDimensions.scrollTop,
+        scrollHeight = _getDimensions.scrollHeight,
+        offsetHeight = _getDimensions.offsetHeight;
 
     if (scrollHeight === 0 || scrollHeight <= offsetHeight) {
       return { top: 0, height: 0 };
@@ -149,10 +147,10 @@ var CustomScroller = function (_Component) {
   };
 
   CustomScroller.prototype.render = function render() {
-    var _state = this.state;
-    var top = _state.top;
-    var height = _state.height;
-    var dragging = _state.dragging;
+    var _state = this.state,
+        top = _state.top,
+        height = _state.height,
+        dragging = _state.dragging;
 
 
     var className = (0, _classnames2.default)('scroller__container', this.props.className);
@@ -186,9 +184,9 @@ var CustomScroller = function (_Component) {
     this.shouldUpdate = shouldUpdate;
 
     raf(function () {
-      var _container = _this3.container;
-      var scrollHeight = _container.scrollHeight;
-      var clientHeight = _container.clientHeight;
+      var _container = _this3.container,
+          scrollHeight = _container.scrollHeight,
+          clientHeight = _container.clientHeight;
 
       _this3.scrollRatio = clientHeight / scrollHeight;
 

@@ -203,9 +203,9 @@ var GroupList = function (_Component) {
   };
 
   GroupList.prototype.getList = function getList() {
-    var _state = this.state;
-    var query = _state.query;
-    var list = _state.list;
+    var _state = this.state,
+        query = _state.query,
+        list = _state.list;
 
 
     if (!query || query === '') return list;
@@ -235,10 +235,10 @@ var GroupList = function (_Component) {
   GroupList.prototype.renderList = function renderList() {
     var _this3 = this;
 
-    var _state2 = this.state;
-    var query = _state2.query;
-    var selectedIndex = _state2.selectedIndex;
-    var list = _state2.list;
+    var _state2 = this.state,
+        query = _state2.query,
+        selectedIndex = _state2.selectedIndex,
+        list = _state2.list;
 
     var results = this.getList();
 

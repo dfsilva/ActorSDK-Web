@@ -44,9 +44,9 @@ var Image = function (_Component) {
   }
 
   Image.prototype.render = function render() {
-    var _state = this.state;
-    var isLoading = _state.isLoading;
-    var src = _state.src;
+    var _state = this.state,
+        isLoading = _state.isLoading,
+        src = _state.src;
 
     if (isLoading) return null;
 

@@ -39,9 +39,9 @@ var Location = function (_Component) {
   }
 
   Location.prototype.handleMapClick = function handleMapClick(event) {
-    var _props = this.props;
-    var latitude = _props.latitude;
-    var longitude = _props.longitude;
+    var _props = this.props,
+        latitude = _props.latitude,
+        longitude = _props.longitude;
 
     var linkToMap = 'https://maps.google.com/maps?q=loc:' + latitude + ',' + longitude;
 
@@ -53,10 +53,10 @@ var Location = function (_Component) {
   };
 
   Location.prototype.render = function render() {
-    var _props2 = this.props;
-    var latitude = _props2.latitude;
-    var longitude = _props2.longitude;
-    var className = _props2.className;
+    var _props2 = this.props,
+        latitude = _props2.latitude,
+        longitude = _props2.longitude,
+        className = _props2.className;
 
 
     return _react2.default.createElement(

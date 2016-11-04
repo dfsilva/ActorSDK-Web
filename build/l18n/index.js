@@ -119,7 +119,7 @@ function extendL18n() {
 }
 
 function flattenMessages(nestedMessages) {
-  var prefix = arguments.length <= 1 || arguments[1] === undefined ? '' : arguments[1];
+  var prefix = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
 
   return Object.keys(nestedMessages).reduce(function (messages, key) {
     var value = nestedMessages[key];

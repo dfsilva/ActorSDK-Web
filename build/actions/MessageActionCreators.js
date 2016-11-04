@@ -110,9 +110,8 @@ var MessageActionCreators = function () {
   MessageActionCreators.prototype.editLastMessage = function editLastMessage() {
     var uid = _ActorClient2.default.getUid();
 
-    var _MessageStore$getStat = _MessageStore2.default.getState();
-
-    var messages = _MessageStore$getStat.messages;
+    var _MessageStore$getStat = _MessageStore2.default.getState(),
+        messages = _MessageStore$getStat.messages;
 
     var message = (0, _MessageUtils.findLastEditableMessage)(messages, uid);
 

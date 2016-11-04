@@ -32,7 +32,7 @@ function waitFor(ids) {
  * Dispatches a single action.
  */
 function dispatch(type) {
-  var action = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+  var action = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
   if (!type) {
     throw new Error('You forgot to specify type.');
@@ -70,10 +70,10 @@ var logError = console.error.bind(console);
  * Dispatches three actions for an async operation represented by promise.
  */
 function dispatchAsync(promise, types) {
-  var action = arguments.length <= 2 || arguments[2] === undefined ? {} : arguments[2];
-  var request = types.request;
-  var success = types.success;
-  var failure = types.failure;
+  var action = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+  var request = types.request,
+      success = types.success,
+      failure = types.failure;
 
 
   dispatch(request, action);

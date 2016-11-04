@@ -48,12 +48,12 @@ var ContactItem = function (_Component) {
   };
 
   ContactItem.prototype.render = function render() {
-    var _props = this.props;
-    var name = _props.name;
-    var placeholder = _props.placeholder;
-    var avatar = _props.avatar;
-    var children = _props.children;
-    var className = _props.className;
+    var _props = this.props,
+        name = _props.name,
+        placeholder = _props.placeholder,
+        avatar = _props.avatar,
+        children = _props.children,
+        className = _props.className;
 
     var contactClassName = (0, _classnames2.default)('contact row middle-xs', className);
 

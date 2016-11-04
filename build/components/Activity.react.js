@@ -73,9 +73,9 @@ var ActivitySection = function (_Component) {
   };
 
   ActivitySection.prototype.renderBody = function renderBody() {
-    var _state = this.state;
-    var peer = _state.peer;
-    var info = _state.info;
+    var _state = this.state,
+        peer = _state.peer,
+        info = _state.info;
 
 
     switch (peer.type) {
@@ -89,9 +89,9 @@ var ActivitySection = function (_Component) {
   };
 
   ActivitySection.prototype.render = function render() {
-    var _state2 = this.state;
-    var peer = _state2.peer;
-    var isOpen = _state2.isOpen;
+    var _state2 = this.state,
+        peer = _state2.peer,
+        isOpen = _state2.isOpen;
 
     if (!isOpen || !peer) {
       return _react2.default.createElement('section', { className: 'activity' });

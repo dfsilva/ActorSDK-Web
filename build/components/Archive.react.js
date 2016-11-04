@@ -53,9 +53,9 @@ var Archive = function (_Component) {
     var _this = _possibleConstructorReturn(this, _Component.call(this, props));
 
     _this.loadArchiveByScroll = (0, _lodash.debounce)(function () {
-      var _this$state = _this.state;
-      var isAllLoaded = _this$state.isAllLoaded;
-      var isLoading = _this$state.isLoading;
+      var _this$state = _this.state,
+          isAllLoaded = _this$state.isAllLoaded,
+          isLoading = _this$state.isLoading;
 
       var threshold = 100;
       if (!isLoading && !isAllLoaded) {
@@ -88,10 +88,10 @@ var Archive = function (_Component) {
   };
 
   Archive.prototype.componentDidUpdate = function componentDidUpdate() {
-    var _state = this.state;
-    var isInitialLoadingComplete = _state.isInitialLoadingComplete;
-    var isAllLoaded = _state.isAllLoaded;
-    var isLoading = _state.isLoading;
+    var _state = this.state,
+        isInitialLoadingComplete = _state.isInitialLoadingComplete,
+        isAllLoaded = _state.isAllLoaded,
+        isLoading = _state.isLoading;
 
     if (isInitialLoadingComplete && !isAllLoaded && !isLoading) {
       var scrollNode = (0, _reactDom.findDOMNode)(this.refs.archiveScroll);
@@ -105,17 +105,17 @@ var Archive = function (_Component) {
   };
 
   Archive.prototype.render = function render() {
-    var _state2 = this.state;
-    var isLoading = _state2.isLoading;
-    var dialogs = _state2.dialogs;
+    var _state2 = this.state,
+        isLoading = _state2.isLoading,
+        dialogs = _state2.dialogs;
 
     var archiveClassname = (0, _classnames2.default)('archive-section', {
       'archive-section--loading': isLoading
     });
 
     var dialogsList = (0, _lodash.map)(dialogs, function (dialog, index) {
-      var counter = dialog.counter;
-      var peer = dialog.peer;
+      var counter = dialog.counter,
+          peer = dialog.peer;
 
 
       return _react2.default.createElement(

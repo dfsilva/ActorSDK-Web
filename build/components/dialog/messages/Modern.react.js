@@ -65,10 +65,10 @@ var Field = function (_Component) {
   }
 
   Field.prototype.render = function render() {
-    var _props = this.props;
-    var title = _props.title;
-    var value = _props.value;
-    var isShort = _props.isShort;
+    var _props = this.props,
+        title = _props.title,
+        value = _props.value,
+        isShort = _props.isShort;
 
 
     var fieldClassName = (0, _classnames2.default)('field', {
@@ -122,12 +122,12 @@ var Attach = function (_Component2) {
   }
 
   Attach.prototype.render = function render() {
-    var _props2 = this.props;
-    var paragraphStyle = _props2.paragraphStyle;
-    var titleUrl = _props2.titleUrl;
-    var title = _props2.title;
-    var text = _props2.text;
-    var fields = _props2.fields;
+    var _props2 = this.props,
+        paragraphStyle = _props2.paragraphStyle,
+        titleUrl = _props2.titleUrl,
+        title = _props2.title,
+        text = _props2.text,
+        fields = _props2.fields;
 
 
     var attachmentClassName = (0, _classnames2.default)('attachment', {
@@ -194,11 +194,11 @@ var TextModern = function (_Component3) {
   }
 
   TextModern.prototype.render = function render() {
-    var _props3 = this.props;
-    var paragraphStyle = _props3.paragraphStyle;
-    var attaches = _props3.attaches;
-    var text = _props3.text;
-    var className = _props3.className;
+    var _props3 = this.props,
+        paragraphStyle = _props3.paragraphStyle,
+        attaches = _props3.attaches,
+        text = _props3.text,
+        className = _props3.className;
 
     var modernClassName = (0, _classnames2.default)('modern', {
       'modern--paragraph': paragraphStyle.showParagraph

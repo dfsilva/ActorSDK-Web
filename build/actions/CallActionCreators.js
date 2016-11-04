@@ -48,8 +48,8 @@ var CallActionCreators = function (_ActionCreators) {
   };
 
   CallActionCreators.prototype.handleCall = function handleCall(event) {
-    var id = event.id;
-    var type = event.type;
+    var id = event.id,
+        type = event.type;
 
     switch (type) {
       case _ActorAppConstants.CallTypes.STARTED:

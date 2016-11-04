@@ -36,9 +36,9 @@ var ToolbarSearchResults = function (_Component) {
   }
 
   ToolbarSearchResults.prototype.renderResults = function renderResults() {
-    var _props = this.props;
-    var query = _props.query;
-    var results = _props.results;
+    var _props = this.props,
+        query = _props.query,
+        results = _props.results;
 
 
     if (!results.length) {

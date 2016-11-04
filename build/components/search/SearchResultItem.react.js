@@ -34,10 +34,10 @@ var SearchResultItem = function (_Component) {
   }
 
   SearchResultItem.prototype.render = function render() {
-    var _props = this.props;
-    var content = _props.content;
-    var date = _props.date;
-    var sender = _props.sender;
+    var _props = this.props,
+        content = _props.content,
+        date = _props.date,
+        sender = _props.sender;
 
 
     return _react2.default.createElement(

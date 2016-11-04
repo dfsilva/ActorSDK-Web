@@ -36,10 +36,10 @@ var LoggerRow = function (_Component) {
   };
 
   LoggerRow.prototype.render = function render() {
-    var _props$data = this.props.data;
-    var tag = _props$data.tag;
-    var type = _props$data.type;
-    var message = _props$data.message;
+    var _props$data = this.props.data,
+        tag = _props$data.tag,
+        type = _props$data.type,
+        message = _props$data.message;
 
 
     var className = (0, _classnames2.default)('logger__container__row log-entry', {

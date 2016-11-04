@@ -53,9 +53,8 @@ var SearchMessagesActionCreators = function () {
   };
 
   SearchMessagesActionCreators.prototype.findText = function findText() {
-    var _SearchMessagesStore$ = _SearchMessagesStore2.default.getState();
-
-    var query = _SearchMessagesStore$.query;
+    var _SearchMessagesStore$ = _SearchMessagesStore2.default.getState(),
+        query = _SearchMessagesStore$.query;
 
     if (!query) {
       return;

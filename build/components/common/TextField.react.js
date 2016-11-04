@@ -69,17 +69,17 @@ var TextField = function (_Component) {
   }
 
   TextField.prototype.render = function render() {
-    var _props = this.props;
-    var className = _props.className;
-    var floatingLabel = _props.floatingLabel;
-    var type = _props.type;
-    var value = _props.value;
-    var ref = _props.ref;
-    var disabled = _props.disabled;
-    var errorText = _props.errorText;
-    var _state = this.state;
-    var isFocused = _state.isFocused;
-    var inputId = _state.inputId;
+    var _props = this.props,
+        className = _props.className,
+        floatingLabel = _props.floatingLabel,
+        type = _props.type,
+        value = _props.value,
+        ref = _props.ref,
+        disabled = _props.disabled,
+        errorText = _props.errorText;
+    var _state = this.state,
+        isFocused = _state.isFocused,
+        inputId = _state.inputId;
 
 
     var inputClassName = (0, _classnames2.default)('input input__material', className, {

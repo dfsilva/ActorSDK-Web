@@ -130,9 +130,9 @@ var AddContact = function (_Component) {
   AddContact.prototype.renderUserSearchResults = function renderUserSearchResults() {
     var _this2 = this;
 
-    var _state = this.state;
-    var query = _state.query;
-    var results = _state.results;
+    var _state = this.state,
+        query = _state.query,
+        results = _state.results;
 
 
     if (!query || query.length === '') {

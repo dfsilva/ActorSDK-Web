@@ -30,9 +30,9 @@ var Stickers = function (_Component) {
   }
 
   Stickers.prototype.renderStickers = function renderStickers() {
-    var _props = this.props;
-    var stickers = _props.stickers;
-    var onStickerSelect = _props.onStickerSelect;
+    var _props = this.props,
+        stickers = _props.stickers,
+        onStickerSelect = _props.onStickerSelect;
 
     if (stickers.length === 0) return null;
 

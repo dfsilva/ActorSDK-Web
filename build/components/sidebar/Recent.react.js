@@ -186,9 +186,9 @@ var Recent = function (_Component) {
   Recent.prototype.renderRecentGroups = function renderRecentGroups() {
     var _this2 = this;
 
-    var _props = this.props;
-    var currentPeer = _props.currentPeer;
-    var archive = _props.archive;
+    var _props = this.props,
+        currentPeer = _props.currentPeer,
+        archive = _props.archive;
 
     return this.props.dialogs.map(function (group) {
       return _react2.default.createElement(_RecentGroup2.default, _extends({

@@ -51,10 +51,9 @@ var SvgIcon = function (_Component) {
   }
 
   SvgIcon.prototype.render = function render() {
-    var _props = this.props;
-    var glyph = _props.glyph;
-
-    var props = _objectWithoutProperties(_props, ["glyph"]);
+    var _props = this.props,
+        glyph = _props.glyph,
+        props = _objectWithoutProperties(_props, ["glyph"]);
 
     var path = icons[glyph];
     var viewBox = viewBoxes[glyph] || defaultViewBox;

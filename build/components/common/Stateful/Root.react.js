@@ -46,10 +46,10 @@ var Root = function (_Component) {
   }
 
   Root.prototype.render = function render() {
-    var _props = this.props;
-    var currentState = _props.currentState;
-    var className = _props.className;
-    var children = _props.children;
+    var _props = this.props,
+        currentState = _props.currentState,
+        className = _props.className,
+        children = _props.children;
 
 
     var equalsState = function equalsState(state, type) {

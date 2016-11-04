@@ -91,9 +91,9 @@ var DialogHeader = function (_Component) {
   }
 
   DialogHeader.prototype.onFavoriteToggle = function onFavoriteToggle() {
-    var _props = this.props;
-    var peer = _props.peer;
-    var isFavorite = _props.isFavorite;
+    var _props = this.props,
+        peer = _props.peer,
+        isFavorite = _props.isFavorite;
 
 
     if (isFavorite) {
@@ -104,9 +104,9 @@ var DialogHeader = function (_Component) {
   };
 
   DialogHeader.prototype.handleInfoButtonClick = function handleInfoButtonClick() {
-    var _props2 = this.props;
-    var call = _props2.call;
-    var isActivityOpen = _props2.isActivityOpen;
+    var _props2 = this.props,
+        call = _props2.call,
+        isActivityOpen = _props2.isActivityOpen;
 
     if (call.isCalling) {
       _CallActionCreators2.default.toggleFloating();
@@ -159,9 +159,9 @@ var DialogHeader = function (_Component) {
   };
 
   DialogHeader.prototype.renderInfoButton = function renderInfoButton() {
-    var _props3 = this.props;
-    var call = _props3.call;
-    var isActivityOpen = _props3.isActivityOpen;
+    var _props3 = this.props,
+        call = _props3.call,
+        isActivityOpen = _props3.isActivityOpen;
 
 
     var className = (0, _classnames2.default)('button button--icon', {
@@ -256,9 +256,9 @@ var DialogHeader = function (_Component) {
 
   DialogHeader.prototype.renderCallButton = function renderCallButton() {
     var delegate = this.context.delegate;
-    var _props4 = this.props;
-    var peer = _props4.peer;
-    var info = _props4.info;
+    var _props4 = this.props,
+        peer = _props4.peer,
+        info = _props4.info;
 
 
     if (!delegate.features.calls) {
@@ -286,9 +286,9 @@ var DialogHeader = function (_Component) {
       return null;
     }
 
-    var _props5 = this.props;
-    var info = _props5.info;
-    var peer = _props5.peer;
+    var _props5 = this.props,
+        info = _props5.info,
+        peer = _props5.peer;
 
 
     return _react2.default.createElement(_MoreDropdown2.default, {

@@ -87,10 +87,10 @@ var GroupMember = function (_Component) {
   GroupMember.prototype.renderControls = function renderControls() {
     var _this2 = this;
 
-    var _props = this.props;
-    var peerInfo = _props.peerInfo;
-    var canKick = _props.canKick;
-    var gid = _props.gid;
+    var _props = this.props,
+        peerInfo = _props.peerInfo,
+        canKick = _props.canKick,
+        gid = _props.gid;
     var kickUserState = this.state.kickUserState;
 
     var myId = _ActorClient2.default.getUid();

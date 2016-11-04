@@ -136,11 +136,11 @@ var Voice = function (_Component) {
 
   Voice.prototype.render = function render() {
     var className = this.props.className;
-    var _state = this.state;
-    var isPlaying = _state.isPlaying;
-    var currentTime = _state.currentTime;
-    var duration = _state.duration;
-    var isLoaded = _state.isLoaded;
+    var _state = this.state,
+        isPlaying = _state.isPlaying,
+        currentTime = _state.currentTime,
+        duration = _state.duration,
+        isLoaded = _state.isLoaded;
 
     var voiceClassName = (0, _classnames2.default)(className, 'row');
 

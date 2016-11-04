@@ -45,17 +45,15 @@ var DialogStore = function (_ReduceStore) {
   };
 
   DialogStore.prototype.getDialogs = function getDialogs() {
-    var _getState = this.getState();
-
-    var dialogs = _getState.dialogs;
+    var _getState = this.getState(),
+        dialogs = _getState.dialogs;
 
     return dialogs;
   };
 
   DialogStore.prototype.getCurrentPeer = function getCurrentPeer() {
-    var _getState2 = this.getState();
-
-    var peer = _getState2.peer;
+    var _getState2 = this.getState(),
+        peer = _getState2.peer;
 
     return peer;
   };

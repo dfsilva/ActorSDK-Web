@@ -199,9 +199,9 @@ var QuickSearch = function (_Component) {
   };
 
   QuickSearch.prototype.getResults = function getResults() {
-    var _state = this.state;
-    var list = _state.list;
-    var query = _state.query;
+    var _state = this.state,
+        list = _state.list,
+        query = _state.query;
 
     if (!query || query === '') return list;
 
@@ -213,9 +213,9 @@ var QuickSearch = function (_Component) {
   QuickSearch.prototype.renderResults = function renderResults() {
     var _this3 = this;
 
-    var _state2 = this.state;
-    var selectedIndex = _state2.selectedIndex;
-    var query = _state2.query;
+    var _state2 = this.state,
+        selectedIndex = _state2.selectedIndex,
+        query = _state2.query;
 
     var results = this.getResults();
 
@@ -286,7 +286,7 @@ var QuickSearch = function (_Component) {
           null,
           'esc'
         ),
-        '  ',
+        '\xA0 ',
         _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'modal.quickSearch.toClose' })
       ),
       _react2.default.createElement(
@@ -295,9 +295,9 @@ var QuickSearch = function (_Component) {
         _react2.default.createElement(
           'strong',
           null,
-          '↵'
+          '\u21B5'
         ),
-        '  ',
+        '\xA0 ',
         _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'modal.quickSearch.toSelect' })
       ),
       _react2.default.createElement(
@@ -308,18 +308,18 @@ var QuickSearch = function (_Component) {
           null,
           'tab'
         ),
-        '  or  ',
+        '\xA0 or \xA0',
         _react2.default.createElement(
           'strong',
           null,
-          '↑'
+          '\u2191'
         ),
         _react2.default.createElement(
           'strong',
           null,
-          '↓'
+          '\u2193'
         ),
-        '  ',
+        '\xA0 ',
         _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'modal.quickSearch.toNavigate' })
       )
     );

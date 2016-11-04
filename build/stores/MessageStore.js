@@ -66,10 +66,9 @@ var MessageStore = function (_ReduceStore) {
   };
 
   MessageStore.prototype.isAllRendered = function isAllRendered() {
-    var _getState = this.getState();
-
-    var messages = _getState.messages;
-    var count = _getState.count;
+    var _getState = this.getState(),
+        messages = _getState.messages,
+        count = _getState.count;
 
     return messages.length === count;
   };

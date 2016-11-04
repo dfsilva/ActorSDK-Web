@@ -121,9 +121,9 @@ var Popup = function (_Component) {
   };
 
   Popup.prototype.render = function render() {
-    var _props = this.props;
-    var onMouseEnter = _props.onMouseEnter;
-    var onMouseLeave = _props.onMouseLeave;
+    var _props = this.props,
+        onMouseEnter = _props.onMouseEnter,
+        onMouseLeave = _props.onMouseLeave;
 
 
     return _react2.default.createElement(

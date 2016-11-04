@@ -128,9 +128,9 @@ var Attachments = function (_Component) {
   };
 
   Attachments.prototype.renderAttachment = function renderAttachment() {
-    var _state = this.state;
-    var attachments = _state.attachments;
-    var selectedIndex = _state.selectedIndex;
+    var _state = this.state,
+        attachments = _state.attachments,
+        selectedIndex = _state.selectedIndex;
 
     if (attachments.length === 0) return null;
 
@@ -138,9 +138,9 @@ var Attachments = function (_Component) {
   };
 
   Attachments.prototype.renderPagination = function renderPagination() {
-    var _state2 = this.state;
-    var attachments = _state2.attachments;
-    var selectedIndex = _state2.selectedIndex;
+    var _state2 = this.state,
+        attachments = _state2.attachments,
+        selectedIndex = _state2.selectedIndex;
 
     if (attachments.length <= 1) return null;
 

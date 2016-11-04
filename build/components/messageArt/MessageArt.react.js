@@ -65,12 +65,12 @@ var MessageArt = function (_Component) {
   };
 
   MessageArt.prototype.renderPopup = function renderPopup() {
-    var _props = this.props;
-    var isActive = _props.isActive;
-    var stickers = _props.stickers;
-    var onSelect = _props.onSelect;
-    var onStickerSelect = _props.onStickerSelect;
-    var onClose = _props.onClose;
+    var _props = this.props,
+        isActive = _props.isActive,
+        stickers = _props.stickers,
+        onSelect = _props.onSelect,
+        onStickerSelect = _props.onStickerSelect,
+        onClose = _props.onClose;
 
     if (!isActive) return null;
 

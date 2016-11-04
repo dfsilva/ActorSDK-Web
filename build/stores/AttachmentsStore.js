@@ -82,7 +82,7 @@ var AttachmentsStore = function (_ReduceStore) {
   };
 
   AttachmentsStore.prototype.getAttachment = function getAttachment() {
-    var index = arguments.length <= 0 || arguments[0] === undefined ? this.getSelectedIndex() : arguments[0];
+    var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : this.getSelectedIndex();
 
     return this.getState().attachments.get(index);
   };

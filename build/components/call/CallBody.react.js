@@ -34,10 +34,10 @@ var CallBody = function (_Component) {
   }
 
   CallBody.prototype.render = function render() {
-    var _props = this.props;
-    var small = _props.small;
-    var peerInfo = _props.peerInfo;
-    var callState = _props.callState;
+    var _props = this.props,
+        small = _props.small,
+        peerInfo = _props.peerInfo,
+        callState = _props.callState;
 
     if (!peerInfo) {
       return null;

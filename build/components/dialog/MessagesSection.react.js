@@ -71,10 +71,10 @@ var MessagesSection = function (_Component) {
   };
 
   MessagesSection.prototype.render = function render() {
-    var _props = this.props;
-    var uid = _props.uid;
-    var peer = _props.peer;
-    var isMember = _props.isMember;
+    var _props = this.props,
+        uid = _props.uid,
+        peer = _props.peer,
+        isMember = _props.isMember;
 
 
     return _react2.default.createElement(_MessagesList2.default, {

@@ -109,9 +109,9 @@ var InviteUser = function (_Component) {
   };
 
   InviteUser.prototype.getContacts = function getContacts() {
-    var _state = this.state;
-    var contacts = _state.contacts;
-    var search = _state.search;
+    var _state = this.state,
+        contacts = _state.contacts,
+        search = _state.search;
 
     if (!search) return contacts;
 
@@ -123,9 +123,9 @@ var InviteUser = function (_Component) {
   InviteUser.prototype.renderContacts = function renderContacts() {
     var _this2 = this;
 
-    var _state2 = this.state;
-    var group = _state2.group;
-    var users = _state2.users;
+    var _state2 = this.state,
+        group = _state2.group,
+        users = _state2.users;
 
     var contacts = this.getContacts();
 

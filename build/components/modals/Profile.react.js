@@ -85,12 +85,12 @@ var Profile = function (_Component) {
   };
 
   Profile.prototype.handleSave = function handleSave() {
-    var _state = this.state;
-    var nick = _state.nick;
-    var name = _state.name;
-    var about = _state.about;
-    var profile = _state.profile;
-    var errors = _state.errors;
+    var _state = this.state,
+        nick = _state.nick,
+        name = _state.name,
+        about = _state.about,
+        profile = _state.profile,
+        errors = _state.errors;
 
 
     if (!errors.nick) {
@@ -183,9 +183,9 @@ var Profile = function (_Component) {
   };
 
   Profile.prototype.renderNick = function renderNick() {
-    var _state2 = this.state;
-    var nick = _state2.nick;
-    var errors = _state2.errors;
+    var _state2 = this.state,
+        nick = _state2.nick,
+        errors = _state2.errors;
 
 
     return _react2.default.createElement(

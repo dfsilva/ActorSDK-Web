@@ -99,9 +99,8 @@ var ModalsWrapper = function (_Component) {
   }
 
   ModalsWrapper.prototype.getComponents = function getComponents() {
-    var _DelegateContainer$ge = _DelegateContainer2.default.get();
-
-    var components = _DelegateContainer$ge.components;
+    var _DelegateContainer$ge = _DelegateContainer2.default.get(),
+        components = _DelegateContainer$ge.components;
 
     var modals = components.modals;
 
@@ -143,19 +142,19 @@ var ModalsWrapper = function (_Component) {
 
     if (!currentModal) return null;
 
-    var _components = this.components;
-    var Profile = _components.Profile;
-    var Crop = _components.Crop;
-    var Groups = _components.Groups;
-    var People = _components.People;
-    var AddContact = _components.AddContact;
-    var CreateGroup = _components.CreateGroup;
-    var EditGroup = _components.EditGroup;
-    var Preferences = _components.Preferences;
-    var Invite = _components.Invite;
-    var InviteByLink = _components.InviteByLink;
-    var QuickSearch = _components.QuickSearch;
-    var Attachments = _components.Attachments;
+    var _components = this.components,
+        Profile = _components.Profile,
+        Crop = _components.Crop,
+        Groups = _components.Groups,
+        People = _components.People,
+        AddContact = _components.AddContact,
+        CreateGroup = _components.CreateGroup,
+        EditGroup = _components.EditGroup,
+        Preferences = _components.Preferences,
+        Invite = _components.Invite,
+        InviteByLink = _components.InviteByLink,
+        QuickSearch = _components.QuickSearch,
+        Attachments = _components.Attachments;
 
 
     switch (currentModal) {

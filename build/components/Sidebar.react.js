@@ -61,9 +61,8 @@ var Sidebar = function (_Component) {
   }
 
   Sidebar.prototype.getComponents = function getComponents() {
-    var _DelegateContainer$ge = _DelegateContainer2.default.get();
-
-    var components = _DelegateContainer$ge.components;
+    var _DelegateContainer$ge = _DelegateContainer2.default.get(),
+        components = _DelegateContainer$ge.components;
 
     var sidebar = components.sidebar;
 
@@ -79,10 +78,10 @@ var Sidebar = function (_Component) {
   };
 
   Sidebar.prototype.render = function render() {
-    var _state = this.state;
-    var currentPeer = _state.currentPeer;
-    var dialogs = _state.dialogs;
-    var archive = _state.archive;
+    var _state = this.state,
+        currentPeer = _state.currentPeer,
+        dialogs = _state.dialogs,
+        archive = _state.archive;
     var Recent = this.components.Recent;
 
 

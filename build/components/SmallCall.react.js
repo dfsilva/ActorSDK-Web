@@ -136,10 +136,10 @@ var SmallCall = function (_Component) {
   };
 
   SmallCall.prototype.render = function render() {
-    var _state = this.state;
-    var isOpen = _state.isOpen;
-    var call = _state.call;
-    var peerInfo = _state.peerInfo;
+    var _state = this.state,
+        isOpen = _state.isOpen,
+        call = _state.call,
+        peerInfo = _state.peerInfo;
 
 
     if (!isOpen) {

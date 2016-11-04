@@ -108,9 +108,9 @@ var MentionDropdown = function (_Component) {
   };
 
   MentionDropdown.prototype.onKeyDown = function onKeyDown(event) {
-    var _props = this.props;
-    var mentions = _props.mentions;
-    var onClose = _props.onClose;
+    var _props = this.props,
+        mentions = _props.mentions,
+        onClose = _props.onClose;
     var selectedIndex = this.state.selectedIndex;
 
     var visibleItems = 6;
@@ -176,12 +176,12 @@ var MentionDropdown = function (_Component) {
   MentionDropdown.prototype.render = function render() {
     var _this2 = this;
 
-    var _props2 = this.props;
-    var className = _props2.className;
-    var mentions = _props2.mentions;
-    var _state = this.state;
-    var isOpen = _state.isOpen;
-    var selectedIndex = _state.selectedIndex;
+    var _props2 = this.props,
+        className = _props2.className,
+        mentions = _props2.mentions;
+    var _state = this.state,
+        isOpen = _state.isOpen,
+        selectedIndex = _state.selectedIndex;
 
 
     if (!isOpen) {
@@ -243,18 +243,18 @@ var MentionDropdown = function (_Component) {
               null,
               'tab'
             ),
-            '  or  ',
+            '\xA0 or \xA0',
             _react2.default.createElement(
               'strong',
               null,
-              '↑'
+              '\u2191'
             ),
             _react2.default.createElement(
               'strong',
               null,
-              '↓'
+              '\u2193'
             ),
-            '  to navigate'
+            '\xA0 to navigate'
           ),
           _react2.default.createElement(
             'div',
@@ -262,9 +262,9 @@ var MentionDropdown = function (_Component) {
             _react2.default.createElement(
               'strong',
               null,
-              '↵'
+              '\u21B5'
             ),
-            '  to select'
+            '\xA0 to select'
           ),
           _react2.default.createElement(
             'div',
@@ -274,7 +274,7 @@ var MentionDropdown = function (_Component) {
               null,
               'esc'
             ),
-            '  to close'
+            '\xA0 to close'
           )
         ),
         _react2.default.createElement(

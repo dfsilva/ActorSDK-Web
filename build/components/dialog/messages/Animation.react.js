@@ -56,9 +56,9 @@ var Animation = function (_Component) {
   };
 
   Animation.prototype.getDimentions = function getDimentions() {
-    var _props = this.props;
-    var width = _props.w;
-    var height = _props.h;
+    var _props = this.props,
+        width = _props.w,
+        height = _props.h;
 
     return (0, _ImageUtils.getDimentions)(width, height);
   };
@@ -107,10 +107,9 @@ var Animation = function (_Component) {
   Animation.prototype.render = function render() {
     var playing = this.state.playing;
 
-    var _getDimentions2 = this.getDimentions();
-
-    var width = _getDimentions2.width;
-    var height = _getDimentions2.height;
+    var _getDimentions2 = this.getDimentions(),
+        width = _getDimentions2.width,
+        height = _getDimentions2.height;
 
     var source = this.props.fileUrl || this.props.preview;
 

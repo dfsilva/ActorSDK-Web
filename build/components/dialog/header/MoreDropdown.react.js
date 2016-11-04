@@ -113,9 +113,9 @@ var MoreDropdown = function (_Component) {
 
   MoreDropdown.prototype.handleChatClear = function handleChatClear() {
     console.debug('handleChatClear');
-    var _props = this.props;
-    var info = _props.info;
-    var peer = _props.peer;
+    var _props = this.props,
+        info = _props.info,
+        peer = _props.peer;
 
 
     var message = peer.key === _ActorAppConstants.PeerTypes.USER ? _react2.default.createElement(_reactIntl.FormattedHTMLMessage, { id: 'modal.confirm.user.clear', values: { name: info.name } }) : _react2.default.createElement(_reactIntl.FormattedHTMLMessage, { id: 'modal.confirm.group.clear', values: { name: info.name } });
@@ -127,9 +127,9 @@ var MoreDropdown = function (_Component) {
 
   MoreDropdown.prototype.handleChatDelete = function handleChatDelete() {
     console.debug('handleChatDelete');
-    var _props2 = this.props;
-    var info = _props2.info;
-    var peer = _props2.peer;
+    var _props2 = this.props,
+        info = _props2.info,
+        peer = _props2.peer;
 
 
     var message = peer.key === _ActorAppConstants.PeerTypes.USER ? _react2.default.createElement(_reactIntl.FormattedHTMLMessage, { id: 'modal.confirm.user.delete', values: { name: info.name } }) : _react2.default.createElement(_reactIntl.FormattedHTMLMessage, { id: 'modal.confirm.group.delete', values: { name: info.name } });
@@ -141,9 +141,9 @@ var MoreDropdown = function (_Component) {
 
   MoreDropdown.prototype.handleChatLeave = function handleChatLeave() {
     console.debug('handleChatLeave');
-    var _props3 = this.props;
-    var peer = _props3.peer;
-    var info = _props3.info;
+    var _props3 = this.props,
+        peer = _props3.peer,
+        info = _props3.info;
 
 
     (0, _confirm2.default)(_react2.default.createElement(_reactIntl.FormattedHTMLMessage, { id: 'modal.confirm.group.leave', values: { name: info.name } })).then(function () {
@@ -152,9 +152,9 @@ var MoreDropdown = function (_Component) {
   };
 
   MoreDropdown.prototype.handleRemoveFromContacts = function handleRemoveFromContacts() {
-    var _props4 = this.props;
-    var peer = _props4.peer;
-    var info = _props4.info;
+    var _props4 = this.props,
+        peer = _props4.peer,
+        info = _props4.info;
 
 
     (0, _confirm2.default)(_react2.default.createElement(_reactIntl.FormattedHTMLMessage, { id: 'modal.confirm.user.removeContact', values: { name: info.name } })).then(function () {
@@ -169,9 +169,9 @@ var MoreDropdown = function (_Component) {
   };
 
   MoreDropdown.prototype.handleBlockUser = function handleBlockUser() {
-    var _props5 = this.props;
-    var peer = _props5.peer;
-    var info = _props5.info;
+    var _props5 = this.props,
+        peer = _props5.peer,
+        info = _props5.info;
 
 
     (0, _confirm2.default)(_react2.default.createElement(_reactIntl.FormattedHTMLMessage, { id: 'modal.confirm.user.block', values: { name: info.name } })).then(function () {

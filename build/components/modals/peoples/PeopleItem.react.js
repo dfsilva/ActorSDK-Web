@@ -37,9 +37,9 @@ var PeopleItem = function (_Component) {
     var _this = _possibleConstructorReturn(this, _Component.call(this, props));
 
     _this.handleClick = function () {
-      var _this$props = _this.props;
-      var contact = _this$props.contact;
-      var onClick = _this$props.onClick;
+      var _this$props = _this.props,
+          contact = _this$props.contact,
+          onClick = _this$props.onClick;
 
       onClick(contact);
     };
@@ -55,9 +55,9 @@ var PeopleItem = function (_Component) {
   }
 
   PeopleItem.prototype.render = function render() {
-    var _props = this.props;
-    var contact = _props.contact;
-    var isSelected = _props.isSelected;
+    var _props = this.props,
+        contact = _props.contact,
+        isSelected = _props.isSelected;
 
     var resultClassName = (0, _classnames2.default)('result-list__item row', {
       'result-list__item--active': isSelected

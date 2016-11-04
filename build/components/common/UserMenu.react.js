@@ -148,10 +148,8 @@ var UserMenu = function (_Component) {
   };
 
   UserMenu.prototype.openTwitter = function openTwitter(event) {
-    var _SharedContainer$get = _SharedContainer2.default.get();
-
-    var twitter = _SharedContainer$get.twitter;
-
+    var _SharedContainer$get = _SharedContainer2.default.get(),
+        twitter = _SharedContainer$get.twitter;
 
     event.preventDefault();
     if (_ActorClient2.default.isElectron()) {
@@ -162,10 +160,8 @@ var UserMenu = function (_Component) {
   };
 
   UserMenu.prototype.openFacebook = function openFacebook(event) {
-    var _SharedContainer$get2 = _SharedContainer2.default.get();
-
-    var facebook = _SharedContainer$get2.facebook;
-
+    var _SharedContainer$get2 = _SharedContainer2.default.get(),
+        facebook = _SharedContainer$get2.facebook;
 
     event.preventDefault();
     if (_ActorClient2.default.isElectron()) {
@@ -176,10 +172,8 @@ var UserMenu = function (_Component) {
   };
 
   UserMenu.prototype.openHomePage = function openHomePage(event) {
-    var _SharedContainer$get3 = _SharedContainer2.default.get();
-
-    var homePage = _SharedContainer$get3.homePage;
-
+    var _SharedContainer$get3 = _SharedContainer2.default.get(),
+        homePage = _SharedContainer$get3.homePage;
 
     event.preventDefault();
     if (_ActorClient2.default.isElectron()) {
@@ -196,9 +190,8 @@ var UserMenu = function (_Component) {
   };
 
   UserMenu.prototype.renderTwitterLink = function renderTwitterLink() {
-    var _SharedContainer$get4 = _SharedContainer2.default.get();
-
-    var twitter = _SharedContainer$get4.twitter;
+    var _SharedContainer$get4 = _SharedContainer2.default.get(),
+        twitter = _SharedContainer$get4.twitter;
 
     if (!twitter) return null;
 
@@ -215,9 +208,8 @@ var UserMenu = function (_Component) {
   };
 
   UserMenu.prototype.renderFacebookLink = function renderFacebookLink() {
-    var _SharedContainer$get5 = _SharedContainer2.default.get();
-
-    var facebook = _SharedContainer$get5.facebook;
+    var _SharedContainer$get5 = _SharedContainer2.default.get(),
+        facebook = _SharedContainer$get5.facebook;
 
     if (!facebook) return null;
 
@@ -234,9 +226,8 @@ var UserMenu = function (_Component) {
   };
 
   UserMenu.prototype.renderHomeLink = function renderHomeLink() {
-    var _SharedContainer$get6 = _SharedContainer2.default.get();
-
-    var homePage = _SharedContainer$get6.homePage;
+    var _SharedContainer$get6 = _SharedContainer2.default.get(),
+        homePage = _SharedContainer$get6.homePage;
 
     if (!homePage) return null;
 
@@ -257,9 +248,8 @@ var UserMenu = function (_Component) {
   };
 
   UserMenu.prototype.renderHelpLink = function renderHelpLink() {
-    var _SharedContainer$get7 = _SharedContainer2.default.get();
-
-    var helpPhone = _SharedContainer$get7.helpPhone;
+    var _SharedContainer$get7 = _SharedContainer2.default.get(),
+        helpPhone = _SharedContainer$get7.helpPhone;
 
     if (!helpPhone) return null;
 
@@ -363,9 +353,9 @@ var UserMenu = function (_Component) {
 
   UserMenu.prototype.render = function render() {
     var className = this.props.className;
-    var _state = this.state;
-    var profile = _state.profile;
-    var isOpened = _state.isOpened;
+    var _state = this.state,
+        profile = _state.profile,
+        isOpened = _state.isOpened;
 
 
     if (!profile) return null;

@@ -37,12 +37,12 @@ var SidebarLink = function (_Component) {
   }
 
   SidebarLink.prototype.render = function render() {
-    var _props = this.props;
-    var to = _props.to;
-    var title = _props.title;
-    var glyph = _props.glyph;
-    var className = _props.className;
-    var onlyActiveOnIndex = _props.onlyActiveOnIndex;
+    var _props = this.props,
+        to = _props.to,
+        title = _props.title,
+        glyph = _props.glyph,
+        className = _props.className,
+        onlyActiveOnIndex = _props.onlyActiveOnIndex;
 
     var buttonClassName = (0, _classnames2.default)('sidebar__button', className);
 

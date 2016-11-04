@@ -61,8 +61,8 @@ function renderImageToCanvas(source, canvas) {
 }
 
 function getDimentions(width, height) {
-  var maxWidth = arguments.length <= 2 || arguments[2] === undefined ? 300 : arguments[2];
-  var maxHeight = arguments.length <= 3 || arguments[3] === undefined ? 400 : arguments[3];
+  var maxWidth = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 300;
+  var maxHeight = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : 400;
 
   if (width > height) {
     if (width > maxWidth) {

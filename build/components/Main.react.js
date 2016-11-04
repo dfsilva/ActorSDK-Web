@@ -76,10 +76,8 @@ var Main = function (_Component) {
   }
 
   Main.prototype.getComponents = function getComponents() {
-    var _DelegateContainer$ge = _DelegateContainer2.default.get();
-
-    var components = _DelegateContainer$ge.components;
-
+    var _DelegateContainer$ge = _DelegateContainer2.default.get(),
+        components = _DelegateContainer$ge.components;
 
     if (components) {
       return {
@@ -104,10 +102,8 @@ var Main = function (_Component) {
   };
 
   Main.prototype.renderCall = function renderCall() {
-    var _DelegateContainer$ge2 = _DelegateContainer2.default.get();
-
-    var features = _DelegateContainer$ge2.features;
-
+    var _DelegateContainer$ge2 = _DelegateContainer2.default.get(),
+        features = _DelegateContainer$ge2.features;
 
     if (!features.calls) {
       return null;
@@ -117,9 +113,9 @@ var Main = function (_Component) {
   };
 
   Main.prototype.render = function render() {
-    var _components = this.components;
-    var Sidebar = _components.Sidebar;
-    var Toolbar = _components.Toolbar;
+    var _components = this.components,
+        Sidebar = _components.Sidebar,
+        Toolbar = _components.Toolbar;
 
 
     return _react2.default.createElement(

@@ -105,7 +105,7 @@ var VoiceRecorder = function (_Component) {
       _react2.default.createElement(
         'div',
         { className: 'fill row middle-xs center-xs' },
-        'Voice message duration:  ',
+        'Voice message duration:\xA0 ',
         this.state.duration
       )
     );

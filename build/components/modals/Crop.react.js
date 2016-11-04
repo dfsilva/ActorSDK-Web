@@ -74,9 +74,9 @@ var CropAvatarModal = function (_Component) {
       wrapper.addEventListener('mousemove', _this.onMoving);
       wrapper.addEventListener('touchmove', _this.onMoving);
     }, _this.onMoving = function (event) {
-      var _this$state = _this.state;
-      var dragOffset = _this$state.dragOffset;
-      var cropSize = _this$state.cropSize;
+      var _this$state = _this.state,
+          dragOffset = _this$state.dragOffset,
+          cropSize = _this$state.cropSize;
 
       var wrapper = (0, _reactDom.findDOMNode)(_this.refs.wrapper);
       var wrapperRect = wrapper.getBoundingClientRect();
@@ -136,12 +136,12 @@ var CropAvatarModal = function (_Component) {
     }, _this.onResizeLeft = function (event) {
       return _this.onCropResize(event, 'LEFT');
     }, _this.onCropResize = function (event, direction) {
-      var _this$state2 = _this.state;
-      var cropPosition = _this$state2.cropPosition;
-      var resizeLastCoord = _this$state2.resizeLastCoord;
-      var cropSize = _this$state2.cropSize;
-      var scaledWidth = _this$state2.scaledWidth;
-      var scaledHeight = _this$state2.scaledHeight;
+      var _this$state2 = _this.state,
+          cropPosition = _this$state2.cropPosition,
+          resizeLastCoord = _this$state2.resizeLastCoord,
+          cropSize = _this$state2.cropSize,
+          scaledWidth = _this$state2.scaledWidth,
+          scaledHeight = _this$state2.scaledHeight;
 
       var axisCoord = direction === 'RIGHT' || direction === 'LEFT' ? event.pageX : event.pageY;
       var resizeValue = resizeLastCoord - axisCoord;
@@ -203,11 +203,11 @@ var CropAvatarModal = function (_Component) {
     }, _this.updateCropSize = function (cropSize, cropPosition) {
       return _this.setState({ cropSize: cropSize, cropPosition: cropPosition });
     }, _this.onCrop = function () {
-      var _this$state3 = _this.state;
-      var cropPosition = _this$state3.cropPosition;
-      var cropSize = _this$state3.cropSize;
-      var scaleRatio = _this$state3.scaleRatio;
-      var callback = _this$state3.callback;
+      var _this$state3 = _this.state,
+          cropPosition = _this$state3.cropPosition,
+          cropSize = _this$state3.cropSize,
+          scaleRatio = _this$state3.scaleRatio,
+          callback = _this$state3.callback;
 
       var cropImage = (0, _reactDom.findDOMNode)(_this.refs.cropImage);
       var canvas = document.createElement('canvas');
@@ -288,13 +288,13 @@ var CropAvatarModal = function (_Component) {
   };
 
   CropAvatarModal.prototype.render = function render() {
-    var _state = this.state;
-    var pictureSource = _state.pictureSource;
-    var cropPosition = _state.cropPosition;
-    var cropSize = _state.cropSize;
-    var scaledWidth = _state.scaledWidth;
-    var scaledHeight = _state.scaledHeight;
-    var maxImageHeight = _state.maxImageHeight;
+    var _state = this.state,
+        pictureSource = _state.pictureSource,
+        cropPosition = _state.cropPosition,
+        cropSize = _state.cropSize,
+        scaledWidth = _state.scaledWidth,
+        scaledHeight = _state.scaledHeight,
+        maxImageHeight = _state.maxImageHeight;
 
 
     return _react2.default.createElement(

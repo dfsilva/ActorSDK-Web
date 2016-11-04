@@ -57,10 +57,10 @@ var Scrollbar = function (_Component) {
   };
 
   Scrollbar.prototype.render = function render() {
-    var _props = this.props;
-    var children = _props.children;
-    var className = _props.className;
-    var style = _props.style;
+    var _props = this.props,
+        children = _props.children,
+        className = _props.className,
+        style = _props.style;
 
     var wrapperClassName = (0, _classnames2.default)('scroll-wrapper', className);
 

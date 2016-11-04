@@ -38,9 +38,9 @@ var CallDraggable = function (_Component) {
   }
 
   CallDraggable.prototype.render = function render() {
-    var _props = this.props;
-    var peerInfo = _props.peerInfo;
-    var callState = _props.callState;
+    var _props = this.props,
+        peerInfo = _props.peerInfo,
+        callState = _props.callState;
 
 
     return _react2.default.createElement(

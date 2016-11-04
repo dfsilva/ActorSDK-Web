@@ -56,9 +56,9 @@ var CallControls = function (_Component) {
   }
 
   CallControls.prototype.render = function render() {
-    var _props = this.props;
-    var isOutgoing = _props.isOutgoing;
-    var small = _props.small;
+    var _props = this.props,
+        isOutgoing = _props.isOutgoing,
+        small = _props.small;
 
 
     var secondaryControls = [];

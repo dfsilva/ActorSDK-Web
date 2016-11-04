@@ -84,9 +84,9 @@ var CreateGroupForm = function (_Component) {
   };
 
   CreateGroupForm.prototype.getContacts = function getContacts() {
-    var _state = this.state;
-    var contacts = _state.contacts;
-    var search = _state.search;
+    var _state = this.state,
+        contacts = _state.contacts,
+        search = _state.search;
 
 
     return _fuzzaldrin2.default.filter(contacts, search, {
@@ -158,9 +158,9 @@ var CreateGroupForm = function (_Component) {
 
   CreateGroupForm.prototype.handleCreateGroup = function handleCreateGroup(event) {
     event.preventDefault();
-    var _state2 = this.state;
-    var name = _state2.name;
-    var selectedUserIds = _state2.selectedUserIds;
+    var _state2 = this.state,
+        name = _state2.name,
+        selectedUserIds = _state2.selectedUserIds;
 
 
     _CreateGroupActionCreators2.default.createGroup(name, null, selectedUserIds.toJS());

@@ -53,11 +53,11 @@ var DialogFooter = function (_Component) {
   }
 
   DialogFooter.prototype.render = function render() {
-    var _props = this.props;
-    var info = _props.info;
-    var isMember = _props.isMember;
-    var onUnblock = _props.onUnblock;
-    var onStart = _props.onStart;
+    var _props = this.props,
+        info = _props.info,
+        isMember = _props.isMember,
+        onUnblock = _props.onUnblock,
+        onStart = _props.onStart;
 
     if (!isMember) {
       return _react2.default.createElement(
@@ -91,9 +91,9 @@ var DialogFooter = function (_Component) {
       );
     }
 
-    var _components = this.components;
-    var TypingSection = _components.TypingSection;
-    var ComposeSection = _components.ComposeSection;
+    var _components = this.components,
+        TypingSection = _components.TypingSection,
+        ComposeSection = _components.ComposeSection;
 
 
     return _react2.default.createElement(

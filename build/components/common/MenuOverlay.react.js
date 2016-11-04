@@ -65,13 +65,13 @@ var MenuOverlay = function (_Component) {
   }
 
   MenuOverlay.prototype.render = function render() {
-    var _state = this.state;
-    var isMessageDropdownOpen = _state.isMessageDropdownOpen;
-    var isRecentContextOpen = _state.isRecentContextOpen;
-    var message = _state.message;
-    var targetRect = _state.targetRect;
-    var contextPeer = _state.contextPeer;
-    var contextPos = _state.contextPos;
+    var _state = this.state,
+        isMessageDropdownOpen = _state.isMessageDropdownOpen,
+        isRecentContextOpen = _state.isRecentContextOpen,
+        message = _state.message,
+        targetRect = _state.targetRect,
+        contextPeer = _state.contextPeer,
+        contextPos = _state.contextPos;
 
     var currentPeer = _DialogStore2.default.getCurrentPeer();
 

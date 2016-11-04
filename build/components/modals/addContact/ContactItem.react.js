@@ -41,10 +41,10 @@ var ContactItem = function (_Component) {
 
   ContactItem.prototype.handleClick = function handleClick(event) {
     event.preventDefault();
-    var _props = this.props;
-    var onSelect = _props.onSelect;
-    var id = _props.id;
-    var isContact = _props.isContact;
+    var _props = this.props,
+        onSelect = _props.onSelect,
+        id = _props.id,
+        isContact = _props.isContact;
 
     onSelect && onSelect(id, isContact);
   };
@@ -138,12 +138,12 @@ var ContactItem = function (_Component) {
   };
 
   ContactItem.prototype.render = function render() {
-    var _props2 = this.props;
-    var name = _props2.name;
-    var nick = _props2.nick;
-    var avatar = _props2.avatar;
-    var placeholder = _props2.placeholder;
-    var isBot = _props2.isBot;
+    var _props2 = this.props,
+        name = _props2.name,
+        nick = _props2.nick,
+        avatar = _props2.avatar,
+        placeholder = _props2.placeholder,
+        isBot = _props2.isBot;
 
 
     return _react2.default.createElement(

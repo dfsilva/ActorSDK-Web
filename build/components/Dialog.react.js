@@ -200,10 +200,10 @@ var Dialog = function (_Component) {
   };
 
   Dialog.prototype.getActivityComponents = function getActivityComponents() {
-    var _DelegateContainer$ge = _DelegateContainer2.default.get();
+    var _DelegateContainer$ge = _DelegateContainer2.default.get(),
+        features = _DelegateContainer$ge.features,
+        components = _DelegateContainer$ge.components;
 
-    var features = _DelegateContainer$ge.features;
-    var components = _DelegateContainer$ge.components;
     var dialog = components.dialog;
 
 
@@ -220,9 +220,8 @@ var Dialog = function (_Component) {
   };
 
   Dialog.prototype.getComponents = function getComponents() {
-    var _DelegateContainer$ge2 = _DelegateContainer2.default.get();
-
-    var dialog = _DelegateContainer$ge2.components.dialog;
+    var _DelegateContainer$ge2 = _DelegateContainer2.default.get(),
+        dialog = _DelegateContainer$ge2.components.dialog;
 
     var activity = this.getActivityComponents();
 
@@ -264,15 +263,15 @@ var Dialog = function (_Component) {
   };
 
   Dialog.prototype.renderContent = function renderContent() {
-    var _state = this.state;
-    var uid = _state.uid;
-    var peer = _state.peer;
-    var isMember = _state.isMember;
-    var dialogInfo = _state.dialogInfo;
-    var search = _state.search;
-    var _components = this.components;
-    var MessagesSection = _components.MessagesSection;
-    var DialogFooter = _components.DialogFooter;
+    var _state = this.state,
+        uid = _state.uid,
+        peer = _state.peer,
+        isMember = _state.isMember,
+        dialogInfo = _state.dialogInfo,
+        search = _state.search;
+    var _components = this.components,
+        MessagesSection = _components.MessagesSection,
+        DialogFooter = _components.DialogFooter;
 
 
     if (search.isOpen) {
@@ -301,14 +300,14 @@ var Dialog = function (_Component) {
   };
 
   Dialog.prototype.render = function render() {
-    var _state2 = this.state;
-    var peer = _state2.peer;
-    var dialogInfo = _state2.dialogInfo;
-    var message = _state2.message;
-    var isFavorite = _state2.isFavorite;
-    var call = _state2.call;
-    var isActivityOpen = _state2.isActivityOpen;
-    var search = _state2.search;
+    var _state2 = this.state,
+        peer = _state2.peer,
+        dialogInfo = _state2.dialogInfo,
+        message = _state2.message,
+        isFavorite = _state2.isFavorite,
+        call = _state2.call,
+        isActivityOpen = _state2.isActivityOpen,
+        search = _state2.search;
     var DialogHeader = this.components.DialogHeader;
 
 

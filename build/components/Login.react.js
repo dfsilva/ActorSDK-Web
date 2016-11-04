@@ -142,15 +142,15 @@ var Login = function (_Component) {
 
 
   Login.prototype.render = function render() {
-    var _state = this.state;
-    var step = _state.step;
-    var errors = _state.errors;
-    var login = _state.login;
-    var code = _state.code;
-    var name = _state.name;
-    var isCodeRequested = _state.isCodeRequested;
-    var isCodeSended = _state.isCodeSended;
-    var isSignupStarted = _state.isSignupStarted;
+    var _state = this.state,
+        step = _state.step,
+        errors = _state.errors,
+        login = _state.login,
+        code = _state.code,
+        name = _state.name,
+        isCodeRequested = _state.isCodeRequested,
+        isCodeSended = _state.isCodeSended,
+        isSignupStarted = _state.isSignupStarted;
     var intl = this.context.intl;
 
 
@@ -219,13 +219,13 @@ var Login = function (_Component) {
               { href: '//actorapp.ghost.io/desktop-apps' },
               'Desktop'
             ),
-            '  •  ',
+            '\xA0\xA0\u2022\xA0\xA0',
             _react2.default.createElement(
               'a',
               { href: '//actor.im/ios' },
               'iPhone'
             ),
-            '  •  ',
+            '\xA0\xA0\u2022\xA0\xA0',
             _react2.default.createElement(
               'a',
               { href: '//actor.im/android' },

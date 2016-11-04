@@ -86,9 +86,9 @@ var Alert = function (_Component) {
   };
 
   Alert.prototype.render = function render() {
-    var _props = this.props;
-    var message = _props.message;
-    var okLabel = _props.okLabel;
+    var _props = this.props,
+        message = _props.message,
+        okLabel = _props.okLabel;
 
 
     return _react2.default.createElement(
@@ -137,7 +137,7 @@ Alert.propTypes = {
   okLabel: _react.PropTypes.string
 };
 function alert(message) {
-  var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
   var element = document.createElement('div');
   element.className = 'modal-overlay';

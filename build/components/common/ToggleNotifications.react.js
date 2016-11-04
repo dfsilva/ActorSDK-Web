@@ -28,9 +28,9 @@ var ToggleNotifications = function (_Component) {
   }
 
   ToggleNotifications.prototype.render = function render() {
-    var _props = this.props;
-    var isNotificationsEnabled = _props.isNotificationsEnabled;
-    var onNotificationChange = _props.onNotificationChange;
+    var _props = this.props,
+        isNotificationsEnabled = _props.isNotificationsEnabled,
+        onNotificationChange = _props.onNotificationChange;
 
 
     return _react2.default.createElement(

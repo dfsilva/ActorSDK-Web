@@ -136,9 +136,9 @@ var RecentItem = function (_Component) {
   };
 
   RecentItem.prototype.render = function render() {
-    var _props = this.props;
-    var dialog = _props.dialog;
-    var isActive = _props.isActive;
+    var _props = this.props,
+        dialog = _props.dialog,
+        isActive = _props.isActive;
 
     var title = (0, _EmojiUtils.escapeWithEmoji)(dialog.peer.title);
 

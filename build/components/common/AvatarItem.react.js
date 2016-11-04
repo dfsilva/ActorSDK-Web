@@ -56,12 +56,12 @@ var AvatarItem = function (_Component) {
   };
 
   AvatarItem.prototype.render = function render() {
-    var _props = this.props;
-    var image = _props.image;
-    var placeholder = _props.placeholder;
-    var title = _props.title;
-    var size = _props.size;
-    var onClick = _props.onClick;
+    var _props = this.props,
+        image = _props.image,
+        placeholder = _props.placeholder,
+        title = _props.title,
+        size = _props.size,
+        onClick = _props.onClick;
 
 
     if (image) {

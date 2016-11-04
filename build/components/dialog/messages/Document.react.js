@@ -35,9 +35,9 @@ var Document = function (_Component) {
   }
 
   Document.prototype.renderIcon = function renderIcon() {
-    var _props = this.props;
-    var fileUrl = _props.fileUrl;
-    var isUploading = _props.isUploading;
+    var _props = this.props,
+        fileUrl = _props.fileUrl,
+        isUploading = _props.isUploading;
 
 
     if (isUploading) {
@@ -64,9 +64,9 @@ var Document = function (_Component) {
   };
 
   Document.prototype.renderActions = function renderActions() {
-    var _props2 = this.props;
-    var fileUrl = _props2.fileUrl;
-    var isUploading = _props2.isUploading;
+    var _props2 = this.props,
+        fileUrl = _props2.fileUrl,
+        isUploading = _props2.isUploading;
 
 
     if (isUploading) {
@@ -85,11 +85,11 @@ var Document = function (_Component) {
   };
 
   Document.prototype.render = function render() {
-    var _props3 = this.props;
-    var fileName = _props3.fileName;
-    var fileSize = _props3.fileSize;
-    var fileExtension = _props3.fileExtension;
-    var className = _props3.className;
+    var _props3 = this.props,
+        fileName = _props3.fileName,
+        fileSize = _props3.fileSize,
+        fileExtension = _props3.fileExtension,
+        className = _props3.className;
 
 
     var documentClassName = (0, _classnames2.default)(className, 'row');

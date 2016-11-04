@@ -45,9 +45,9 @@ var RecentGroup = function (_Component) {
   }
 
   RecentGroup.prototype.renderPlusButton = function renderPlusButton() {
-    var _props = this.props;
-    var group = _props.group;
-    var onPlusClick = _props.onPlusClick;
+    var _props = this.props,
+        group = _props.group,
+        onPlusClick = _props.onPlusClick;
 
     if (!onPlusClick) {
       return null;
@@ -69,9 +69,9 @@ var RecentGroup = function (_Component) {
   };
 
   RecentGroup.prototype.renderGroupTitle = function renderGroupTitle() {
-    var _props2 = this.props;
-    var group = _props2.group;
-    var onTitleClick = _props2.onTitleClick;
+    var _props2 = this.props,
+        group = _props2.group,
+        onTitleClick = _props2.onTitleClick;
 
 
     var titleMessage = _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'sidebar.recents.' + group });
@@ -111,11 +111,11 @@ var RecentGroup = function (_Component) {
   };
 
   RecentGroup.prototype.renderGroupList = function renderGroupList() {
-    var _props3 = this.props;
-    var items = _props3.items;
-    var archive = _props3.archive;
-    var currentPeer = _props3.currentPeer;
-    var onItemUpdate = _props3.onItemUpdate;
+    var _props3 = this.props,
+        items = _props3.items,
+        archive = _props3.archive,
+        currentPeer = _props3.currentPeer,
+        onItemUpdate = _props3.onItemUpdate;
 
     if (!items.length) {
       if (this.props.renderEmptyHint) {

@@ -166,7 +166,7 @@ var LoginActionCreators = function (_ActionCreators) {
   };
 
   LoginActionCreators.prototype.setLoggedIn = function setLoggedIn() {
-    var opts = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+    var opts = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 
     var delegate = _DelegateContainer2.default.get();
 

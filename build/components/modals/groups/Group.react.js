@@ -39,9 +39,9 @@ var Group = function (_Component) {
     var _this = _possibleConstructorReturn(this, _Component.call(this, props));
 
     _this.handleClick = function () {
-      var _this$props = _this.props;
-      var group = _this$props.group;
-      var onClick = _this$props.onClick;
+      var _this$props = _this.props,
+          group = _this$props.group,
+          onClick = _this$props.onClick;
 
       onClick(group.peerInfo.peer);
     };
@@ -56,9 +56,9 @@ var Group = function (_Component) {
   }
 
   Group.prototype.render = function render() {
-    var _props = this.props;
-    var group = _props.group;
-    var isSelected = _props.isSelected;
+    var _props = this.props,
+        group = _props.group,
+        isSelected = _props.isSelected;
 
     var resultClassName = (0, _classnames2.default)('result-list__item row', {
       'result-list__item--active': isSelected

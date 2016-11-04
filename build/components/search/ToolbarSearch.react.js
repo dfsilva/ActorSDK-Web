@@ -100,10 +100,10 @@ var ToolbarSearch = function (_Component) {
   };
 
   ToolbarSearch.prototype.renderSearchResultsDropdown = function renderSearchResultsDropdown() {
-    var _state = this.state;
-    var isFocused = _state.isFocused;
-    var query = _state.query;
-    var results = _state.results;
+    var _state = this.state,
+        isFocused = _state.isFocused,
+        query = _state.query,
+        results = _state.results;
 
 
     if (!isFocused) {
@@ -145,9 +145,9 @@ var ToolbarSearch = function (_Component) {
   };
 
   ToolbarSearch.prototype.render = function render() {
-    var _state2 = this.state;
-    var query = _state2.query;
-    var isFocused = _state2.isFocused;
+    var _state2 = this.state,
+        query = _state2.query,
+        isFocused = _state2.isFocused;
 
     var toolbarSearchClassName = (0, _classnames2.default)('toolbar__search row', {
       'toolbar__search--focused': isFocused

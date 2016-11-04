@@ -33,23 +33,21 @@ var Photo = function (_Component) {
   };
 
   Photo.prototype.getDimentions = function getDimentions() {
-    var _props = this.props;
-    var width = _props.w;
-    var height = _props.h;
+    var _props = this.props,
+        width = _props.w,
+        height = _props.h;
 
     return (0, _ImageUtils.getDimentions)(width, height);
   };
 
   Photo.prototype.render = function render() {
-    var _props2 = this.props;
-    var fileUrl = _props2.fileUrl;
-    var preview = _props2.preview;
+    var _props2 = this.props,
+        fileUrl = _props2.fileUrl,
+        preview = _props2.preview;
 
-    var _getDimentions2 = this.getDimentions();
-
-    var width = _getDimentions2.width;
-    var height = _getDimentions2.height;
-
+    var _getDimentions2 = this.getDimentions(),
+        width = _getDimentions2.width,
+        height = _getDimentions2.height;
 
     return _react2.default.createElement('img', {
       className: 'message__photo',

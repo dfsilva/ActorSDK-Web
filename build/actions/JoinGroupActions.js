@@ -35,9 +35,8 @@ function joinFailed(error) {
 
 exports.default = {
   joinAfterLogin: function joinAfterLogin() {
-    var _JoinGroupStore$getSt = _JoinGroupStore2.default.getState();
-
-    var token = _JoinGroupStore$getSt.token;
+    var _JoinGroupStore$getSt = _JoinGroupStore2.default.getState(),
+        token = _JoinGroupStore$getSt.token;
 
     if (token) {
       _history2.default.push('/join/' + token);

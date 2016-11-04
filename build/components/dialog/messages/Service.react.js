@@ -31,9 +31,9 @@ var Service = function (_Component) {
   }
 
   Service.prototype.render = function render() {
-    var _props = this.props;
-    var text = _props.text;
-    var className = _props.className;
+    var _props = this.props,
+        text = _props.text,
+        className = _props.className;
 
 
     return _react2.default.createElement(

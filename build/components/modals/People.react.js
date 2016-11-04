@@ -199,9 +199,9 @@ var PeopleList = function (_Component) {
   };
 
   PeopleList.prototype.getPeople = function getPeople() {
-    var _state = this.state;
-    var query = _state.query;
-    var contacts = _state.contacts;
+    var _state = this.state,
+        query = _state.query,
+        contacts = _state.contacts;
 
     if (!query || query === '') return contacts;
 
@@ -213,9 +213,9 @@ var PeopleList = function (_Component) {
   PeopleList.prototype.renderPeople = function renderPeople() {
     var _this3 = this;
 
-    var _state2 = this.state;
-    var selectedIndex = _state2.selectedIndex;
-    var contacts = _state2.contacts;
+    var _state2 = this.state,
+        selectedIndex = _state2.selectedIndex,
+        contacts = _state2.contacts;
 
     var people = this.getPeople();
 

@@ -40,9 +40,8 @@ var AppHeader = function (_Component) {
 
     var _this = _possibleConstructorReturn(this, _Component.call(this, props));
 
-    var _SharedContainer$get = _SharedContainer2.default.get();
-
-    var appName = _SharedContainer$get.appName;
+    var _SharedContainer$get = _SharedContainer2.default.get(),
+        appName = _SharedContainer$get.appName;
 
     _this.appName = appName;
     return _this;

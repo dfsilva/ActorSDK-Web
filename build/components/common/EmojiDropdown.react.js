@@ -221,10 +221,10 @@ var EmojiDropdown = function (_Component) {
   };
 
   EmojiDropdown.prototype.render = function render() {
-    var _state = this.state;
-    var isOpen = _state.isOpen;
-    var dropdownTitle = _state.dropdownTitle;
-    var isStickersOpen = _state.isStickersOpen;
+    var _state = this.state,
+        isOpen = _state.isOpen,
+        dropdownTitle = _state.dropdownTitle,
+        isStickersOpen = _state.isStickersOpen;
 
     var isEmojiOpenedBefore = localStorage.getItem('isEmojiOpenedBefore') === 'true' || false;
 

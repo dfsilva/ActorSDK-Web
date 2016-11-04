@@ -69,9 +69,9 @@ var Sticker = function (_Component) {
   };
 
   Sticker.prototype.calculateDementions = function calculateDementions() {
-    var _props = this.props;
-    var w = _props.w;
-    var h = _props.h;
+    var _props = this.props,
+        w = _props.w,
+        h = _props.h;
 
     var MAX_WIDTH = 200;
     var MAX_HEIGHT = 200;
@@ -115,9 +115,9 @@ var Sticker = function (_Component) {
 
     if (!fileUrl) return null;
 
-    var _state = this.state;
-    var width = _state.width;
-    var height = _state.height;
+    var _state = this.state,
+        width = _state.width,
+        height = _state.height;
 
 
     return _react2.default.createElement(_Image2.default, {
@@ -130,10 +130,10 @@ var Sticker = function (_Component) {
 
   Sticker.prototype.render = function render() {
     var className = this.props.className;
-    var _state2 = this.state;
-    var isLoaded = _state2.isLoaded;
-    var width = _state2.width;
-    var height = _state2.height;
+    var _state2 = this.state,
+        isLoaded = _state2.isLoaded,
+        width = _state2.width,
+        height = _state2.height;
 
     var stickerClassName = (0, _classnames2.default)('sticker', {
       'sticker--loaded': isLoaded

@@ -53,9 +53,9 @@ var PictureChanger = function (_Component) {
   };
 
   PictureChanger.prototype.handlePictureInputChange = function handlePictureInputChange() {
-    var _props = this.props;
-    var fromModal = _props.fromModal;
-    var onChange = _props.onChange;
+    var _props = this.props,
+        fromModal = _props.fromModal,
+        onChange = _props.onChange;
 
     var reader = new FileReader();
     var imageForm = (0, _reactDom.findDOMNode)(this.refs.imageForm);
@@ -69,11 +69,11 @@ var PictureChanger = function (_Component) {
   };
 
   PictureChanger.prototype.renderPictureChanger = function renderPictureChanger() {
-    var _props2 = this.props;
-    var bigAvatar = _props2.bigAvatar;
-    var placeholder = _props2.placeholder;
-    var name = _props2.name;
-    var small = _props2.small;
+    var _props2 = this.props,
+        bigAvatar = _props2.bigAvatar,
+        placeholder = _props2.placeholder,
+        name = _props2.name,
+        small = _props2.small;
 
 
     return _react2.default.createElement(

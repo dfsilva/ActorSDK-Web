@@ -97,17 +97,16 @@ var ComposeTextArea = function (_Component) {
   };
 
   ComposeTextArea.prototype.getCaretPosition = function getCaretPosition() {
-    var _Inputs$getInputSelec = _Inputs2.default.getInputSelection(this.refs.area);
-
-    var start = _Inputs$getInputSelec.start;
+    var _Inputs$getInputSelec = _Inputs2.default.getInputSelection(this.refs.area),
+        start = _Inputs$getInputSelec.start;
 
     return start;
   };
 
   ComposeTextArea.prototype.render = function render() {
-    var _props = this.props;
-    var value = _props.value;
-    var placeholder = _props.placeholder;
+    var _props = this.props,
+        value = _props.value,
+        placeholder = _props.placeholder;
 
 
     return _react2.default.createElement('textarea', {
@@ -122,7 +121,7 @@ var ComposeTextArea = function (_Component) {
   };
 
   ComposeTextArea.prototype.focus = function focus() {
-    var force = arguments.length <= 0 || arguments[0] === undefined ? false : arguments[0];
+    var force = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
     var area = this.refs.area;
 
     if (force || area !== document.activeElement) {

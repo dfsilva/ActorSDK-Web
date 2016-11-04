@@ -50,7 +50,7 @@ var ComposeMarkdownHint = function (_Component) {
         intl.messages['compose.markdown.bold'],
         '*'
       ),
-      '  ',
+      '\xA0\xA0',
       _react2.default.createElement(
         'i',
         null,
@@ -58,7 +58,7 @@ var ComposeMarkdownHint = function (_Component) {
         intl.messages['compose.markdown.italic'],
         '_'
       ),
-      '  ',
+      '\xA0\xA0',
       _react2.default.createElement(
         'code',
         null,

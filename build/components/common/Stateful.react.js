@@ -32,12 +32,12 @@ var Stateful = function (_Component) {
   };
 
   Stateful.prototype.renderState = function renderState() {
-    var _props = this.props;
-    var currentState = _props.currentState;
-    var processing = _props.processing;
-    var pending = _props.pending;
-    var success = _props.success;
-    var failure = _props.failure;
+    var _props = this.props,
+        currentState = _props.currentState,
+        processing = _props.processing,
+        pending = _props.pending,
+        success = _props.success,
+        failure = _props.failure;
 
     switch (currentState) {
       case _ActorAppConstants.AsyncActionStates.PENDING:

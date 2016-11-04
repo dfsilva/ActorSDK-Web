@@ -45,7 +45,7 @@ var BlockedUsersActionCreators = function () {
   BlockedUsersActionCreators.prototype.unblockUser = function unblockUser(id) {
     var _this = this;
 
-    var reload = arguments.length <= 1 || arguments[1] === undefined ? false : arguments[1];
+    var reload = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
 
     _ActorClient2.default.unblockUser(id).then(function () {
       if (reload) {

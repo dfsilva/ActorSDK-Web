@@ -95,9 +95,9 @@ var MessageItem = function (_Component) {
     };
 
     _this.toggleMessageSelection = function () {
-      var _this$props = _this.props;
-      var message = _this$props.message;
-      var onSelect = _this$props.onSelect;
+      var _this$props = _this.props,
+          message = _this$props.message,
+          onSelect = _this$props.onSelect;
 
       onSelect(message.rid);
     };
@@ -111,9 +111,9 @@ var MessageItem = function (_Component) {
   };
 
   MessageItem.prototype.onClick = function onClick() {
-    var _props = this.props;
-    var message = _props.message;
-    var peer = _props.peer;
+    var _props = this.props,
+        message = _props.message,
+        peer = _props.peer;
 
 
     if (_PeerUtils2.default.equals(peer, message.sender.peer)) {
@@ -124,9 +124,9 @@ var MessageItem = function (_Component) {
   };
 
   MessageItem.prototype.renderTitle = function renderTitle() {
-    var _props2 = this.props;
-    var message = _props2.message;
-    var peer = _props2.peer;
+    var _props2 = this.props,
+        message = _props2.message,
+        peer = _props2.peer;
 
 
     if (_PeerUtils2.default.isGroupBot(message.sender)) {
@@ -138,10 +138,10 @@ var MessageItem = function (_Component) {
   };
 
   MessageItem.prototype.renderHeader = function renderHeader() {
-    var _props3 = this.props;
-    var isShort = _props3.isShort;
-    var message = _props3.message;
-    var state = _props3.state;
+    var _props3 = this.props,
+        isShort = _props3.isShort,
+        message = _props3.message,
+        state = _props3.state;
 
 
     if (isShort) {
@@ -176,11 +176,11 @@ var MessageItem = function (_Component) {
   };
 
   MessageItem.prototype.renderLeftBlock = function renderLeftBlock() {
-    var _props4 = this.props;
-    var isShort = _props4.isShort;
-    var message = _props4.message;
-    var state = _props4.state;
-    var peer = _props4.peer;
+    var _props4 = this.props,
+        isShort = _props4.isShort,
+        message = _props4.message,
+        state = _props4.state,
+        peer = _props4.peer;
 
 
     if (isShort) {
@@ -225,9 +225,9 @@ var MessageItem = function (_Component) {
   };
 
   MessageItem.prototype.renderActions = function renderActions() {
-    var _props5 = this.props;
-    var peer = _props5.peer;
-    var message = _props5.message;
+    var _props5 = this.props,
+        peer = _props5.peer,
+        message = _props5.message;
     var isHighlighted = this.state.isHighlighted;
     var isExperimental = this.context.isExperimental;
 
@@ -254,11 +254,11 @@ var MessageItem = function (_Component) {
   };
 
   MessageItem.prototype.render = function render() {
-    var _props6 = this.props;
-    var message = _props6.message;
-    var isShort = _props6.isShort;
-    var isSelected = _props6.isSelected;
-    var isEditing = _props6.isEditing;
+    var _props6 = this.props,
+        message = _props6.message,
+        isShort = _props6.isShort,
+        isSelected = _props6.isSelected,
+        isEditing = _props6.isEditing;
     var isHighlighted = this.state.isHighlighted;
 
 

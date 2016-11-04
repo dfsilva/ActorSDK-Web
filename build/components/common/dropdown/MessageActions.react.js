@@ -75,9 +75,9 @@ var MessageActions = function (_Component) {
     };
 
     _this.handleDelete = function () {
-      var _this$props = _this.props;
-      var peer = _this$props.peer;
-      var message = _this$props.message;
+      var _this$props = _this.props,
+          peer = _this$props.peer,
+          message = _this$props.message;
 
       _MessageActionCreators2.default.deleteMessage(peer, message.rid);
       _this.handleDropdownClose();
@@ -116,9 +116,9 @@ var MessageActions = function (_Component) {
   };
 
   MessageActions.prototype.render = function render() {
-    var _props = this.props;
-    var message = _props.message;
-    var targetRect = _props.targetRect;
+    var _props = this.props,
+        message = _props.message,
+        targetRect = _props.targetRect;
     var intl = this.context.intl;
 
 

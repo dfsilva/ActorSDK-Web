@@ -38,7 +38,7 @@ var DialogSearchActionCreators = function () {
   }
 
   DialogSearchActionCreators.prototype.open = function open() {
-    var query = arguments.length <= 0 || arguments[0] === undefined ? '' : arguments[0];
+    var query = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
 
     (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.DIALOG_SEARCH_SHOW);
     _ComposeActionCreators2.default.toggleAutoFocus(false);
@@ -52,7 +52,7 @@ var DialogSearchActionCreators = function () {
   };
 
   DialogSearchActionCreators.prototype.changeSearchQuery = function changeSearchQuery(query) {
-    var filter = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+    var filter = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
     (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.DIALOG_SEARCH_CHANGE_QUERY, { query: query });
 

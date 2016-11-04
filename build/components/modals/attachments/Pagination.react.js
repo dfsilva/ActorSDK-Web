@@ -42,9 +42,9 @@ var Pagination = function (_Component) {
   };
 
   Pagination.prototype.handlePrevClick = function handlePrevClick() {
-    var _props = this.props;
-    var current = _props.current;
-    var onChange = _props.onChange;
+    var _props = this.props,
+        current = _props.current,
+        onChange = _props.onChange;
 
 
     if (current !== 0) {
@@ -53,10 +53,10 @@ var Pagination = function (_Component) {
   };
 
   Pagination.prototype.handleNextClick = function handleNextClick() {
-    var _props2 = this.props;
-    var current = _props2.current;
-    var total = _props2.total;
-    var onChange = _props2.onChange;
+    var _props2 = this.props,
+        current = _props2.current,
+        total = _props2.total,
+        onChange = _props2.onChange;
 
 
     if (current !== total) {
@@ -92,9 +92,9 @@ var Pagination = function (_Component) {
   };
 
   Pagination.prototype.renderPager = function renderPager() {
-    var _props3 = this.props;
-    var current = _props3.current;
-    var total = _props3.total;
+    var _props3 = this.props,
+        current = _props3.current,
+        total = _props3.total;
 
 
     return _react2.default.createElement(

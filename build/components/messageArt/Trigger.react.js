@@ -34,13 +34,12 @@ var Trigger = function (_Component) {
   }
 
   Trigger.prototype.render = function render() {
-    var _props = this.props;
-    var className = _props.className;
-    var children = _props.children;
-    var isActive = _props.isActive;
-    var isDotVisible = _props.isDotVisible;
-
-    var props = _objectWithoutProperties(_props, ['className', 'children', 'isActive', 'isDotVisible']);
+    var _props = this.props,
+        className = _props.className,
+        children = _props.children,
+        isActive = _props.isActive,
+        isDotVisible = _props.isDotVisible,
+        props = _objectWithoutProperties(_props, ['className', 'children', 'isActive', 'isDotVisible']);
 
     var triggerClassName = (0, _classnames2.default)('message-art__trigger', className, {
       'message-art__trigger--active': isActive,

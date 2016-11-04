@@ -35,10 +35,10 @@ var SmartCallButton = function (_Component) {
   }
 
   SmartCallButton.prototype.handleButtonClick = function handleButtonClick() {
-    var _props = this.props;
-    var call = _props.call;
-    var onCallStart = _props.onCallStart;
-    var onCallEnd = _props.onCallEnd;
+    var _props = this.props,
+        call = _props.call,
+        onCallStart = _props.onCallStart,
+        onCallEnd = _props.onCallEnd;
 
 
     if (!call.isCalling) {

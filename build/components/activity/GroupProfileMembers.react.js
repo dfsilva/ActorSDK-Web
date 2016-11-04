@@ -37,9 +37,9 @@ var GroupProfileMembers = function (_Component) {
   }
 
   GroupProfileMembers.prototype.renderMembers = function renderMembers() {
-    var _props = this.props;
-    var groupId = _props.groupId;
-    var members = _props.members;
+    var _props = this.props,
+        groupId = _props.groupId,
+        members = _props.members;
 
 
     return members.map(function (member) {

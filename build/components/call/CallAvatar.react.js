@@ -36,9 +36,9 @@ var CallAvatar = function (_Component) {
   }
 
   CallAvatar.prototype.renderAnimation = function renderAnimation() {
-    var _props = this.props;
-    var callState = _props.callState;
-    var small = _props.small;
+    var _props = this.props,
+        callState = _props.callState,
+        small = _props.small;
 
 
     if (callState !== _ActorAppConstants.CallStates.CALLING && callState !== _ActorAppConstants.CallStates.CONNECTING) {
@@ -59,9 +59,9 @@ var CallAvatar = function (_Component) {
   };
 
   CallAvatar.prototype.render = function render() {
-    var _props2 = this.props;
-    var peerInfo = _props2.peerInfo;
-    var small = _props2.small;
+    var _props2 = this.props,
+        peerInfo = _props2.peerInfo,
+        small = _props2.small;
 
 
     return _react2.default.createElement(

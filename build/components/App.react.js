@@ -25,9 +25,9 @@ var App = function (_Component) {
   _inherits(App, _Component);
 
   App.prototype.getChildContext = function getChildContext() {
-    var _props = this.props;
-    var delegate = _props.delegate;
-    var isExperimental = _props.isExperimental;
+    var _props = this.props,
+        delegate = _props.delegate,
+        isExperimental = _props.isExperimental;
 
     return {
       delegate: delegate, isExperimental: isExperimental

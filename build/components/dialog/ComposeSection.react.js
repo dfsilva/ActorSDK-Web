@@ -131,9 +131,9 @@ var ComposeSection = function (_Component) {
     };
 
     _this.onMentionSelect = function (mention) {
-      var _this$state = _this.state;
-      var peer = _this$state.peer;
-      var text = _this$state.compose.text;
+      var _this$state = _this.state,
+          peer = _this$state.peer,
+          text = _this$state.compose.text;
 
 
       _ComposeActionCreators2.default.insertMention(peer, text, _this.getCaretPosition(), mention);
@@ -225,9 +225,9 @@ var ComposeSection = function (_Component) {
   };
 
   ComposeSection.prototype.onSubmit = function onSubmit() {
-    var _state = this.state;
-    var peer = _state.peer;
-    var text = _state.compose.text;
+    var _state = this.state,
+        peer = _state.peer,
+        text = _state.compose.text;
 
 
     if (text.trim().length) {
@@ -260,11 +260,11 @@ var ComposeSection = function (_Component) {
   };
 
   ComposeSection.prototype.onEditSubmit = function onEditSubmit() {
-    var _state2 = this.state;
-    var peer = _state2.peer;
-    var _state2$compose = _state2.compose;
-    var text = _state2$compose.text;
-    var editMessage = _state2$compose.editMessage;
+    var _state2 = this.state,
+        peer = _state2.peer,
+        _state2$compose = _state2.compose,
+        text = _state2$compose.text,
+        editMessage = _state2$compose.editMessage;
 
 
     if (text) {
@@ -345,12 +345,12 @@ var ComposeSection = function (_Component) {
   };
 
   ComposeSection.prototype.renderEditing = function renderEditing() {
-    var _state3 = this.state;
-    var compose = _state3.compose;
-    var profile = _state3.profile;
-    var stickers = _state3.stickers;
-    var isMessageArtOpen = _state3.isMessageArtOpen;
-    var sendByEnter = _state3.sendByEnter;
+    var _state3 = this.state,
+        compose = _state3.compose,
+        profile = _state3.profile,
+        stickers = _state3.stickers,
+        isMessageArtOpen = _state3.isMessageArtOpen,
+        sendByEnter = _state3.sendByEnter;
     var intl = this.context.intl;
 
 
@@ -406,12 +406,12 @@ var ComposeSection = function (_Component) {
   };
 
   ComposeSection.prototype.renderPosting = function renderPosting() {
-    var _state4 = this.state;
-    var compose = _state4.compose;
-    var profile = _state4.profile;
-    var stickers = _state4.stickers;
-    var isMessageArtOpen = _state4.isMessageArtOpen;
-    var sendByEnter = _state4.sendByEnter;
+    var _state4 = this.state,
+        compose = _state4.compose,
+        profile = _state4.profile,
+        stickers = _state4.stickers,
+        isMessageArtOpen = _state4.isMessageArtOpen,
+        sendByEnter = _state4.sendByEnter;
     var intl = this.context.intl;
 
 

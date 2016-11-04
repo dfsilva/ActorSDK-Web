@@ -85,10 +85,10 @@ var Confirm = function (_Component) {
   };
 
   Confirm.prototype.render = function render() {
-    var _props = this.props;
-    var message = _props.message;
-    var abortLabel = _props.abortLabel;
-    var confirmLabel = _props.confirmLabel;
+    var _props = this.props,
+        message = _props.message,
+        abortLabel = _props.abortLabel,
+        confirmLabel = _props.confirmLabel;
 
 
     return _react2.default.createElement(
@@ -143,7 +143,7 @@ Confirm.propTypes = {
   confirmLabel: _react.PropTypes.string
 };
 function confirm(message) {
-  var options = arguments.length <= 1 || arguments[1] === undefined ? {} : arguments[1];
+  var options = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
 
   var element = document.createElement('div');
   element.className = 'modal-overlay';

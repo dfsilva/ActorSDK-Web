@@ -126,9 +126,9 @@ var RecentContextMenu = function (_Component) {
   };
 
   RecentContextMenu.prototype.render = function render() {
-    var _props = this.props;
-    var peer = _props.peer;
-    var contextPos = _props.contextPos;
+    var _props = this.props,
+        peer = _props.peer,
+        contextPos = _props.contextPos;
 
     var isFavorite = _DialogStore2.default.isFavorite(peer.id);
 

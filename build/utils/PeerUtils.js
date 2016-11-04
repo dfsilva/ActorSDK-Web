@@ -14,8 +14,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 exports.default = {
   peerToString: function peerToString(peer) {
-    var id = peer.id;
-    var type = peer.type;
+    var id = peer.id,
+        type = peer.type;
 
 
     switch (type) {

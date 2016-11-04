@@ -111,17 +111,17 @@ var MessageContent = function (_Component) {
 
   MessageContent.prototype.render = function render() {
     var content = this.props.content;
-    var _components = this.components;
-    var Service = _components.Service;
-    var Text = _components.Text;
-    var Photo = _components.Photo;
-    var Animation = _components.Animation;
-    var Document = _components.Document;
-    var Voice = _components.Voice;
-    var Contact = _components.Contact;
-    var Location = _components.Location;
-    var Modern = _components.Modern;
-    var Sticker = _components.Sticker;
+    var _components = this.components,
+        Service = _components.Service,
+        Text = _components.Text,
+        Photo = _components.Photo,
+        Animation = _components.Animation,
+        Document = _components.Document,
+        Voice = _components.Voice,
+        Contact = _components.Contact,
+        Location = _components.Location,
+        Modern = _components.Modern,
+        Sticker = _components.Sticker;
 
 
     switch (content.content) {

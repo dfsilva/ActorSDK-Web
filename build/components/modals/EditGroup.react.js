@@ -87,11 +87,11 @@ var EditGroup = function (_Component) {
   };
 
   EditGroup.prototype.handleSave = function handleSave() {
-    var _state = this.state;
-    var group = _state.group;
-    var title = _state.title;
-    var about = _state.about;
-    var isAdmin = _state.isAdmin;
+    var _state = this.state,
+        group = _state.group,
+        title = _state.title,
+        about = _state.about,
+        isAdmin = _state.isAdmin;
 
     _EditGroupActionCreators2.default.editGroupTitle(group.id, title);
     if (isAdmin) {
@@ -125,9 +125,9 @@ var EditGroup = function (_Component) {
   };
 
   EditGroup.prototype.renderAbout = function renderAbout() {
-    var _state2 = this.state;
-    var isAdmin = _state2.isAdmin;
-    var about = _state2.about;
+    var _state2 = this.state,
+        isAdmin = _state2.isAdmin,
+        about = _state2.about;
 
     if (!isAdmin) return null;
 

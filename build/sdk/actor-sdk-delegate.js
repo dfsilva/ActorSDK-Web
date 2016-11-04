@@ -18,7 +18,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
  * @param {object} options.l18n - Object contains custom translations.
  */
 var ActorSDKDelegate = function ActorSDKDelegate() {
-  var options = arguments.length <= 0 || arguments[0] === undefined ? {} : arguments[0];
+  var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
 
   _classCallCheck(this, ActorSDKDelegate);
 

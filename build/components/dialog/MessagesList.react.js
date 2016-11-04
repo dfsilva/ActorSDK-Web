@@ -101,11 +101,11 @@ var MessagesList = function (_Component) {
       return;
     }
 
-    var dimensions = this.dimensions;
-    var scroller = this.refs.scroller;
-    var _props = this.props;
-    var uid = _props.uid;
-    var messages = _props.messages;
+    var dimensions = this.dimensions,
+        scroller = this.refs.scroller,
+        _props = this.props,
+        uid = _props.uid,
+        messages = _props.messages;
 
 
     if (messages.unreadId && messages.unreadId !== prevProps.messages.unreadId) {
@@ -147,8 +147,8 @@ var MessagesList = function (_Component) {
   };
 
   MessagesList.prototype.onResize = function onResize() {
-    var dimensions = this.dimensions;
-    var scroller = this.refs.scroller;
+    var dimensions = this.dimensions,
+        scroller = this.refs.scroller;
 
     if (dimensions) {
       // Fix scroll
@@ -166,10 +166,10 @@ var MessagesList = function (_Component) {
   };
 
   MessagesList.prototype.renderHeader = function renderHeader() {
-    var _props2 = this.props;
-    var peer = _props2.peer;
-    var isMember = _props2.isMember;
-    var messages = _props2.messages;
+    var _props2 = this.props,
+        peer = _props2.peer,
+        isMember = _props2.isMember,
+        messages = _props2.messages;
 
 
     if (!isMember) {
@@ -190,18 +190,18 @@ var MessagesList = function (_Component) {
   };
 
   MessagesList.prototype.renderMessages = function renderMessages() {
-    var _props3 = this.props;
-    var uid = _props3.uid;
-    var peer = _props3.peer;
-    var _props3$messages = _props3.messages;
-    var messages = _props3$messages.messages;
-    var overlay = _props3$messages.overlay;
-    var count = _props3$messages.count;
-    var selected = _props3$messages.selected;
-    var receiveDate = _props3$messages.receiveDate;
-    var readDate = _props3$messages.readDate;
-    var editId = _props3$messages.editId;
-    var unreadId = _props3$messages.unreadId;
+    var _props3 = this.props,
+        uid = _props3.uid,
+        peer = _props3.peer,
+        _props3$messages = _props3.messages,
+        messages = _props3$messages.messages,
+        overlay = _props3$messages.overlay,
+        count = _props3$messages.count,
+        selected = _props3$messages.selected,
+        receiveDate = _props3$messages.receiveDate,
+        readDate = _props3$messages.readDate,
+        editId = _props3$messages.editId,
+        unreadId = _props3$messages.unreadId;
     var MessageItem = this.components.MessageItem;
 
 
@@ -307,8 +307,8 @@ var MessagesList = function (_Component) {
   };
 
   MessagesList.prototype.restoreScroll = function restoreScroll() {
-    var dimensions = this.dimensions;
-    var scroller = this.refs.scroller;
+    var dimensions = this.dimensions,
+        scroller = this.refs.scroller;
 
 
     if (dimensions) {

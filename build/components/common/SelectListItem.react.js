@@ -47,9 +47,9 @@ var SelectListItem = function (_Component) {
   };
 
   SelectListItem.prototype.render = function render() {
-    var _props = this.props;
-    var index = _props.index;
-    var children = _props.children;
+    var _props = this.props,
+        index = _props.index,
+        children = _props.children;
 
     var isSelected = index === this.context.select.current;
     var className = isSelected && 'selected';

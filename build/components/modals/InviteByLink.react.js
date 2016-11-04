@@ -92,9 +92,9 @@ var InviteByLink = function (_Component) {
   };
 
   InviteByLink.prototype.render = function render() {
-    var _state = this.state;
-    var group = _state.group;
-    var inviteUrl = _state.inviteUrl;
+    var _state = this.state,
+        group = _state.group,
+        inviteUrl = _state.inviteUrl;
 
 
     return _react2.default.createElement(
