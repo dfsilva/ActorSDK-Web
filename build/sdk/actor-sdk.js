@@ -26,10 +26,6 @@ var _reactModal = require('react-modal');
 
 var _reactModal2 = _interopRequireDefault(_reactModal);
 
-var _pace = require('pace');
-
-var _pace2 = _interopRequireDefault(_pace);
-
 var _crosstab = require('crosstab');
 
 var _crosstab2 = _interopRequireDefault(_crosstab);
@@ -120,14 +116,17 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
                                                                                                                                                            * Copyright (C) 2015-2016 Actor LLC. <https://actor.im>
                                                                                                                                                            */
 
+// import Pace from 'pace-progress';
+
+
 var ACTOR_INIT_EVENT = 'INIT';
 
 // Init app loading progressbar
-_pace2.default.start({
-  ajax: false,
-  restartOnRequestAfter: false,
-  restartOnPushState: false
-});
+// Pace.start({
+//   ajax: false,
+//   restartOnRequestAfter: false,
+//   restartOnPushState: false
+// });
 
 // Init lightbox
 _ImageUtils.lightbox.load({
