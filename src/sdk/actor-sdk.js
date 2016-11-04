@@ -11,7 +11,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, IndexRoute, Redirect, IndexRedirect } from 'react-router';
 import Modal from 'react-modal';
-// import Pace from 'pace-progress';
+import Pace from 'pace-progress';
 import crosstab from 'crosstab';
 import assignDeep from 'assign-deep';
 
@@ -45,11 +45,11 @@ import { extendL18n, getIntlData } from '../l18n';
 const ACTOR_INIT_EVENT = 'INIT';
 
 // Init app loading progressbar
-// Pace.start({
-//   ajax: false,
-//   restartOnRequestAfter: false,
-//   restartOnPushState: false
-// });
+Pace.start({
+  ajax: false,
+  restartOnRequestAfter: false,
+  restartOnPushState: false
+});
 
 // Init lightbox
 lightbox.load({
