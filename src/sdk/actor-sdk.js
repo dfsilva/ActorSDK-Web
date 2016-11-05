@@ -11,7 +11,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, IndexRoute, Redirect, IndexRedirect } from 'react-router';
 import Modal from 'react-modal';
-import Pace from 'pace-progress';
+import Pace from 'pace';
 import crosstab from 'crosstab';
 import assignDeep from 'assign-deep';
 
