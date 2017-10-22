@@ -70,21 +70,19 @@ if (language === 'zh-cn') language = 'zh';
 
 function buildMessages(defaultLanguage, language) {
   if (process.env.NODE_ENV === 'development') {
-    (function () {
-      var flattenDefault = flattenMessages(defaultLanguage.messages);
-      var flattenLanguage = flattenMessages(language.messages);
-      var missingKeys = Object.keys(flattenDefault).filter(function (key) {
-        return !flattenLanguage[key];
+    var flattenDefault = flattenMessages(defaultLanguage.messages);
+    var flattenLanguage = flattenMessages(language.messages);
+    var missingKeys = Object.keys(flattenDefault).filter(function (key) {
+      return !flattenLanguage[key];
+    });
+    if (missingKeys.length) {
+      var groupMessage = 'There are missing transations for "' + language.locale + '" locale.';
+      console.groupCollapsed(groupMessage);
+      missingKeys.forEach(function (key) {
+        console.warn(key + ': ' + flattenDefault[key]);
       });
-      if (missingKeys.length) {
-        var groupMessage = 'There are missing transations for "' + language.locale + '" locale.';
-        console.groupCollapsed(groupMessage);
-        missingKeys.forEach(function (key) {
-          console.warn(key + ': ' + flattenDefault[key]);
-        });
-        console.groupEnd(groupMessage);
-      }
-    })();
+      console.groupEnd(groupMessage);
+    }
   }
 
   language.messages = (0, _assignDeep2.default)({}, defaultLanguage.messages, language.messages);

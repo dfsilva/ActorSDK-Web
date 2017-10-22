@@ -59,10 +59,9 @@ var CreateGroupStore = function (_ReduceStore) {
       case _ActorAppConstants.ActionTypes.GROUP_CREATE:
         return _extends({}, state, {
           step: _ActorAppConstants.CreateGroupSteps.CREATION_STARTED
-        });
 
-      // TODO: Show create group error success messages in modal
-      case _ActorAppConstants.ActionTypes.GROUP_CREATE_SUCCESS:
+          // TODO: Show create group error success messages in modal
+        });case _ActorAppConstants.ActionTypes.GROUP_CREATE_SUCCESS:
         return this.getInitialState();
 
       case _ActorAppConstants.ActionTypes.GROUP_CREATE_ERROR:

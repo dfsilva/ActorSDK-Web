@@ -2,8 +2,6 @@
 
 exports.__esModule = true;
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
 var _utils = require('flux/utils');
 
 var _ActorAppDispatcher = require('../dispatcher/ActorAppDispatcher');
@@ -41,16 +39,10 @@ var PeopleStore = function (_ReduceStore) {
 
   PeopleStore.prototype.reduce = function reduce(state, action) {
     if (action.type === _ActorAppConstants.ActionTypes.CONTACT_LIST_CHANGED) {
-      var _ret = function () {
-        var uid = _ActorClient2.default.getUid();
-        return {
-          v: action.contacts.filter(function (contact) {
-            return contact.uid !== uid;
-          })
-        };
-      }();
-
-      if ((typeof _ret === 'undefined' ? 'undefined' : _typeof(_ret)) === "object") return _ret.v;
+      var uid = _ActorClient2.default.getUid();
+      return action.contacts.filter(function (contact) {
+        return contact.uid !== uid;
+      });
     }
 
     return state;
