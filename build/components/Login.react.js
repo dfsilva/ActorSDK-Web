@@ -216,19 +216,13 @@ var Login = function (_Component) {
             { className: 'pull-right' },
             _react2.default.createElement(
               'a',
-              { href: '//actorapp.ghost.io/desktop-apps' },
-              'Desktop'
-            ),
-            '\xA0\xA0\u2022\xA0\xA0',
-            _react2.default.createElement(
-              'a',
-              { href: '//actor.im/ios' },
+              { href: '#' },
               'iPhone'
             ),
             '\xA0\xA0\u2022\xA0\xA0',
             _react2.default.createElement(
               'a',
-              { href: '//actor.im/android' },
+              { href: '//play.google.com/store/apps/details?id=br.com.diegosilva.actorlotericas' },
               'Android'
             )
           )

@@ -146,9 +146,8 @@ class Login extends Component {
           <footer>
             <div className="pull-left"><FormattedMessage id="login.welcome.copyright" values={{ appName: this.appName }}/></div>
             <div className="pull-right">
-              <a href="//actorapp.ghost.io/desktop-apps">Desktop</a>&nbsp;&nbsp;•&nbsp;&nbsp;
-              <a href="//actor.im/ios">iPhone</a>&nbsp;&nbsp;•&nbsp;&nbsp;
-              <a href="//actor.im/android">Android</a>
+              <a href="#">iPhone</a>&nbsp;&nbsp;•&nbsp;&nbsp;
+              <a href="//play.google.com/store/apps/details?id=br.com.diegosilva.actorlotericas">Android</a>
             </div>
           </footer>
         </div>
