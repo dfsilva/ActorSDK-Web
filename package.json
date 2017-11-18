@@ -48,7 +48,7 @@
   ],
   "dependencies": {
     "actor-emoji": "latest",
-    "actor-js": "latest",
+    "actor-js": "https://github.com/dfsilva/ActorSDK-JavaScript.git#master",
     "actor-react-scroll": "1.0.5",
     "assign-deep": "0.4.5",
     "babel-polyfill": "6.9.1",
