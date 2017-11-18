@@ -14,8 +14,8 @@ export default {
   devtool: '#inline-source-map',
   entry: {
     app: [
-      './devapp/index.js',
-      './src/styles/index.scss'
+        './devapp/index.js',
+        './src/styles/index.scss'
     ]
   },
   output: {
