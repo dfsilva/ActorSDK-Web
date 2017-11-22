@@ -12,6 +12,7 @@ import { escapeWithEmoji } from '../../utils/EmojiUtils';
 import NotificationsActionCreators from '../../actions/NotificationsActionCreators';
 
 import UserStore from '../../stores/UserStore';
+import PeerStore from '../../stores/PeerStore';
 import NotificationsStore from '../../stores/NotificationsStore';
 import OnlineStore from '../../stores/OnlineStore';
 
@@ -34,7 +35,7 @@ class UserProfile extends Component {
 
   static calculateState(prevState, nextProps) {
     const uid = nextProps.user.id;
-    const peer = uid ? UserStore.getUser(uid) : null;
+    const peer = uid ? PeerStore.getUserPeer(uid) : null;
 
     return {
       ...prevState,

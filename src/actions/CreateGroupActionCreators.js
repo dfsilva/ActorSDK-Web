@@ -30,6 +30,7 @@ const CreateGroupActionCreators = {
   },
 
   createGroup(title, avatar, memberIds) {
+
     const createGroup = () => dispatchAsync(ActorClient.createGroup(title, avatar, memberIds), {
       request: ActionTypes.GROUP_CREATE,
       success: ActionTypes.GROUP_CREATE_SUCCESS,

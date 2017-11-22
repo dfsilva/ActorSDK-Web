@@ -14,7 +14,6 @@ gulp.task('webpack:dev', () => {
     if (err) {
       throw new gutil.PluginError('[webpack:dev]', err);
     }
-
     gutil.log('[webpack:dev]', 'http://0.0.0.0:3000');
   });
 });
@@ -38,8 +37,8 @@ gulp.task('html', () => {
 
 gulp.task('workers', ['sdk'], () => {
   return gulp.src([
-    //'build/workers/offline-worker.*',
-    //'build/workers/serviceworker-cache-polyfill.*',
+    'build/workers/offline-worker.*',
+    'build/workers/serviceworker-cache-polyfill.*',
     'node_modules/opus-recorder/libopus.js',
     'node_modules/opus-recorder/oggopusDecoder.js',
     'node_modules/opus-recorder/oggopusEncoder.js',
@@ -48,7 +47,13 @@ gulp.task('workers', ['sdk'], () => {
     .pipe(gulp.dest('./dist/'));
 });
 
-gulp.task('lib:build', shell.task('./gradlew :actor-sdk:sdk-core:core:core-js:buildPackage', { cwd: '../..' }));
+//gulp.task('lib:build', shell.task('./gradlew :actor-sdk:sdk-core:core:core-js:buildPackage', { cwd: '../..' }));
+
+gulp.task('lib:build', () => {
+    return gulp.src('../*', {read: false})
+        .pipe(shell.task('./gradlew :actor-sdk:sdk-core:core:core-js:buildPackage', { cwd: '../..' }))
+});
+
 gulp.task('lib:copy', ['lib:build'], () => {
   return gulp.src(['../sdk-core/core/core-js/build/package/actor.nocache.js'])
     .pipe(rename('actor.js'))

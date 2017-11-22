@@ -86,7 +86,7 @@ class InviteByLink extends Component {
                 className="textarea"
                 onClick={this.handleInviteLinkSelect}
                 readOnly
-                row="3"
+                rows="3"
                 value={inviteUrl}/>
             </div>
 

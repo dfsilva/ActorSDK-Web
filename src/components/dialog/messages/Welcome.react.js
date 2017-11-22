@@ -86,7 +86,7 @@ class Welcome extends Component {
     const group = GroupStore.getGroup(id);
     const myID = UserStore.getMyId();
     const admin = UserStore.getUser(group.adminId);
-    const creator = group.adminId === myID ? intl.messages['message.welcome.group.you'] : admin.name;
+    const creator = group.adminId === myID ? intl.messages['message.welcome.group.you'] : (admin ? admin.name : "");
 
     return (
       <div className="row">

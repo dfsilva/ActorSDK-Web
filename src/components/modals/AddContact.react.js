@@ -48,7 +48,7 @@ class AddContact extends Component {
   }
 
   componentDidMount() {
-    this.refs.query.focus();
+    this.qry.focus();
   }
 
   componentWillUnmount() {
@@ -92,7 +92,7 @@ class AddContact extends Component {
         className="input__material--wide"
         floatingLabel={<FormattedMessage id="modal.addContact.query"/>}
         onChange={this.handleQueryChange}
-        ref="query"
+        inputRef={(input) => { this.qry = input; }}
         value={query}/>
     );
   }
@@ -136,6 +136,7 @@ class AddContact extends Component {
         overlayClassName="modal-overlay"
         className="modal"
         onRequestClose={this.handleClose}
+        contentLabel=""
         isOpen>
 
         <div className="add-contact">

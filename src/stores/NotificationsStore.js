@@ -8,6 +8,7 @@ import { ActionTypes } from '../constants/ActorAppConstants';
 import ActorClient from '../utils/ActorClient';
 
 class NotificationsStore extends Store {
+
   isNotificationsEnabled(peer) {
     return ActorClient.isNotificationsEnabled(peer);
   }

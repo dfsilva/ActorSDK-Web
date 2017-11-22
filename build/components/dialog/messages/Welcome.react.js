@@ -122,7 +122,7 @@ var Welcome = function (_Component) {
     var group = _GroupStore2.default.getGroup(id);
     var myID = _UserStore2.default.getMyId();
     var admin = _UserStore2.default.getUser(group.adminId);
-    var creator = group.adminId === myID ? intl.messages['message.welcome.group.you'] : admin.name;
+    var creator = group.adminId === myID ? intl.messages['message.welcome.group.you'] : admin ? admin.name : "";
 
     return _react2.default.createElement(
       'div',

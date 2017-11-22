@@ -82,10 +82,10 @@ var GroupProfile = function (_Component) {
   GroupProfile.calculateState = function calculateState(prevState, nextProps) {
     var gid = nextProps.group.id;
     var peer = gid ? _GroupStore2.default.getGroup(gid) : null;
+    var notificationEnabled = _NotificationsStore2.default.isNotificationsEnabled(peer);
     return {
       peer: peer,
-      // should not require to pass a peer
-      isNotificationsEnabled: peer ? _NotificationsStore2.default.isNotificationsEnabled(peer) : true,
+      isNotificationsEnabled: peer ? notificationEnabled : true,
       integrationToken: _GroupStore2.default.getToken(),
       message: _OnlineStore2.default.getMessage()
     };
@@ -200,6 +200,42 @@ var GroupProfile = function (_Component) {
     );
   };
 
+  GroupProfile.prototype.renderGroupPre = function renderGroupPre() {
+    var adminId = this.props.group.adminId;
+    var integrationToken = this.state.integrationToken;
+
+    var myId = _UserStore2.default.getMyId();
+
+    return _react2.default.createElement(
+      'li',
+      { className: 'profile__list__item group_profile__integration no-p' },
+      _react2.default.createElement(
+        _Fold2.default,
+        { icon: 'power', iconClassName: 'icon--pink', title: 'Criar Grupo Pre' },
+        _react2.default.createElement(
+          'div',
+          { className: 'info info--light' },
+          _react2.default.createElement(
+            'p',
+            null,
+            _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'integrationTokenHint' })
+          ),
+          _react2.default.createElement(
+            'a',
+            { href: 'https://actor.readme.io/docs/simple-integration', target: '_blank' },
+            _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'integrationTokenHelp' })
+          )
+        ),
+        _react2.default.createElement('textarea', {
+          className: 'textarea',
+          onClick: this.handleTokenSelect,
+          readOnly: true,
+          row: '3',
+          value: integrationToken })
+      )
+    );
+  };
+
   GroupProfile.prototype.render = function render() {
     var group = this.props.group;
     var _state = this.state,
@@ -245,7 +281,9 @@ var GroupProfile = function (_Component) {
           _react2.default.createElement(
             'li',
             { className: 'profile__list__item group_profile__notifications no-p' },
-            _react2.default.createElement(_ToggleNotifications2.default, { isNotificationsEnabled: isNotificationsEnabled, onNotificationChange: this.handleNotificationChange })
+            _react2.default.createElement(_ToggleNotifications2.default, {
+              isNotificationsEnabled: isNotificationsEnabled,
+              onNotificationChange: this.handleNotificationChange })
           ),
           _react2.default.createElement(
             'li',

@@ -44,6 +44,7 @@ var CreateGroupActionCreators = {
     (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.GROUP_CREATE_SET_MEMBERS, { selectedUserIds: selectedUserIds });
   },
   createGroup: function createGroup(title, avatar, memberIds) {
+
     var createGroup = function createGroup() {
       return (0, _ActorAppDispatcher.dispatchAsync)(_ActorClient2.default.createGroup(title, avatar, memberIds), {
         request: _ActorAppConstants.ActionTypes.GROUP_CREATE,

@@ -46,7 +46,7 @@ class CreateGroupForm extends Component {
 
   componentDidMount() {
     if (this.state.step === CreateGroupSteps.NAME_INPUT) {
-      this.refs.name.focus();
+      this.name.focus();
     }
   }
 
@@ -128,7 +128,7 @@ class CreateGroupForm extends Component {
       <TextField
         className="input__material--wide"
         floatingLabel={<FormattedMessage id="modal.createGroup.groupName"/>}
-        ref="name"
+        inputRef={(input) => { this.name = input; }}
         onChange={this.handleNameChange}
         value={name}/>
     );

@@ -15,6 +15,7 @@ import NotificationsActionCreators from '../../actions/NotificationsActionCreato
 import DialogStore from '../../stores/DialogStore';
 import NotificationsStore from '../../stores/NotificationsStore';
 import GroupStore from '../../stores/GroupStore';
+import PeerStore from '../../stores/PeerStore';
 import UserStore from '../../stores/UserStore';
 import OnlineStore from '../../stores/OnlineStore';
 
@@ -35,11 +36,11 @@ class GroupProfile extends Component {
 
   static calculateState(prevState, nextProps) {
     const gid = nextProps.group.id;
-    const peer = gid ? GroupStore.getGroup(gid) : null;
+    const peer = gid ? PeerStore.getGroupPeer(gid) : null;
+    const notificationEnabled = NotificationsStore.isNotificationsEnabled(peer);
     return {
       peer,
-      // should not require to pass a peer
-      isNotificationsEnabled: peer ? NotificationsStore.isNotificationsEnabled(peer) : true,
+      isNotificationsEnabled: peer ? notificationEnabled : true,
       integrationToken: GroupStore.getToken(),
       message: OnlineStore.getMessage()
     };
@@ -132,12 +133,35 @@ class GroupProfile extends Component {
             className="textarea"
             onClick={this.handleTokenSelect}
             readOnly
-            row="3"
+            rows="3"
             value={integrationToken}/>
         </Fold>
       </li>
     );
   }
+
+    renderGroupPre() {
+        const { group } = this.props;
+
+        return (
+            <li className="profile__list__item group_profile__integration no-p">
+              <Fold icon="power" iconClassName="icon--pink" title="Criar Grupo Pre">
+
+                <div className="info info--light">
+                  <p><FormattedMessage id="integrationTokenHint"/></p>
+                  <a href="https://actor.readme.io/docs/simple-integration" target="_blank"><FormattedMessage id="integrationTokenHelp"/></a>
+                </div>
+
+                <textarea
+                    className="textarea"
+                    onClick={this.handleTokenSelect}
+                    readOnly
+                    rows="3"
+                    value={integrationToken}/>
+              </Fold>
+            </li>
+        );
+    }
 
   render() {
     const { group } = this.props;
@@ -171,7 +195,9 @@ class GroupProfile extends Component {
             </li>
 
             <li className="profile__list__item group_profile__notifications no-p">
-              <ToggleNotifications isNotificationsEnabled={isNotificationsEnabled} onNotificationChange={this.handleNotificationChange}/>
+              <ToggleNotifications
+                  isNotificationsEnabled={isNotificationsEnabled}
+                                   onNotificationChange={this.handleNotificationChange}/>
             </li>
 
             <li className="profile__list__item group_profile__members no-p">

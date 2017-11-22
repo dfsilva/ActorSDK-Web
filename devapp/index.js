@@ -1,5 +1,3 @@
-console.log("pagina inicial");
-
 import ActorSDK from '../src/sdk/actor-sdk';
 import ActorSDKDelegate from '../src/sdk/actor-sdk-delegate';
 
@@ -26,7 +24,7 @@ const app = new ActorSDK({
     facebook: 'actorapp',
     twitter: 'actorapp',
     homePage: 'https://actor.im',
-    appName: 'XLoto Mensageiro'
+    appName: 'Actor'
 });
 
 app.startApp();

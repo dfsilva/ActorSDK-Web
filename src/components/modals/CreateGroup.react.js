@@ -27,11 +27,11 @@ class CreateGroup extends Component {
         overlayClassName="modal-overlay"
         className="modal"
         onRequestClose={this.handleClose}
+        contentLabel=""
         isOpen>
 
         <div className="create-group">
           <div className="modal__content">
-
             <header className="modal__header">
               <FormattedMessage id="modal.createGroup.title" tagName="h1"/>
               <a className="modal__header__close material-icons"
