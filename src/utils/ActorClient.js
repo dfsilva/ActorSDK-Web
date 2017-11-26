@@ -274,6 +274,10 @@ class ActorClient {
     return window.messenger.createGroup(title, avatar, userIds);
   }
 
+  createGroupPre(groupId, parentId) {
+      return window.messenger.createGroupPre(groupId, parentId);
+  }
+
   kickMember(gid, uid) {
     return window.messenger.kickMember(gid, uid);
   }
