@@ -22,6 +22,7 @@ import OnlineStore from '../../stores/OnlineStore';
 import SvgIcon from '../common/SvgIcon.react';
 import AvatarItem from '../common/AvatarItem.react';
 import GroupProfileMembers from '../activity/GroupProfileMembers.react';
+import GroupPreProperties from '../activity/GroupPreProperties.react';
 import Fold from '../common/Fold.react';
 import ToggleNotifications from '../common/ToggleNotifications.react';
 
@@ -206,6 +207,9 @@ class GroupProfile extends Component {
               </Fold>
             </li>
 
+            <li className="profile__list__item group_profile__group_pre no-p">
+                <GroupPreProperties groupId={group.id} groups={[]}/>
+            </li>
             {this.renderToken()}
           </ul>
         </Scrollbar>

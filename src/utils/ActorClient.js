@@ -77,6 +77,14 @@ class ActorClient {
     return ActorClient.createBindings('bindGroup', 'unbindGroup', gid, callback);
   }
 
+  bindGroups(callback) {
+      return ActorClient.createBindings('bindGroups', 'unbindGroups', callback);
+  }
+
+  bindChannels(callback) {
+      return ActorClient.createBindings('bindChannels', 'unbindChannels', callback);
+  }
+
   bindUser(uid, callback) {
     return ActorClient.createBindings('bindUser', 'unbindUser', uid, callback);
   }

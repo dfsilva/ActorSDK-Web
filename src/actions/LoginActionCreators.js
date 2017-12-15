@@ -19,6 +19,8 @@ import QuickSearchActionCreators from './QuickSearchActionCreators';
 import FaviconActionCreators from './FaviconActionCreators';
 import EventBusActionCreators from './EventBusActionCreators';
 import StickersActionCreators from './StickersActionCreators';
+import GroupListActionCreators from "./GroupListActionCreators";
+import ChannelsActionCreators from "./ChannelsActionCreators";
 
 class LoginActionCreators extends ActionCreators {
   start() {
@@ -123,7 +125,9 @@ class LoginActionCreators extends ActionCreators {
       ActorClient.bindSearch(QuickSearchActionCreators.setQuickSearchList),
       ActorClient.bindTempGlobalCounter(FaviconActionCreators.setFavicon),
       ActorClient.bindEventBus(EventBusActionCreators.broadcastEvent),
-      ActorClient.bindStickers(StickersActionCreators.setStickers)
+      ActorClient.bindStickers(StickersActionCreators.setStickers),
+      ActorClient.bindGroups(GroupListActionCreators.setGroups),
+      ActorClient.bindChannels(ChannelsActionCreators.setChannels)
     ]);
 
     dispatch(ActionTypes.AUTH_SET_LOGGED_IN);

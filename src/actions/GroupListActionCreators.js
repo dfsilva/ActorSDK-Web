@@ -29,6 +29,10 @@ const GroupListActionCreators = {
       success: ActionTypes.GROUP_LIST_LOAD_SUCCESS,
       failure: ActionTypes.GROUP_LIST_LOAD_ERROR
     });
+  },
+
+  setGroups(groups) {
+      dispatch(ActionTypes.GROUP_LIST_SET, { groups });
   }
 };
 
