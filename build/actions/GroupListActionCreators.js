@@ -39,6 +39,9 @@ var GroupListActionCreators = {
       success: _ActorAppConstants.ActionTypes.GROUP_LIST_LOAD_SUCCESS,
       failure: _ActorAppConstants.ActionTypes.GROUP_LIST_LOAD_ERROR
     });
+  },
+  setGroups: function setGroups(groups) {
+    (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.GROUP_LIST_SET, { groups: groups });
   }
 };
 

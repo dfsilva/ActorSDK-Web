@@ -53,6 +53,7 @@ var CreateGroup = function (_Component) {
         overlayClassName: 'modal-overlay',
         className: 'modal',
         onRequestClose: this.handleClose,
+        contentLabel: '',
         isOpen: true },
       _react2.default.createElement(
         'div',

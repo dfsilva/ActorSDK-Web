@@ -24,6 +24,10 @@ var _UserStore = require('../../stores/UserStore');
 
 var _UserStore2 = _interopRequireDefault(_UserStore);
 
+var _PeerStore = require('../../stores/PeerStore');
+
+var _PeerStore2 = _interopRequireDefault(_PeerStore);
+
 var _NotificationsStore = require('../../stores/NotificationsStore');
 
 var _NotificationsStore2 = _interopRequireDefault(_NotificationsStore);
@@ -63,7 +67,7 @@ var UserProfile = function (_Component) {
 
   UserProfile.calculateState = function calculateState(prevState, nextProps) {
     var uid = nextProps.user.id;
-    var peer = uid ? _UserStore2.default.getUser(uid) : null;
+    var peer = uid ? _PeerStore2.default.getUserPeer(uid) : null;
 
     return _extends({}, prevState, {
       peer: peer,

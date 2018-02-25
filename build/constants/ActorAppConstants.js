@@ -135,6 +135,8 @@ var ActionTypes = exports.ActionTypes = (0, _keymirror2.default)({
   GROUP_LIST_LOAD: null,
   GROUP_LIST_LOAD_SUCCESS: null,
   GROUP_LIST_LOAD_ERROR: null,
+  GROUP_LIST_SET: null,
+  CHANNEL_LIST_SET: null,
 
   NOTIFICATION_CHANGE: null,
 

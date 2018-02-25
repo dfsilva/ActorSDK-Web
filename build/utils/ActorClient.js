@@ -95,6 +95,14 @@ var ActorClient = function () {
     return ActorClient.createBindings('bindGroup', 'unbindGroup', gid, callback);
   };
 
+  ActorClient.prototype.bindGroups = function bindGroups(callback) {
+    return ActorClient.createBindings('bindGroups', 'unbindGroups', callback);
+  };
+
+  ActorClient.prototype.bindChannels = function bindChannels(callback) {
+    return ActorClient.createBindings('bindChannels', 'unbindChannels', callback);
+  };
+
   ActorClient.prototype.bindUser = function bindUser(uid, callback) {
     return ActorClient.createBindings('bindUser', 'unbindUser', uid, callback);
   };
@@ -290,6 +298,10 @@ var ActorClient = function () {
 
   ActorClient.prototype.createGroup = function createGroup(title, avatar, userIds) {
     return window.messenger.createGroup(title, avatar, userIds);
+  };
+
+  ActorClient.prototype.createGroupPre = function createGroupPre(groupId, parentId) {
+    return window.messenger.createGroupPre(groupId, parentId);
   };
 
   ActorClient.prototype.kickMember = function kickMember(gid, uid) {

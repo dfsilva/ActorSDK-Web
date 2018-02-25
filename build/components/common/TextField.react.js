@@ -31,7 +31,8 @@ var TextField = function (_Component) {
     var _this = _possibleConstructorReturn(this, _Component.call(this, props));
 
     _this.focus = function () {
-      var input = _this.props.ref || _this.refs.input;
+      var input = _this.props.inputRef || _this.refs.inputElement;
+
       if (!input) {
         return;
       }
@@ -69,12 +70,14 @@ var TextField = function (_Component) {
   }
 
   TextField.prototype.render = function render() {
+    var _this2 = this;
+
     var _props = this.props,
         className = _props.className,
         floatingLabel = _props.floatingLabel,
         type = _props.type,
         value = _props.value,
-        ref = _props.ref,
+        inputRef = _props.inputRef,
         disabled = _props.disabled,
         errorText = _props.errorText;
     var _state = this.state,
@@ -95,9 +98,10 @@ var TextField = function (_Component) {
       onChange: this.handleChange,
       onFocus: this.handleFocus,
       onBlur: this.handleBlur,
-      value: value,
       disabled: disabled,
-      ref: ref ? ref : 'input'
+      ref: inputRef ? inputRef : function (input) {
+        return _this2.inputElement = input;
+      }
     };
 
     return _react2.default.createElement(
@@ -125,10 +129,9 @@ TextField.propTypes = {
   floatingLabel: _react.PropTypes.node,
   type: _react.PropTypes.string,
   value: _react.PropTypes.string,
-  ref: _react.PropTypes.string,
   disabled: _react.PropTypes.bool,
   errorText: _react.PropTypes.string,
-
+  inputRef: _react.PropTypes.func,
   onChange: _react.PropTypes.func,
   onFocus: _react.PropTypes.func,
   onBlur: _react.PropTypes.func

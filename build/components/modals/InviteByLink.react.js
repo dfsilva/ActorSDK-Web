@@ -127,7 +127,7 @@ var InviteByLink = function (_Component) {
               className: 'textarea',
               onClick: this.handleInviteLinkSelect,
               readOnly: true,
-              row: '3',
+              rows: '3',
               value: inviteUrl })
           )
         )

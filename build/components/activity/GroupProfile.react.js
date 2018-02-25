@@ -34,6 +34,10 @@ var _GroupStore = require('../../stores/GroupStore');
 
 var _GroupStore2 = _interopRequireDefault(_GroupStore);
 
+var _PeerStore = require('../../stores/PeerStore');
+
+var _PeerStore2 = _interopRequireDefault(_PeerStore);
+
 var _UserStore = require('../../stores/UserStore');
 
 var _UserStore2 = _interopRequireDefault(_UserStore);
@@ -53,6 +57,10 @@ var _AvatarItem2 = _interopRequireDefault(_AvatarItem);
 var _GroupProfileMembers = require('../activity/GroupProfileMembers.react');
 
 var _GroupProfileMembers2 = _interopRequireDefault(_GroupProfileMembers);
+
+var _GroupPreProperties = require('../activity/GroupPreProperties.react');
+
+var _GroupPreProperties2 = _interopRequireDefault(_GroupPreProperties);
 
 var _Fold = require('../common/Fold.react');
 
@@ -81,7 +89,7 @@ var GroupProfile = function (_Component) {
 
   GroupProfile.calculateState = function calculateState(prevState, nextProps) {
     var gid = nextProps.group.id;
-    var peer = gid ? _GroupStore2.default.getGroup(gid) : null;
+    var peer = gid ? _PeerStore2.default.getGroupPeer(gid) : null;
     var notificationEnabled = _NotificationsStore2.default.isNotificationsEnabled(peer);
     return {
       peer: peer,
@@ -194,17 +202,15 @@ var GroupProfile = function (_Component) {
           className: 'textarea',
           onClick: this.handleTokenSelect,
           readOnly: true,
-          row: '3',
+          rows: '3',
           value: integrationToken })
       )
     );
   };
 
   GroupProfile.prototype.renderGroupPre = function renderGroupPre() {
-    var adminId = this.props.group.adminId;
-    var integrationToken = this.state.integrationToken;
+    var group = this.props.group;
 
-    var myId = _UserStore2.default.getMyId();
 
     return _react2.default.createElement(
       'li',
@@ -230,7 +236,7 @@ var GroupProfile = function (_Component) {
           className: 'textarea',
           onClick: this.handleTokenSelect,
           readOnly: true,
-          row: '3',
+          rows: '3',
           value: integrationToken })
       )
     );
@@ -293,6 +299,11 @@ var GroupProfile = function (_Component) {
               { iconElement: iconElement, title: message },
               _react2.default.createElement(_GroupProfileMembers2.default, { groupId: group.id, members: group.members })
             )
+          ),
+          _react2.default.createElement(
+            'li',
+            { className: 'profile__list__item group_profile__group_pre no-p' },
+            _react2.default.createElement(_GroupPreProperties2.default, { groupId: group.id, groups: [] })
           ),
           this.renderToken()
         )

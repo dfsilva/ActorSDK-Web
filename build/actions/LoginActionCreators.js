@@ -58,6 +58,14 @@ var _StickersActionCreators = require('./StickersActionCreators');
 
 var _StickersActionCreators2 = _interopRequireDefault(_StickersActionCreators);
 
+var _GroupListActionCreators = require('./GroupListActionCreators');
+
+var _GroupListActionCreators2 = _interopRequireDefault(_GroupListActionCreators);
+
+var _ChannelsActionCreators = require('./ChannelsActionCreators');
+
+var _ChannelsActionCreators2 = _interopRequireDefault(_ChannelsActionCreators);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -181,7 +189,7 @@ var LoginActionCreators = function (_ActionCreators) {
       _history2.default.replace(nextPathname);
     }
 
-    this.setBindings('main', [_ActorClient2.default.bindUser(_ActorClient2.default.getUid(), _ProfileActionCreators2.default.setProfile), _ActorClient2.default.bindGroupDialogs(_DialogActionCreators2.default.setDialogs), _ActorClient2.default.bindContacts(_ContactActionCreators2.default.setContacts), _ActorClient2.default.bindSearch(_QuickSearchActionCreators2.default.setQuickSearchList), _ActorClient2.default.bindTempGlobalCounter(_FaviconActionCreators2.default.setFavicon), _ActorClient2.default.bindEventBus(_EventBusActionCreators2.default.broadcastEvent), _ActorClient2.default.bindStickers(_StickersActionCreators2.default.setStickers)]);
+    this.setBindings('main', [_ActorClient2.default.bindUser(_ActorClient2.default.getUid(), _ProfileActionCreators2.default.setProfile), _ActorClient2.default.bindGroupDialogs(_DialogActionCreators2.default.setDialogs), _ActorClient2.default.bindContacts(_ContactActionCreators2.default.setContacts), _ActorClient2.default.bindSearch(_QuickSearchActionCreators2.default.setQuickSearchList), _ActorClient2.default.bindTempGlobalCounter(_FaviconActionCreators2.default.setFavicon), _ActorClient2.default.bindEventBus(_EventBusActionCreators2.default.broadcastEvent), _ActorClient2.default.bindStickers(_StickersActionCreators2.default.setStickers), _ActorClient2.default.bindGroups(_GroupListActionCreators2.default.setGroups), _ActorClient2.default.bindChannels(_ChannelsActionCreators2.default.setChannels)]);
 
     (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.AUTH_SET_LOGGED_IN);
 
