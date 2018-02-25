@@ -41,7 +41,7 @@ class Location extends Component {
       <div className={className}>
         <div className="location" onClick={this.handleMapClick}>
           <img
-            src={`https://maps.googleapis.com/maps/api/staticmap?center=${latitude},${longitude}&zoom=15&size=${MAP_SIZE}&scale=2&maptype=roadmap&markers=color:red%7C${latitude},${longitude}&key=API_KEY`}
+            src={`https://maps.googleapis.com/maps/api/staticmap?center=${latitude},${longitude}&zoom=15&size=${MAP_SIZE}&scale=2&maptype=roadmap&markers=color:red%7C${latitude},${longitude}&key=${API_KEY}`}
             alt="Location"
           />
         </div>

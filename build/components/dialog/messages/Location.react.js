@@ -67,7 +67,7 @@ var Location = function (_Component) {
         'div',
         { className: 'location', onClick: this.handleMapClick },
         _react2.default.createElement('img', {
-          src: 'https://maps.googleapis.com/maps/api/staticmap?center=' + latitude + ',' + longitude + '&zoom=15&size=' + MAP_SIZE + '&scale=2&maptype=roadmap&markers=color:red%7C' + latitude + ',' + longitude + '&key=API_KEY',
+          src: 'https://maps.googleapis.com/maps/api/staticmap?center=' + latitude + ',' + longitude + '&zoom=15&size=' + MAP_SIZE + '&scale=2&maptype=roadmap&markers=color:red%7C' + latitude + ',' + longitude + '&key=' + API_KEY,
           alt: 'Location'
         })
       )
