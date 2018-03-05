@@ -82,6 +82,9 @@ class LoginActionCreators extends ActionCreators {
         case 'signup':
           this.startSignup();
           break;
+        case 'start':
+            this.startSignup();
+            break;
         case 'logged_in':
           this.setLoggedIn({ redirect: true });
           break;
@@ -125,9 +128,9 @@ class LoginActionCreators extends ActionCreators {
       ActorClient.bindSearch(QuickSearchActionCreators.setQuickSearchList),
       ActorClient.bindTempGlobalCounter(FaviconActionCreators.setFavicon),
       ActorClient.bindEventBus(EventBusActionCreators.broadcastEvent),
-      ActorClient.bindStickers(StickersActionCreators.setStickers),
-      ActorClient.bindGroups(GroupListActionCreators.setGroups),
-      ActorClient.bindChannels(ChannelsActionCreators.setChannels)
+      ActorClient.bindStickers(StickersActionCreators.setStickers)//,
+      //ActorClient.bindGroups(GroupListActionCreators.setGroups),
+      //ActorClient.bindChannels(ChannelsActionCreators.setChannels)
     ]);
 
     dispatch(ActionTypes.AUTH_SET_LOGGED_IN);

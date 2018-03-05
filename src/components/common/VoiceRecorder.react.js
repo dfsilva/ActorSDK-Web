@@ -17,15 +17,16 @@ class VoiceRecorder extends Component {
     super(props);
 
     this.state = {
+      startDate: null,
       duration: 0,
       isRecording: false
     };
 
     this.onRecordStart = this.onRecordStart.bind(this);
     this.onRecordStop = this.onRecordStop.bind(this);
-    this.onStreamReady = this.onStreamReady.bind(this);
     this.onRecordDone = this.onRecordDone.bind(this);
-    this.onDurationChange = this.onDurationChange.bind(this);
+    this.updateDuration = this.updateDuration.bind(this);
+    this.onRecordStarted = this.onRecordStarted.bind(this);
   }
 
   shouldComponentUpdate(nextProps, nextState) {
@@ -36,44 +37,51 @@ class VoiceRecorder extends Component {
   componentDidMount() {
     if (isRecordingSupported) {
       this.recorder = new Recorder();
-      this.recorder.addEventListener('duration', this.onDurationChange);
-      this.recorder.addEventListener('streamReady', this.onStreamReady);
-      this.recorder.addEventListener('dataAvailable', this.onRecordDone);
+      this.recorder.onstart = this.onRecordStarted;
+      this.recorder.ondataavailable = this.onRecordDone;
     }
   }
 
   componentWillUnmount() {
-    this.recorder.removeEventListener('duration', this.onDurationChange);
-    this.recorder.removeEventListener('streamReady', this.onStreamReady);
-    this.recorder.removeEventListener('dataAvailable', this.onRecordDone);
+    this.recorder.onstart = null;
+    this.recorder.ondataavailable = null;
     this.recorder = null;
   }
 
   onRecordStart() {
-    this.recorder.initStream();
-  }
-
-  onRecordStop() {
-    this.recorder.stop();
-    this.setState({ isRecording: false, duration: 0 });
-  }
-
-  onStreamReady() {
     this.recorder.start();
-    this.setState({ isRecording: true });
   }
 
-  onRecordDone(event) {
+  onRecordStarted(event){
+    this.setState({
+        startDate: Date.now(),
+        duration: 0,
+        isRecording: true
+    });
+    this.timer = setInterval(this.updateDuration, 50);
+  }
+
+  updateDuration(){
+      const elapsed = new Date() - this.state.startDate;
+      var roundElapsed = Math.round(elapsed / 100);
+      var duration = (roundElapsed / 10).toFixed(1);
+      this.setState({duration});
+  }
+
+  onRecordStop(event) {
+    this.recorder.stop();
+    clearInterval(this.timer);
+    this.setState({ isRecording: false});
+  }
+
+  onRecordDone(typedArray) {
     // duration must be in ms
     const duration = this.state.duration * 1000;
     if (duration >= 100) {
-      this.props.onFinish(duration, event.detail);
+      const dataBlob = new Blob( [typedArray], { type: 'audio/ogg' } );
+      this.props.onFinish(duration, dataBlob);
     }
-  }
-
-  onDurationChange(event) {
-    const duration = event.detail.toFixed(2);
-    this.setState({ duration });
+    this.setState({duration:0});
   }
 
   renderDuration() {

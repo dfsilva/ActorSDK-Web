@@ -19,7 +19,6 @@ class State extends Component {
 
   renderState() {
     const { state } = this.props;
-
     switch (state) {
       case MessageStates.PENDING:
         return <i className="status status--pending material-icons icon-access_time"></i>;

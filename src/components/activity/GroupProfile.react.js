@@ -207,9 +207,9 @@ class GroupProfile extends Component {
               </Fold>
             </li>
 
-            <li className="profile__list__item group_profile__group_pre no-p">
+           {/* <li className="profile__list__item group_profile__group_pre no-p">
                 <GroupPreProperties groupId={group.id} groups={[]}/>
-            </li>
+            </li>*/}
             {this.renderToken()}
           </ul>
         </Scrollbar>

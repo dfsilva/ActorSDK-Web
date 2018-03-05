@@ -14,9 +14,10 @@ class TextField extends Component {
     floatingLabel: PropTypes.node,
     type: PropTypes.string,
     value: PropTypes.string,
+    ref: PropTypes.string,
     disabled: PropTypes.bool,
     errorText: PropTypes.string,
-    inputRef: PropTypes.func,
+
     onChange: PropTypes.func,
     onFocus: PropTypes.func,
     onBlur: PropTypes.func
@@ -32,7 +33,7 @@ class TextField extends Component {
   }
 
   render() {
-    const { className, floatingLabel, type, value, inputRef, disabled, errorText } = this.props;
+    const { className, floatingLabel, type, value, ref, disabled, errorText } = this.props;
     const { isFocused, inputId } = this.state;
 
     const inputClassName = classnames('input input__material', className, {
@@ -49,7 +50,7 @@ class TextField extends Component {
       onFocus: this.handleFocus,
       onBlur: this.handleBlur,
       disabled,
-      ref: inputRef ? inputRef : (input => this.inputElement = input)
+      ref: ref ? ref : 'input'
     };
 
     return (
@@ -70,9 +71,8 @@ class TextField extends Component {
   }
 
   focus = () => {
-    const input = this.props.inputRef || this.refs.inputElement
-
-      if (!input) {
+    const input = this.props.ref || this.refs.input
+    if (!input) {
       return;
     }
 

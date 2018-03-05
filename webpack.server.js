@@ -16,6 +16,12 @@ function createServer(webpackConfig) {
 
   app.use('/assets', express.static('assets'));
   app.use('/assets/images/emoji', express.static('node_modules/actor-emoji'));
+  app.use('/decoderWorker.js', express.static('node_modules/opus-recorder/decoderWorker.js'));
+  app.use('/decoderWorker.wasm', express.static('node_modules/opus-recorder/decoderWorker.wasm'));
+  app.use('/decoderWorker.wast', express.static('node_modules/opus-recorder/decoderWorker.wast'));
+  app.use('/encoderWorker.js', express.static('node_modules/opus-recorder/encoderWorker.js'));
+  app.use('/encoderWorker.wasm', express.static('node_modules/opus-recorder/encoderWorker.wasm'));
+  app.use('/encoderWorker.wast', express.static('node_modules/opus-recorder/encoderWorker.wast'));
 
   app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'devapp/index.html'));

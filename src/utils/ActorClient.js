@@ -449,6 +449,7 @@ class ActorClient {
   // Search
 
   findGroups(query) {
+    console.log("Buscando grupos: "+query);
     return window.messenger.findGroups(query);
   }
 
