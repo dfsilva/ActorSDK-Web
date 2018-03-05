@@ -30,7 +30,6 @@ var State = function (_Component) {
   State.prototype.renderState = function renderState() {
     var state = this.props.state;
 
-
     switch (state) {
       case _ActorAppConstants.MessageStates.PENDING:
         return _react2.default.createElement('i', { className: 'status status--pending material-icons icon-access_time' });

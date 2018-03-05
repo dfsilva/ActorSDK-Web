@@ -300,11 +300,6 @@ var GroupProfile = function (_Component) {
               _react2.default.createElement(_GroupProfileMembers2.default, { groupId: group.id, members: group.members })
             )
           ),
-          _react2.default.createElement(
-            'li',
-            { className: 'profile__list__item group_profile__group_pre no-p' },
-            _react2.default.createElement(_GroupPreProperties2.default, { groupId: group.id, groups: [] })
-          ),
           this.renderToken()
         )
       )

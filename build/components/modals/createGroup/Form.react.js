@@ -79,7 +79,7 @@ var CreateGroupForm = function (_Component) {
 
   CreateGroupForm.prototype.componentDidMount = function componentDidMount() {
     if (this.state.step === _ActorAppConstants.CreateGroupSteps.NAME_INPUT) {
-      this.name.focus();
+      this.refs.name.focus();
     }
   };
 
@@ -171,16 +171,12 @@ var CreateGroupForm = function (_Component) {
   };
 
   CreateGroupForm.prototype.renderGroupNameInput = function renderGroupNameInput() {
-    var _this3 = this;
-
     var name = this.state.name;
 
     return _react2.default.createElement(_TextField2.default, {
       className: 'input__material--wide',
       floatingLabel: _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'modal.createGroup.groupName' }),
-      inputRef: function inputRef(input) {
-        _this3.name = input;
-      },
+      ref: 'name',
       onChange: this.handleNameChange,
       value: name });
   };

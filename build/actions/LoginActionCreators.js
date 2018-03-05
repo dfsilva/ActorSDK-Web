@@ -146,6 +146,9 @@ var LoginActionCreators = function (_ActionCreators) {
         case 'signup':
           _this2.startSignup();
           break;
+        case 'start':
+          _this2.startSignup();
+          break;
         case 'logged_in':
           _this2.setLoggedIn({ redirect: true });
           break;
@@ -189,7 +192,10 @@ var LoginActionCreators = function (_ActionCreators) {
       _history2.default.replace(nextPathname);
     }
 
-    this.setBindings('main', [_ActorClient2.default.bindUser(_ActorClient2.default.getUid(), _ProfileActionCreators2.default.setProfile), _ActorClient2.default.bindGroupDialogs(_DialogActionCreators2.default.setDialogs), _ActorClient2.default.bindContacts(_ContactActionCreators2.default.setContacts), _ActorClient2.default.bindSearch(_QuickSearchActionCreators2.default.setQuickSearchList), _ActorClient2.default.bindTempGlobalCounter(_FaviconActionCreators2.default.setFavicon), _ActorClient2.default.bindEventBus(_EventBusActionCreators2.default.broadcastEvent), _ActorClient2.default.bindStickers(_StickersActionCreators2.default.setStickers), _ActorClient2.default.bindGroups(_GroupListActionCreators2.default.setGroups), _ActorClient2.default.bindChannels(_ChannelsActionCreators2.default.setChannels)]);
+    this.setBindings('main', [_ActorClient2.default.bindUser(_ActorClient2.default.getUid(), _ProfileActionCreators2.default.setProfile), _ActorClient2.default.bindGroupDialogs(_DialogActionCreators2.default.setDialogs), _ActorClient2.default.bindContacts(_ContactActionCreators2.default.setContacts), _ActorClient2.default.bindSearch(_QuickSearchActionCreators2.default.setQuickSearchList), _ActorClient2.default.bindTempGlobalCounter(_FaviconActionCreators2.default.setFavicon), _ActorClient2.default.bindEventBus(_EventBusActionCreators2.default.broadcastEvent), _ActorClient2.default.bindStickers(_StickersActionCreators2.default.setStickers) //,
+    //ActorClient.bindGroups(GroupListActionCreators.setGroups),
+    //ActorClient.bindChannels(ChannelsActionCreators.setChannels)
+    ]);
 
     (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.AUTH_SET_LOGGED_IN);
 

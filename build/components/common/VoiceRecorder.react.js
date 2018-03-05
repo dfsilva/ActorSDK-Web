@@ -35,15 +35,16 @@ var VoiceRecorder = function (_Component) {
     var _this = _possibleConstructorReturn(this, _Component.call(this, props));
 
     _this.state = {
+      startDate: null,
       duration: 0,
       isRecording: false
     };
 
     _this.onRecordStart = _this.onRecordStart.bind(_this);
     _this.onRecordStop = _this.onRecordStop.bind(_this);
-    _this.onStreamReady = _this.onStreamReady.bind(_this);
     _this.onRecordDone = _this.onRecordDone.bind(_this);
-    _this.onDurationChange = _this.onDurationChange.bind(_this);
+    _this.updateDuration = _this.updateDuration.bind(_this);
+    _this.onRecordStarted = _this.onRecordStarted.bind(_this);
     return _this;
   }
 
@@ -54,44 +55,51 @@ var VoiceRecorder = function (_Component) {
   VoiceRecorder.prototype.componentDidMount = function componentDidMount() {
     if (isRecordingSupported) {
       this.recorder = new _opusRecorder2.default();
-      this.recorder.addEventListener('duration', this.onDurationChange);
-      this.recorder.addEventListener('streamReady', this.onStreamReady);
-      this.recorder.addEventListener('dataAvailable', this.onRecordDone);
+      this.recorder.onstart = this.onRecordStarted;
+      this.recorder.ondataavailable = this.onRecordDone;
     }
   };
 
   VoiceRecorder.prototype.componentWillUnmount = function componentWillUnmount() {
-    this.recorder.removeEventListener('duration', this.onDurationChange);
-    this.recorder.removeEventListener('streamReady', this.onStreamReady);
-    this.recorder.removeEventListener('dataAvailable', this.onRecordDone);
+    this.recorder.onstart = null;
+    this.recorder.ondataavailable = null;
     this.recorder = null;
   };
 
   VoiceRecorder.prototype.onRecordStart = function onRecordStart() {
-    this.recorder.initStream();
-  };
-
-  VoiceRecorder.prototype.onRecordStop = function onRecordStop() {
-    this.recorder.stop();
-    this.setState({ isRecording: false, duration: 0 });
-  };
-
-  VoiceRecorder.prototype.onStreamReady = function onStreamReady() {
     this.recorder.start();
-    this.setState({ isRecording: true });
   };
 
-  VoiceRecorder.prototype.onRecordDone = function onRecordDone(event) {
+  VoiceRecorder.prototype.onRecordStarted = function onRecordStarted(event) {
+    this.setState({
+      startDate: Date.now(),
+      duration: 0,
+      isRecording: true
+    });
+    this.timer = setInterval(this.updateDuration, 50);
+  };
+
+  VoiceRecorder.prototype.updateDuration = function updateDuration() {
+    var elapsed = new Date() - this.state.startDate;
+    var roundElapsed = Math.round(elapsed / 100);
+    var duration = (roundElapsed / 10).toFixed(1);
+    this.setState({ duration: duration });
+  };
+
+  VoiceRecorder.prototype.onRecordStop = function onRecordStop(event) {
+    this.recorder.stop();
+    clearInterval(this.timer);
+    this.setState({ isRecording: false });
+  };
+
+  VoiceRecorder.prototype.onRecordDone = function onRecordDone(typedArray) {
     // duration must be in ms
     var duration = this.state.duration * 1000;
     if (duration >= 100) {
-      this.props.onFinish(duration, event.detail);
+      var dataBlob = new Blob([typedArray], { type: 'audio/ogg' });
+      this.props.onFinish(duration, dataBlob);
     }
-  };
-
-  VoiceRecorder.prototype.onDurationChange = function onDurationChange(event) {
-    var duration = event.detail.toFixed(2);
-    this.setState({ duration: duration });
+    this.setState({ duration: 0 });
   };
 
   VoiceRecorder.prototype.renderDuration = function renderDuration() {

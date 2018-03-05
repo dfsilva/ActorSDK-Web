@@ -79,7 +79,7 @@ var AddContact = function (_Component) {
   };
 
   AddContact.prototype.componentDidMount = function componentDidMount() {
-    this.qry.focus();
+    this.refs.query.focus();
   };
 
   AddContact.prototype.componentWillUnmount = function componentWillUnmount() {
@@ -117,22 +117,18 @@ var AddContact = function (_Component) {
   };
 
   AddContact.prototype.renderUserSearchInput = function renderUserSearchInput() {
-    var _this2 = this;
-
     var query = this.state.query;
 
     return _react2.default.createElement(_TextField2.default, {
       className: 'input__material--wide',
       floatingLabel: _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'modal.addContact.query' }),
       onChange: this.handleQueryChange,
-      inputRef: function inputRef(input) {
-        _this2.qry = input;
-      },
+      ref: 'query',
       value: query });
   };
 
   AddContact.prototype.renderUserSearchResults = function renderUserSearchResults() {
-    var _this3 = this;
+    var _this2 = this;
 
     var _state = this.state,
         query = _state.query,
@@ -165,7 +161,7 @@ var AddContact = function (_Component) {
     }
 
     return results.map(function (result, index) {
-      return _react2.default.createElement(_ContactItem2.default, _extends({ key: index }, result, { onSelect: _this3.handleSelect }));
+      return _react2.default.createElement(_ContactItem2.default, _extends({ key: index }, result, { onSelect: _this2.handleSelect }));
     });
   };
 

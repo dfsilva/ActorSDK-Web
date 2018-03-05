@@ -469,6 +469,7 @@ var ActorClient = function () {
   // Search
 
   ActorClient.prototype.findGroups = function findGroups(query) {
+    console.log("Buscando grupos: " + query);
     return window.messenger.findGroups(query);
   };
 
