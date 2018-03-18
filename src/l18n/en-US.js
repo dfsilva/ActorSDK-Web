@@ -8,6 +8,8 @@ export default {
       'phone': 'Phone number',
       'email': 'Email address',
       'phone_or_email': 'Phone number or Email address',
+      'phone': 'Phone number',
+      'email': 'Email address',
       'authCode': 'Auth code',
       'yourName': 'Your name',
       'errors': {
@@ -15,7 +17,8 @@ export default {
         'nameInvalid': 'Invalid name',
         'codeInvalid': 'Invalid code',
         'codeExpired': 'Phone code has expired',
-        'codeWait': 'Try to request code later'
+        'codeWait': 'Try to request code later',
+        'emailInvalid': 'Please provide a valid email address'
       },
       'welcome': {
         'header': 'Welcome to <strong>{appName}</strong>',
@@ -258,7 +261,9 @@ export default {
         'favourites': 'Favorites',
         'groups': 'Groups',
         'privates': 'Direct Messages',
-        'history': 'History'
+        'history': 'History',
+        'groupspre': 'Predefined Groups',
+        'channelspre': 'Predefined Channels'
       },
       'group': {
         'empty': 'Create your first group conversation'

@@ -216,7 +216,6 @@ class ComposeSection extends Component {
     if (this.refs.area) {
       return this.refs.area.getCaretPosition();
     }
-
     return 0;
   }
 

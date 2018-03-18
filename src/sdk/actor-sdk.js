@@ -18,7 +18,7 @@ import assignDeep from 'assign-deep';
 import DelegateContainer from '../utils/DelegateContainer';
 import SharedContainer from '../utils/SharedContainer';
 import SDKDelegate from './actor-sdk-delegate';
-import { endpoints, rootElement, helpPhone, appName } from '../constants/ActorAppConstants'
+import { endpoints, rootElement, helpPhone, appName, LoginTypes } from '../constants/ActorAppConstants'
 
 import history from '../utils/history';
 import RouterHooks from '../utils/RouterHooks';
@@ -39,6 +39,7 @@ import DefaultInstall from '../components/Install.react';
 import DefaultArchive from '../components/Archive.react';
 import DefaultDialog from '../components/Dialog.react';
 import DefaultEmpty from '../components/Empty.react';
+import DefaultGrouppre from '../components/Grouppre.react';
 
 import { extendL18n, getIntlData } from '../l18n';
 
@@ -83,6 +84,7 @@ class ActorSDK {
     },
     routes: null,
     isExperimental: false,
+    loginType: LoginTypes.EMAIL_PHONE,
     logHandler: defaultLogHandler
   };
 
@@ -112,6 +114,7 @@ class ActorSDK {
     const Join = (typeof this.delegate.components.join == 'function') ? this.delegate.components.join : DefaultJoin;
     const Empty = (typeof this.delegate.components.empty == 'function') ? this.delegate.components.empty : DefaultEmpty;
     const Dialog = (typeof this.delegate.components.dialog == 'function') ? this.delegate.components.dialog : DefaultDialog;
+    const GroupPre = (typeof this.delegate.components.grouppre == 'function') ? this.delegate.components.grouppre : DefaultGrouppre;
 
     return (
       <Route path="/" component={App}>
@@ -121,6 +124,7 @@ class ActorSDK {
 
         <Route path="im" component={Main} onEnter={RouterHooks.requireAuth}>
           <Route path="history" component={Archive} />
+          <Route path="groups-pre" component={GroupPre}/>
           <Route path="join/:token" component={Join} />
           <Route path=":id" component={Dialog} />
           <IndexRoute component={Empty} />

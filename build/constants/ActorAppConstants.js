@@ -1,7 +1,7 @@
 'use strict';
 
 exports.__esModule = true;
-exports.helpPhone = exports.rootElement = exports.appName = exports.endpoints = exports.Path = exports.PreferencesTabTypes = exports.ModalTypes = exports.LoggerTypes = exports.AsyncActionStates = exports.KeyCodes = exports.MessageContentTypes = exports.CreateGroupSteps = exports.ActivityTypes = exports.PeerTypePrefixes = exports.PeerTypes = exports.MessageChangeReason = exports.MessageStates = exports.ConnectionStates = exports.MessageArtPopupState = exports.CallStates = exports.CallTypes = exports.EventTypes = exports.ActionTypes = exports.AuthSteps = undefined;
+exports.helpPhone = exports.rootElement = exports.appName = exports.endpoints = exports.Path = exports.PreferencesTabTypes = exports.ModalTypes = exports.LoggerTypes = exports.AsyncActionStates = exports.KeyCodes = exports.MessageContentTypes = exports.CreateGroupSteps = exports.ActivityTypes = exports.PeerTypePrefixes = exports.PeerTypes = exports.MessageChangeReason = exports.MessageStates = exports.ConnectionStates = exports.MessageArtPopupState = exports.CallStates = exports.CallTypes = exports.EventTypes = exports.ActionTypes = exports.LoginTypes = exports.AuthSteps = undefined;
 
 var _keymirror = require('keymirror');
 
@@ -17,6 +17,12 @@ var AuthSteps = exports.AuthSteps = (0, _keymirror2.default)({
 }); /*
      * Copyright (C) 2015 Actor LLC. <https://actor.im>
      */
+
+var LoginTypes = exports.LoginTypes = {
+  EMAIL_PHONE: 0,
+  PHONE: 1,
+  EMAIL: 2
+};
 
 var ActionTypes = exports.ActionTypes = (0, _keymirror2.default)({
   APP_HIDDEN: null,
@@ -235,6 +241,13 @@ var ActionTypes = exports.ActionTypes = (0, _keymirror2.default)({
   ARCHIVE_LOAD_MORE_SUCCESS: null,
   ARCHIVE_LOAD_MORE_ERROR: null,
 
+  GROUPPRE_ADD: null,
+  GROUPPRE_ADD_SUCCESS: null,
+  GROUPPRE_ADD_ERROR: null,
+  GROUPPRE_LOAD: null,
+  GROUPPRE_LOAD_SUCCESS: null,
+  GROUPPRE_LOAD_ERROR: null,
+
   FAVORITE_ADD: null,
   FAVORITE_ADD_SUCCESS: null,
   FAVORITE_ADD_ERROR: null,
@@ -442,6 +455,7 @@ var helpPhone = exports.helpPhone = '75551234567';
 
 exports.default = {
   AuthSteps: AuthSteps,
+  LoginTypes: LoginTypes,
   ActionTypes: ActionTypes,
   EventTypes: EventTypes,
   CallTypes: CallTypes,

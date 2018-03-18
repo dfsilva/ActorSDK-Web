@@ -6,6 +6,7 @@ import { Store } from 'flux/utils';
 import Dispatcher from '../dispatcher/ActorAppDispatcher';
 import { ActionTypes, AuthSteps } from '../constants/ActorAppConstants';
 
+
 import ActorClient from '../utils/ActorClient';
 
 import { getIntlData } from '../l18n';
@@ -88,6 +89,9 @@ class LoginStore extends Store {
           case 'CODE_WAIT':
             errors.login = this.intl.messages['login.errors.codeWait'];
             break;
+          case 'EMAIL_INVALID':
+              errors.login = this.intl.messages['login.errors.emailInvalid'];
+              break;
           default:
             errors.login = action.error;
         }

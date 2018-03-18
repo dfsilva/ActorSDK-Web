@@ -233,12 +233,10 @@ var Recent = function (_Component) {
 
   Recent.prototype.renderHistoryButton = function renderHistoryButton() {
     // actually this is hack, but it's ok while we haven't real flag
-    var isArchiveEmpty = this.props.dialogs.some(function (group) {
-      return !group.shorts.length;
-    });
-    if (isArchiveEmpty) {
-      return null;
-    }
+    // const isArchiveEmpty = this.props.dialogs.some((group) => !group.shorts.length);
+    // if (isArchiveEmpty) {
+    //   return null;
+    // }
 
     return _react2.default.createElement(_SidebarLink2.default, {
       className: 'sidebar__history',
@@ -249,8 +247,28 @@ var Recent = function (_Component) {
     });
   };
 
+  Recent.prototype.renderGroupsPreButton = function renderGroupsPreButton() {
+    return _react2.default.createElement(_SidebarLink2.default, {
+      className: 'sidebar__history',
+      to: '/im/groups-pre',
+      title: _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'sidebar.recents.groupspre' }),
+      glyph: 'group',
+      key: 'groupspre'
+    });
+  };
+
+  Recent.prototype.renderChannelsPreButton = function renderChannelsPreButton() {
+    return _react2.default.createElement(_SidebarLink2.default, {
+      className: 'sidebar__history',
+      to: '#',
+      title: _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'sidebar.recents.channelspre' }),
+      glyph: '',
+      key: 'channelspre'
+    });
+  };
+
   Recent.prototype.renderScrollableContent = function renderScrollableContent() {
-    return [this.renderRecentGroups(), this.renderHistoryButton()];
+    return [this.renderRecentGroups(), this.renderHistoryButton(), this.renderGroupsPreButton()];
   };
 
   Recent.prototype.render = function render() {

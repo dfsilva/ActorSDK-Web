@@ -75,6 +75,7 @@ var Archive = function (_Component) {
   };
 
   Archive.calculateState = function calculateState() {
+    console.log("calculateState");
     return {
       isLoading: _ArchiveStore2.default.isArchiveLoading(),
       isInitialLoadingComplete: _ArchiveStore2.default.isInitialLoadingComplete(),
@@ -158,7 +159,7 @@ var Archive = function (_Component) {
       { className: 'main' },
       _react2.default.createElement(
         'header',
-        { className: 'toolbar row' },
+        { className: 'toolbar row color--white' },
         _react2.default.createElement(
           'h3',
           null,

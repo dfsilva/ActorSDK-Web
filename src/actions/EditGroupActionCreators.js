@@ -17,18 +17,14 @@ class EditGroupActionCreators extends ActionCreators {
     this.setBindings('group', [
       ActorClient.bindGroup(gid, this.onCurrentGroupChange)
     ]);
-
     const group = ActorClient.getGroup(gid);
     dispatch(ActionTypes.GROUP_EDIT_MODAL_SHOW, { group });
-
     ComposeActionCreators.toggleAutoFocus(false);
   }
 
   hide() {
     this.removeBindings('group');
-
     dispatch(ActionTypes.GROUP_EDIT_MODAL_HIDE);
-
     ComposeActionCreators.toggleAutoFocus(true);
   }
 

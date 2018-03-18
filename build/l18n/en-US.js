@@ -1,31 +1,31 @@
 'use strict';
 
 exports.__esModule = true;
+
+var _login;
+
 exports.default = {
   'locale': 'en',
   'messages': {
     // Login
-    'login': {
+    'login': (_login = {
       'signIn': 'Sign in',
       'wrong': 'Wrong?',
       'phone': 'Phone number',
       'email': 'Email address',
-      'phone_or_email': 'Phone number or Email address',
-      'authCode': 'Auth code',
-      'yourName': 'Your name',
-      'errors': {
-        'numberInvalid': 'Invalid number',
-        'nameInvalid': 'Invalid name',
-        'codeInvalid': 'Invalid code',
-        'codeExpired': 'Phone code has expired',
-        'codeWait': 'Try to request code later'
-      },
-      'welcome': {
-        'header': 'Welcome to <strong>{appName}</strong>',
-        'text': '<p>{appName} Messenger brings all your business network connections into one place.</p>' + '<p>Our goal is making your working process easier, reducing your email load and making the people in business world closer to each other.</p>',
-        'copyright': '{appName} Messenger © 2016'
-      }
-    },
+      'phone_or_email': 'Phone number or Email address'
+    }, _login['phone'] = 'Phone number', _login['email'] = 'Email address', _login['authCode'] = 'Auth code', _login['yourName'] = 'Your name', _login['errors'] = {
+      'numberInvalid': 'Invalid number',
+      'nameInvalid': 'Invalid name',
+      'codeInvalid': 'Invalid code',
+      'codeExpired': 'Phone code has expired',
+      'codeWait': 'Try to request code later',
+      'emailInvalid': 'Please provide a valid email address'
+    }, _login['welcome'] = {
+      'header': 'Welcome to <strong>{appName}</strong>',
+      'text': '<p>{appName} Messenger brings all your business network connections into one place.</p>' + '<p>Our goal is making your working process easier, reducing your email load and making the people in business world closer to each other.</p>',
+      'copyright': '{appName} Messenger © 2016'
+    }, _login),
 
     // Menus
     'menu': {
@@ -256,7 +256,9 @@ exports.default = {
         'favourites': 'Favorites',
         'groups': 'Groups',
         'privates': 'Direct Messages',
-        'history': 'History'
+        'history': 'History',
+        'groupspre': 'Predefined Groups',
+        'channelspre': 'Predefined Channels'
       },
       'group': {
         'empty': 'Create your first group conversation'

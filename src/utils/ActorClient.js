@@ -77,6 +77,10 @@ class ActorClient {
     return ActorClient.createBindings('bindGroup', 'unbindGroup', gid, callback);
   }
 
+  bindGroupspre(parentId, callback) {
+      return ActorClient.createBindings('bindGroupspre', 'unbindGroupspre', parentId, callback);
+  }
+
   bindGroups(callback) {
       return ActorClient.createBindings('bindGroups', 'unbindGroups', callback);
   }

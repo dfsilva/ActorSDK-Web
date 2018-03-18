@@ -24,7 +24,8 @@ const app = new ActorSDK({
     facebook: 'actorapp',
     twitter: 'actorapp',
     homePage: 'https://actor.im',
-    appName: 'Actor'
+    appName: 'Actor',
+    loginType: 0
 });
 
 app.startApp();

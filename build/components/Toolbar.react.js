@@ -88,7 +88,6 @@ var AppHeader = function (_Component) {
       _react2.default.createElement(
         'div',
         { className: 'toolbar__controls col-xs' },
-        this.renderWriteButton(),
         _react2.default.createElement(_ToolbarSearch2.default, null)
       ),
       _react2.default.createElement(

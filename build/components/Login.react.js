@@ -107,6 +107,7 @@ var Login = function (_Component) {
 
     var SharedActor = _SharedContainer2.default.get();
     _this.appName = SharedActor.appName ? SharedActor.appName : _ActorAppConstants.appName;
+    _this.loginType = SharedActor.loginType;
     return _this;
   }
 
@@ -129,6 +130,7 @@ var Login = function (_Component) {
 
   Login.prototype.componentDidMount = function componentDidMount() {
     this.handleFocus();
+    console.log(this.loginType);
   };
 
   Login.prototype.componentDidUpdate = function componentDidUpdate() {
@@ -250,7 +252,8 @@ var Login = function (_Component) {
             _react2.default.createElement(_TextField2.default, { className: 'login-new__forms__form__input input__material--wide',
               disabled: isCodeRequested || step !== _ActorAppConstants.AuthSteps.LOGIN_WAIT,
               errorText: errors.login,
-              floatingLabel: intl.messages['login.phone_or_email'],
+              type: this.loginType == 0 ? 'text' : this.loginType == 1 ? 'phone' : 'email',
+              floatingLabel: this.loginType == 0 ? intl.messages['login.phone_or_email'] : this.loginType == 1 ? intl.messages['login.phone'] : intl.messages['login.email'],
               onChange: this.onLoginChange,
               ref: 'login',
               value: login }),

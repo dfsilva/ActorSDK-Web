@@ -138,6 +138,9 @@ var LoginStore = function (_Store) {
           case 'CODE_WAIT':
             errors.login = this.intl.messages['login.errors.codeWait'];
             break;
+          case 'EMAIL_INVALID':
+            errors.login = this.intl.messages['login.errors.emailInvalid'];
+            break;
           default:
             errors.login = action.error;
         }

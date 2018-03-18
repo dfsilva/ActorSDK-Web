@@ -43,18 +43,14 @@ var EditGroupActionCreators = function (_ActionCreators) {
 
   EditGroupActionCreators.prototype.show = function show(gid) {
     this.setBindings('group', [_ActorClient2.default.bindGroup(gid, this.onCurrentGroupChange)]);
-
     var group = _ActorClient2.default.getGroup(gid);
     (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.GROUP_EDIT_MODAL_SHOW, { group: group });
-
     _ComposeActionCreators2.default.toggleAutoFocus(false);
   };
 
   EditGroupActionCreators.prototype.hide = function hide() {
     this.removeBindings('group');
-
     (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.GROUP_EDIT_MODAL_HIDE);
-
     _ComposeActionCreators2.default.toggleAutoFocus(true);
   };
 

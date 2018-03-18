@@ -6,7 +6,7 @@ import React, { Component, PropTypes } from 'react';
 import { Container } from 'flux/utils';
 import classnames from 'classnames';
 import SharedContainer from '../utils/SharedContainer';
-import { appName, AuthSteps } from '../constants/ActorAppConstants';
+import { appName, AuthSteps, LoginTypes } from '../constants/ActorAppConstants';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 
 import LoginActionCreators from '../actions/LoginActionCreators';
@@ -23,6 +23,7 @@ class Login extends Component {
 
     const SharedActor = SharedContainer.get();
     this.appName = SharedActor.appName ? SharedActor.appName : appName;
+    this.loginType = SharedActor.loginType;
   }
 
   static getStores() {
@@ -48,6 +49,7 @@ class Login extends Component {
 
   componentDidMount() {
     this.handleFocus();
+    console.log(this.loginType);
   }
 
   componentDidUpdate() {
@@ -158,13 +160,16 @@ class Login extends Component {
 
             <form className={requestFormClassName} onSubmit={this.onRequestCode}>
               <a className="wrong" onClick={this.handleRestartAuthClick}><FormattedMessage id="login.wrong"/></a>
+
               <TextField className="login-new__forms__form__input input__material--wide"
                          disabled={isCodeRequested || step !== AuthSteps.LOGIN_WAIT}
                          errorText={errors.login}
-                         floatingLabel={intl.messages['login.phone_or_email']}
+                         type={this.loginType == 0 ? 'text' : this.loginType == 1 ? 'phone' : 'email'}
+                         floatingLabel={this.loginType == 0 ? intl.messages['login.phone_or_email'] : this.loginType == 1 ? intl.messages['login.phone'] : intl.messages['login.email']}
                          onChange={this.onLoginChange}
                          ref="login"
                          value={login}/>
+
               <footer className="text-center">
                 <button className="button button--rised button--wide"
                         type="submit"
@@ -174,7 +179,6 @@ class Login extends Component {
                 </button>
               </footer>
             </form>
-
             <form className={checkFormClassName} onSubmit={this.onSendCode}>
               <TextField className="login-new__forms__form__input input__material--wide"
                          disabled={isCodeSended || step !== AuthSteps.CODE_WAIT}

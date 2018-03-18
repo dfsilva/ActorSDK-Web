@@ -26,6 +26,7 @@ class Archive extends Component {
   }
 
   static calculateState() {
+      console.log("calculateState");
     return {
       isLoading: ArchiveStore.isArchiveLoading(),
       isInitialLoadingComplete: ArchiveStore.isInitialLoadingComplete(),
@@ -104,7 +105,7 @@ class Archive extends Component {
 
     return (
       <section className="main">
-        <header className="toolbar row">
+        <header className="toolbar row color--white">
           <h3>Archive</h3>
         </header>
         <div className="flexrow">

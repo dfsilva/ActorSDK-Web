@@ -19,8 +19,6 @@ import QuickSearchActionCreators from './QuickSearchActionCreators';
 import FaviconActionCreators from './FaviconActionCreators';
 import EventBusActionCreators from './EventBusActionCreators';
 import StickersActionCreators from './StickersActionCreators';
-import GroupListActionCreators from "./GroupListActionCreators";
-import ChannelsActionCreators from "./ChannelsActionCreators";
 
 class LoginActionCreators extends ActionCreators {
   start() {

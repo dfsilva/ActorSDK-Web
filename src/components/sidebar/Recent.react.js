@@ -182,10 +182,10 @@ class Recent extends Component {
 
   renderHistoryButton() {
     // actually this is hack, but it's ok while we haven't real flag
-    const isArchiveEmpty = this.props.dialogs.some((group) => !group.shorts.length);
-    if (isArchiveEmpty) {
-      return null;
-    }
+    // const isArchiveEmpty = this.props.dialogs.some((group) => !group.shorts.length);
+    // if (isArchiveEmpty) {
+    //   return null;
+    // }
 
     return (
       <SidebarLink
@@ -198,10 +198,36 @@ class Recent extends Component {
     );
   }
 
+  renderGroupsPreButton() {
+        return (
+            <SidebarLink
+                className="sidebar__history"
+                to="/im/groups-pre"
+                title={<FormattedMessage id="sidebar.recents.groupspre" />}
+                glyph="group"
+                key="groupspre"
+            />
+        );
+    }
+
+    renderChannelsPreButton() {
+        return (
+            <SidebarLink
+                className="sidebar__history"
+                to="#"
+                title={<FormattedMessage id="sidebar.recents.channelspre" />}
+                glyph=""
+                key="channelspre"
+            />
+        );
+    }
+
   renderScrollableContent() {
     return [
       this.renderRecentGroups(),
-      this.renderHistoryButton()
+      this.renderHistoryButton(),
+      this.renderGroupsPreButton(),
+     // this.renderChannelsPreButton()
     ];
   }
 

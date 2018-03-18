@@ -47,7 +47,6 @@ class AppHeader extends Component {
           <span>{this.appName}</span>
         </div>
         <div className="toolbar__controls col-xs">
-          {this.renderWriteButton()}
           <ToolbarSearch />
         </div>
         <div className="toolbar__profile">

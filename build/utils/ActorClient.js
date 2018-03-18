@@ -95,6 +95,10 @@ var ActorClient = function () {
     return ActorClient.createBindings('bindGroup', 'unbindGroup', gid, callback);
   };
 
+  ActorClient.prototype.bindGroupspre = function bindGroupspre(parentId, callback) {
+    return ActorClient.createBindings('bindGroupspre', 'unbindGroupspre', parentId, callback);
+  };
+
   ActorClient.prototype.bindGroups = function bindGroups(callback) {
     return ActorClient.createBindings('bindGroups', 'unbindGroups', callback);
   };

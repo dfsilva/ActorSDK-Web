@@ -8,15 +8,17 @@ exports.default = {
     'login': {
       'signIn': 'Entrar',
       'wrong': 'Errado?',
+      'phone_or_email': 'Telefone ou Email',
       'phone': 'Numero do celular',
-      'email': 'Email address',
+      'email': 'Endereço de email',
       'authCode': 'Código de autenticação',
       'yourName': 'Seu nome',
       'errors': {
         'numberInvalid': 'Numero inválido',
         'nameInvalid': 'Nome inválido',
         'codeInvalid': 'Código inválido',
-        'codeExpired': 'Este código expirou'
+        'codeExpired': 'Este código expirou',
+        'emailInvalid': 'Insira um endereço de email válido'
       }
     },
 
@@ -147,6 +149,34 @@ exports.default = {
     'preferencesSessionsAuthTime': 'Tempo logado',
     'preferencesSessionsTerminate': 'Matar sessão',
     'preferencesSessionsTerminateAll': 'Terminar todas seções',
+
+    // Sidebar
+    'sidebar': {
+      'recents': {
+        'empty': {
+          'first': 'You don\'t have any ongoing conversations at the moment.',
+          'second': {
+            'start': 'Você pode ',
+            'or': ' ou ',
+            'end': '.'
+          }
+        },
+        'newDialog': 'criar nova conversa',
+        'addPeople': 'adicionar pessoas',
+        'favourites': 'Favoritos',
+        'groups': 'Grupos',
+        'privates': 'Mensagens Diretas',
+        'history': 'Histórico',
+        'groupspre': 'Grupos Predefinidos',
+        'channelspre': 'Canais Predefinidos'
+      },
+      'group': {
+        'empty': 'Criar sua primeira conversa em grupo'
+      },
+      'private': {
+        'empty': 'Não existe ninguem na sua rede por enquanto'
+      }
+    },
 
     search: {
       'placeholder': 'Busca'

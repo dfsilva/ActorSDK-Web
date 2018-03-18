@@ -11,6 +11,12 @@ export const AuthSteps = keymirror({
   COMPLETED: null
 });
 
+export const LoginTypes = {
+    EMAIL_PHONE: 0,
+    PHONE: 1,
+    EMAIL: 2
+};
+
 export const ActionTypes = keymirror({
   APP_HIDDEN: null,
   APP_VISIBLE: null,
@@ -228,6 +234,13 @@ export const ActionTypes = keymirror({
   ARCHIVE_LOAD_MORE_SUCCESS: null,
   ARCHIVE_LOAD_MORE_ERROR: null,
 
+  GROUPPRE_ADD: null,
+  GROUPPRE_ADD_SUCCESS: null,
+  GROUPPRE_ADD_ERROR: null,
+  GROUPPRE_LOAD: null,
+  GROUPPRE_LOAD_SUCCESS: null,
+  GROUPPRE_LOAD_ERROR: null,
+
   FAVORITE_ADD: null,
   FAVORITE_ADD_SUCCESS: null,
   FAVORITE_ADD_ERROR: null,
@@ -440,6 +453,7 @@ export const helpPhone = '75551234567';
 
 export default {
   AuthSteps,
+  LoginTypes,
   ActionTypes,
   EventTypes,
   CallTypes,

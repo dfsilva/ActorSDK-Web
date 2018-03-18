@@ -8,7 +8,6 @@ import { Container } from 'flux/utils';
 import DelegateContainer from '../utils/DelegateContainer';
 
 import DefaultRecent from './sidebar/Recent.react';
-
 import DialogStore from '../stores/DialogStore';
 import ArchiveStore from '../stores/ArchiveStore';
 

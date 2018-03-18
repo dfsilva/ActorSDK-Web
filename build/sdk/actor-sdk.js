@@ -112,6 +112,10 @@ var _Empty = require('../components/Empty.react');
 
 var _Empty2 = _interopRequireDefault(_Empty);
 
+var _Grouppre = require('../components/Grouppre.react');
+
+var _Grouppre2 = _interopRequireDefault(_Grouppre);
+
 var _l18n = require('../l18n');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
@@ -231,6 +235,7 @@ var ActorSDK = function () {
     var Join = typeof this.delegate.components.join == 'function' ? this.delegate.components.join : _Join2.default;
     var Empty = typeof this.delegate.components.empty == 'function' ? this.delegate.components.empty : _Empty2.default;
     var Dialog = typeof this.delegate.components.dialog == 'function' ? this.delegate.components.dialog : _Dialog2.default;
+    var GroupPre = typeof this.delegate.components.grouppre == 'function' ? this.delegate.components.grouppre : _Grouppre2.default;
 
     return _react2.default.createElement(
       _reactRouter.Route,
@@ -242,6 +247,7 @@ var ActorSDK = function () {
         _reactRouter.Route,
         { path: 'im', component: _Main2.default, onEnter: _RouterHooks2.default.requireAuth },
         _react2.default.createElement(_reactRouter.Route, { path: 'history', component: Archive }),
+        _react2.default.createElement(_reactRouter.Route, { path: 'groups-pre', component: GroupPre }),
         _react2.default.createElement(_reactRouter.Route, { path: 'join/:token', component: Join }),
         _react2.default.createElement(_reactRouter.Route, { path: ':id', component: Dialog }),
         _react2.default.createElement(_reactRouter.IndexRoute, { component: Empty })
@@ -282,6 +288,7 @@ ActorSDK.defaultOptions = {
   },
   routes: null,
   isExperimental: false,
+  loginType: _ActorAppConstants.LoginTypes.EMAIL_PHONE,
   logHandler: _defaultLogHandler2.default
 };
 exports.default = ActorSDK;
