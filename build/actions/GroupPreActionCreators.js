@@ -42,7 +42,11 @@ var GroupPreActionCreators = function (_ActionCreators) {
     };
 
     GroupPreActionCreators.prototype.showGroupsPre = function showGroupsPre(parentId) {
-        this.setBindings('groupspre', [_ActorClient2.default.bindGroupspre(parentId, this.setGroupsPre)]);
+        var _this2 = this;
+
+        setTimeout(function () {
+            _this2.setBindings('groupspre', [_ActorClient2.default.bindGroupspre(parentId, _this2.setGroupsPre)]);
+        }, 500);
     };
 
     return GroupPreActionCreators;

@@ -41,16 +41,14 @@ var GrouppreStore = function (_ReduceStore) {
     };
 
     GrouppreStore.prototype.reduce = function reduce(state, action) {
+        console.log("reduce called: " + action.type);
         switch (action.type) {
             case _ActorAppConstants.ActionTypes.GROUPPRE_LOAD_SUCCESS:
-                console.log("retornando novo estado");
-                var newObj = _extends({}, state, {
+                return _extends({}, state, {
                     isLoading: false,
                     isLoaded: true,
                     groups: action.groupspre
                 });
-                console.log(newObj);
-                return newObj;
             default:
                 return state;
         }
@@ -65,7 +63,6 @@ var GrouppreStore = function (_ReduceStore) {
     };
 
     GrouppreStore.prototype.getGroups = function getGroups() {
-        console.log("getGroups " + this.getState().groups.length);
         return this.getState().groups;
     };
 

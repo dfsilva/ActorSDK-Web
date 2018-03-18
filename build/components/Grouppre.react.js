@@ -54,7 +54,6 @@ var Grouppre = function (_Component) {
     };
 
     Grouppre.calculateState = function calculateState() {
-        console.log("calculateState");
         return {
             parentId: _GrouppreStore2.default.getParentId(),
             isLoading: _GrouppreStore2.default.getIsLoading(),
@@ -69,23 +68,17 @@ var Grouppre = function (_Component) {
         return _possibleConstructorReturn(this, _Component.call(this, props));
     }
 
-    Grouppre.prototype.componentWillMount = function componentWillMount() {
-        console.log("componentWillMount");
-    };
+    Grouppre.prototype.componentWillMount = function componentWillMount() {};
 
     Grouppre.prototype.componentWillUnmount = function componentWillUnmount() {
-        console.log("componentWillUnmount");
         _GroupPreActionCreators2.default.removeBindings('groupspre');
     };
 
-    Grouppre.prototype.componentDidUpdate = function componentDidUpdate() {
-        console.log("componentDidUpdate");
-    };
+    Grouppre.prototype.componentDidUpdate = function componentDidUpdate() {};
 
     Grouppre.prototype.componentDidMount = function componentDidMount() {
         var parentId = this.state.parentId;
 
-        console.log("componentDidMount: " + parentId);
         _GroupPreActionCreators2.default.showGroupsPre(parentId);
     };
 
@@ -99,10 +92,7 @@ var Grouppre = function (_Component) {
             'archive-section--loading': isLoading
         });
 
-        console.log("render");
-
         var groupsList = (0, _lodash.map)(groups, function (grouppre, index) {
-            console.log("groupslist");
             var groupId = grouppre.groupId,
                 parentId = grouppre.parentId,
                 hasChildren = grouppre.hasChildren;
@@ -111,10 +101,33 @@ var Grouppre = function (_Component) {
             var groupPeer = _ActorClient2.default.getGroupPeer(groupId);
             return _react2.default.createElement(
                 'div',
-                { className: 'archive-section__list__item col-xs-12 col-sm-6 col-md-4 col-lg-3', key: index },
-                _react2.default.createElement(
+                { className: 'archive-section__list__item col-xs-12 col-sm-12 col-md-12 col-lg-12', key: index },
+                group.isMember ? _react2.default.createElement(
                     _reactRouter.Link,
                     { to: '/im/' + groupPeer.key, className: 'archive-item row' },
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'archive-item__user' },
+                        _react2.default.createElement(_AvatarItem2.default, {
+                            className: 'archive-item__avatar',
+                            size: 'medium',
+                            image: group.avatar,
+                            placeholder: group.placeholder,
+                            title: group.name
+                        })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'col-xs' },
+                        _react2.default.createElement(
+                            'h4',
+                            { className: 'archive-item__title' },
+                            group.name
+                        )
+                    )
+                ) : _react2.default.createElement(
+                    _reactRouter.Link,
+                    { to: '/im/join/' + group.shortName, className: 'archive-item row' },
                     _react2.default.createElement(
                         'div',
                         { className: 'archive-item__user' },
@@ -139,7 +152,6 @@ var Grouppre = function (_Component) {
             );
         });
 
-        console.log("return " + groups.length);
         return _react2.default.createElement(
             'section',
             { className: 'main' },
@@ -175,7 +187,7 @@ var Grouppre = function (_Component) {
                             ) : null,
                             isLoading ? _react2.default.createElement(
                                 'div',
-                                { className: 'archive-section__list__item archive-section__list__item--loading col-xs-12 col-sm-6 col-md-4 col-lg-3' },
+                                { className: 'archive-section__list__item archive-section__list__item--loading col-xs-12 col-sm-12 col-md-12 col-lg-12' },
                                 _react2.default.createElement(
                                     'div',
                                     { className: 'preloader' },

@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36490998-0fab-470a-b071-7de8ce82e399" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/actions/GroupPreActionCreators.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/components/Grouppre.react.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/stores/GrouppreStore.js" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/build/actions/ActionCreators.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/actions/ActionCreators.js.map" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/actions/ActivityActionCreators.js" afterPath="" />
@@ -56,6 +52,8 @@
       <change beforePath="$PROJECT_DIR$/build/actions/FavoriteActionCreators.js.map" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/actions/GroupListActionCreators.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/actions/GroupListActionCreators.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/actions/GroupPreActionCreators.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/actions/GroupPreActionCreators.js.map" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/actions/GroupProfileActionCreators.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/actions/GroupProfileActionCreators.js.map" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/actions/HelpActionCreators.js" afterPath="" />
@@ -225,6 +223,8 @@
       <change beforePath="$PROJECT_DIR$/build/components/Dialog.react.js.map" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/components/Empty.react.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/components/Empty.react.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/components/Grouppre.react.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/components/Grouppre.react.js.map" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/components/Install.react.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/components/Install.react.js.map" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/components/Join.react.js" afterPath="" />
@@ -555,6 +555,8 @@
       <change beforePath="$PROJECT_DIR$/build/stores/GroupListStore.js.map" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/stores/GroupStore.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/stores/GroupStore.js.map" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/stores/GrouppreStore.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/build/stores/GrouppreStore.js.map" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/stores/InviteUserStore.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/stores/InviteUserStore.js.map" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/stores/JoinGroupStore.js" afterPath="" />
@@ -654,23 +656,8 @@
       <change beforePath="$PROJECT_DIR$/build/workers/offline-worker.js.map" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/workers/serviceworker-cache-polyfill.js" afterPath="" />
       <change beforePath="$PROJECT_DIR$/build/workers/serviceworker-cache-polyfill.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/devapp/index.js" afterPath="$PROJECT_DIR$/devapp/index.js" />
-      <change beforePath="$PROJECT_DIR$/src/actions/EditGroupActionCreators.js" afterPath="$PROJECT_DIR$/src/actions/EditGroupActionCreators.js" />
-      <change beforePath="$PROJECT_DIR$/src/actions/LoginActionCreators.js" afterPath="$PROJECT_DIR$/src/actions/LoginActionCreators.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Archive.react.js" afterPath="$PROJECT_DIR$/src/components/Archive.react.js" />
+      <change beforePath="$PROJECT_DIR$/src/actions/GroupPreActionCreators.js" afterPath="$PROJECT_DIR$/src/actions/GroupPreActionCreators.js" />
       <change beforePath="$PROJECT_DIR$/src/components/Login.react.js" afterPath="$PROJECT_DIR$/src/components/Login.react.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar.react.js" afterPath="$PROJECT_DIR$/src/components/Sidebar.react.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Toolbar.react.js" afterPath="$PROJECT_DIR$/src/components/Toolbar.react.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/dialog/ComposeSection.react.js" afterPath="$PROJECT_DIR$/src/components/dialog/ComposeSection.react.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/sidebar/Recent.react.js" afterPath="$PROJECT_DIR$/src/components/sidebar/Recent.react.js" />
-      <change beforePath="$PROJECT_DIR$/src/constants/ActorAppConstants.js" afterPath="$PROJECT_DIR$/src/constants/ActorAppConstants.js" />
-      <change beforePath="$PROJECT_DIR$/src/l18n/en-US.js" afterPath="$PROJECT_DIR$/src/l18n/en-US.js" />
-      <change beforePath="$PROJECT_DIR$/src/l18n/pt-BR.js" afterPath="$PROJECT_DIR$/src/l18n/pt-BR.js" />
-      <change beforePath="$PROJECT_DIR$/src/sdk/actor-sdk.js" afterPath="$PROJECT_DIR$/src/sdk/actor-sdk.js" />
-      <change beforePath="$PROJECT_DIR$/src/stores/LoginStore.js" afterPath="$PROJECT_DIR$/src/stores/LoginStore.js" />
-      <change beforePath="$PROJECT_DIR$/src/styles/_variables.scss" afterPath="$PROJECT_DIR$/src/styles/_variables.scss" />
-      <change beforePath="$PROJECT_DIR$/src/styles/app.scss" afterPath="$PROJECT_DIR$/src/styles/app.scss" />
-      <change beforePath="$PROJECT_DIR$/src/utils/ActorClient.js" afterPath="$PROJECT_DIR$/src/utils/ActorClient.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -796,92 +783,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Grouppre.react.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/Grouppre.react.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="433">
-              <caret line="93" column="26" lean-forward="false" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
-              <folding>
-                <element signature="e#60#99#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComposeTextArea.react.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/dialog/compose/ComposeTextArea.react.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="21" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ComposeSection.react.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/dialog/ComposeSection.react.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3599">
-              <caret line="214" column="18" lean-forward="false" selection-start-line="214" selection-start-column="2" selection-end-line="214" selection-end-column="18" />
-              <folding>
-                <element signature="e#65#98#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GroupProfile.react.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/activity/GroupProfile.react.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="169" column="37" lean-forward="false" selection-start-line="169" selection-start-column="37" selection-end-line="169" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="actor-sdk.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/sdk/actor-sdk.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="127" column="28" lean-forward="false" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
-              <folding>
-                <element signature="e#65#89#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DialogStore.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stores/DialogStore.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="28" column="2" lean-forward="false" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Join.react.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Join.react.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="10" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/devapp/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="30" column="10" lean-forward="false" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
+            <state relative-caret-position="268">
+              <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="16" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Login.react.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Login.react.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="150" column="23" lean-forward="false" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Grouppre.react.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Grouppre.react.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="379">
+              <caret line="48" column="35" lean-forward="false" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+              <folding>
+                <element signature="e#60#99#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -890,7 +819,7 @@
         <entry file="file://$PROJECT_DIR$/src/actions/GroupPreActionCreators.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="414">
-              <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
+              <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#60#135#0" expanded="true" />
@@ -899,15 +828,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="GrouppreStore.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/stores/GrouppreStore.js">
+      <file leaf-file-name="gulpfile.babel.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#60#99#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="-596">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-648">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -916,7 +852,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>SharedActor</find>
       <find>LoginTypes</find>
       <find>phone_or_email</find>
       <find>type</find>
@@ -946,6 +881,7 @@
       <find>isMem</find>
       <find>DefaultJoin</find>
       <find>Join</find>
+      <find>br.com.diegosilva.actorlotericas</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/node_modules</dir>
@@ -994,7 +930,6 @@
         <option value="$PROJECT_DIR$/src/components/Sidebar.react.js" />
         <option value="$PROJECT_DIR$/src/sdk/actor-sdk.js" />
         <option value="$PROJECT_DIR$/src/constants/ActorAppConstants.js" />
-        <option value="$PROJECT_DIR$/src/components/Login.react.js" />
         <option value="$PROJECT_DIR$/src/actions/LoginActionCreators.js" />
         <option value="$PROJECT_DIR$/src/stores/LoginStore.js" />
         <option value="$PROJECT_DIR$/src/l18n/en-US.js" />
@@ -1008,9 +943,10 @@
         <option value="$PROJECT_DIR$/src/components/Archive.react.js" />
         <option value="$PROJECT_DIR$/src/actions/EditGroupActionCreators.js" />
         <option value="$PROJECT_DIR$/src/stores/GrouppreStore.js" />
-        <option value="$PROJECT_DIR$/src/actions/GroupPreActionCreators.js" />
         <option value="$PROJECT_DIR$/src/components/dialog/ComposeSection.react.js" />
         <option value="$PROJECT_DIR$/src/components/Grouppre.react.js" />
+        <option value="$PROJECT_DIR$/src/components/Login.react.js" />
+        <option value="$PROJECT_DIR$/src/actions/GroupPreActionCreators.js" />
       </list>
     </option>
   </component>
@@ -1159,13 +1095,6 @@
               <item name="ActorSDK-Web" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ActorSDK-Web" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ActorSDK-Web" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="dialog" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1320,12 +1249,12 @@
       <workItem from="1520299874539" duration="3402000" />
       <workItem from="1520534320995" duration="48000" />
       <workItem from="1520534389453" duration="18285000" />
-      <workItem from="1521075064324" duration="37761000" />
+      <workItem from="1521075064324" duration="39080000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="189335000" />
+    <option name="totallyTimeSpent" value="190654000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
@@ -1334,13 +1263,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44945055" sideWeight="0.3611111" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18571429" sideWeight="0.6388889" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18571429" sideWeight="0.6388889" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24285714" sideWeight="0.8259494" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3021978" sideWeight="0.8259494" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22845088" sideWeight="0.5054602" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1877637" sideWeight="0.49453977" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26153848" sideWeight="0.45886075" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26153848" sideWeight="0.45886075" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41538462" sideWeight="0.6698312" order="3" side_tool="false" content_ui="tabs" />
@@ -1419,22 +1348,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/styles/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="33" column="1" lean-forward="false" selection-start-line="33" selection-start-column="1" selection-end-line="33" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/sidebar/SidebarLink.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Toolbar.react.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -1695,14 +1608,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-427">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/stores/CallStore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-170">
@@ -1742,28 +1647,9 @@
         <state relative-caret-position="756">
           <caret line="42" column="17" lean-forward="false" selection-start-line="42" selection-start-column="17" selection-end-line="42" selection-end-column="17" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#60#99#0" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#60#99#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/GroupPreActionCreators.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="10" lean-forward="false" selection-start-line="23" selection-start-column="10" selection-end-line="23" selection-end-column="10" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#60#135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devapp/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="30" column="10" lean-forward="false" selection-start-line="30" selection-start-column="10" selection-end-line="30" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1791,38 +1677,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/dialog/compose/ComposeTextArea.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="21" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/dialog/ComposeSection.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3599">
-          <caret line="214" column="18" lean-forward="false" selection-start-line="214" selection-start-column="2" selection-end-line="214" selection-end-column="18" />
-          <folding>
-            <element signature="e#65#98#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/activity/GroupProfile.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="169" column="37" lean-forward="false" selection-start-line="169" selection-start-column="37" selection-end-line="169" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/dialog/TypingSection.react.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Join.react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="10" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
@@ -1837,33 +1705,92 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Join.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="10" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sdk/actor-sdk.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
           <caret line="127" column="28" lean-forward="false" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/activity/GroupProfile.react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="169" column="37" lean-forward="false" selection-start-line="169" selection-start-column="37" selection-end-line="169" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dialog/ComposeSection.react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3599">
+          <caret line="214" column="18" lean-forward="false" selection-start-line="214" selection-start-column="2" selection-end-line="214" selection-end-column="18" />
           <folding>
-            <element signature="e#65#89#0" expanded="true" />
+            <element signature="e#65#98#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/dialog/compose/ComposeTextArea.react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devapp/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Login.react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="150" column="23" lean-forward="false" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Grouppre.react.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="433">
-          <caret line="93" column="26" lean-forward="false" selection-start-line="93" selection-start-column="26" selection-end-line="93" selection-end-column="26" />
+        <state relative-caret-position="379">
+          <caret line="48" column="35" lean-forward="false" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
           <folding>
             <element signature="e#60#99#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/GroupPreActionCreators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="e#60#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-596">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-648">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -148,8 +148,8 @@ class Login extends Component {
           <footer>
             <div className="pull-left"><FormattedMessage id="login.welcome.copyright" values={{ appName: this.appName }}/></div>
             <div className="pull-right">
-              <a href="#">iPhone</a>&nbsp;&nbsp;•&nbsp;&nbsp;
-              <a href="//play.google.com/store/apps/details?id=br.com.diegosilva.actorlotericas">Android</a>
+              <a href="//itunes.apple.com/us/app/conecta-im/id1347857436?ls=1&mt=8">iPhone</a>&nbsp;&nbsp;•&nbsp;&nbsp;
+              <a href="//play.google.com/store/apps/details?id=br.com.diegosilva.conecta">Android</a>
             </div>
           </footer>
         </div>

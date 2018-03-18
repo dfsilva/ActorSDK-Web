@@ -312,7 +312,6 @@ var ComposeSection = function (_Component) {
     if (this.refs.area) {
       return this.refs.area.getCaretPosition();
     }
-
     return 0;
   };
 

@@ -21,7 +21,7 @@ class GroupPreActionCreators extends ActionCreators {
           this.setBindings('groupspre', [
               ActorClient.bindGroupspre(parentId, this.setGroupsPre)
           ]);
-      }, 200);
+      }, 500);
   }
 }
 

@@ -218,13 +218,13 @@ var Login = function (_Component) {
             { className: 'pull-right' },
             _react2.default.createElement(
               'a',
-              { href: '#' },
+              { href: '//itunes.apple.com/us/app/conecta-im/id1347857436?ls=1&mt=8' },
               'iPhone'
             ),
             '\xA0\xA0\u2022\xA0\xA0',
             _react2.default.createElement(
               'a',
-              { href: '//play.google.com/store/apps/details?id=br.com.diegosilva.actorlotericas' },
+              { href: '//play.google.com/store/apps/details?id=br.com.diegosilva.conecta' },
               'Android'
             )
           )
