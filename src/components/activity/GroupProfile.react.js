@@ -141,9 +141,17 @@ class GroupProfile extends Component {
     );
   }
 
-    renderGroupPre() {
-        const { group } = this.props;
+  renderGroupPermissions(){
+      const { group: { adminId } } = this.props;
+      const myId = UserStore.getMyId();
 
+      if (adminId !== myId) {
+          return null;
+      }
+  }
+
+  renderGroupPre() {
+        const { group } = this.props;
         return (
             <li className="profile__list__item group_profile__integration no-p">
               <Fold icon="power" iconClassName="icon--pink" title="Criar Grupo Pre">

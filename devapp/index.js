@@ -21,11 +21,11 @@ const app = new ActorSDK({
     ],
     isExperimental: true,
     forceLocale: 'pt-BR',
-    facebook: 'actorapp',
     twitter: 'actorapp',
     homePage: 'https://actor.im',
     appName: 'Actor',
-    loginType: 0
+    loginType: 0,
+    helpPhone: +5555555555555
 });
 
 app.startApp();

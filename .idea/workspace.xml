@@ -2,662 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36490998-0fab-470a-b071-7de8ce82e399" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/build/actions/ActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ActivityActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ActivityActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/AddContactActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/AddContactActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ArchiveActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ArchiveActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/AttachmentsActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/AttachmentsActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/BannerActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/BannerActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/BlockedUsersActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/BlockedUsersActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/CallActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/CallActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ChannelsActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ChannelsActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ComposeActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ComposeActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ConnectionStateActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ConnectionStateActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ContactActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ContactActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/CreateGroupActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/CreateGroupActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/CropActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/CropActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DialogActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DialogActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DialogInfoActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DialogInfoActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DialogSearchActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DialogSearchActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DraftActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DraftActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DropdownActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DropdownActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/EditGroupActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/EditGroupActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/EmojiActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/EmojiActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/EventBusActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/EventBusActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/FaviconActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/FaviconActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/FavoriteActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/FavoriteActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/GroupListActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/GroupListActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/GroupPreActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/GroupPreActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/GroupProfileActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/GroupProfileActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/HelpActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/HelpActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/InviteUserActions.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/InviteUserActions.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/InviteUserByLinkActions.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/InviteUserByLinkActions.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/JoinGroupActions.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/JoinGroupActions.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/KickUserActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/KickUserActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/LoggerActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/LoggerActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/LoginActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/LoginActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/MessageActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/MessageActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/MessageArtActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/MessageArtActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/NotificationsActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/NotificationsActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/OnlineActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/OnlineActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/PreferencesActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/PreferencesActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ProfileActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ProfileActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/QuickSearchActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/QuickSearchActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/SearchActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/SearchActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/SearchMessagesActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/SearchMessagesActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/StickersActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/StickersActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/TypingActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/TypingActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/VisibilityActionCreators.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/actions/VisibilityActionCreators.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Material Icons/MaterialIcons-Regular.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Material Icons/MaterialIcons-Regular.ijmap" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Material Icons/MaterialIcons-Regular.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Material Icons/MaterialIcons-Regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Material Icons/MaterialIcons-Regular.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Material Icons/MaterialIcons-Regular.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Material Icons/material-icons.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-black.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-black.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-black.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-black.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-black.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-blackitalic.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-blackitalic.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-blackitalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-blackitalic.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-blackitalic.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bold.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bold.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bold.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bold.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bold.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bolditalic.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bolditalic.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bolditalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bolditalic.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bolditalic.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-italic.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-italic.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-italic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-italic.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-italic.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-light.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-light.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-light.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-light.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-light.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-lightitalic.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-lightitalic.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-lightitalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-lightitalic.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-lightitalic.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-medium.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-medium.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-medium.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-medium.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-medium.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-mediumitalic.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-mediumitalic.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-mediumitalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-mediumitalic.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-mediumitalic.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-regular.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-regular.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-regular.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-regular.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thin.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thin.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thin.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thin.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thin.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thinitalic.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thinitalic.svg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thinitalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thinitalic.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thinitalic.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Black.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Black.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Black.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Black.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Bold.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Bold.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Bold.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Bold.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-BoldItalic.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-BoldItalic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-BoldItalic.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-BoldItalic.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Italic.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Italic.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Italic.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Italic.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Light.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Light.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Light.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Light.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Medium.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Medium.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Medium.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Medium.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Regular.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Regular.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Regular.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Regular.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Thin.eot" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Thin.ttf" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Thin.woff" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Thin.woff2" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/about_logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/emoji/sheet_apple_64.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/emoji/sheet_emojione_64.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/emoji/sheet_google_64.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/emoji/sheet_twitter_64.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/favicon.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/logo@2x.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/logo_splash.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/notification_icon_512.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/sound/notification.mp3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/sound/notification.ogg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/sound/ringtone.mp3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/sound/ringtone.ogg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/sound/tone.mp3" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/assets/sound/tone.ogg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Activity.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Activity.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/App.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/App.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Archive.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Archive.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Call.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Call.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Deactivated.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Deactivated.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Dialog.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Dialog.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Empty.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Empty.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Grouppre.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Grouppre.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Install.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Install.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Join.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Join.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Login.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Login.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Main.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Main.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Sidebar.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Sidebar.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/SmallCall.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/SmallCall.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Toolbar.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/Toolbar.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/GroupMember.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/GroupMember.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/GroupPreProperties.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/GroupPreProperties.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/GroupProfile.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/GroupProfile.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/GroupProfileMembers.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/GroupProfileMembers.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/UserProfile.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/UserProfile.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/AddUserButton.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/AddUserButton.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/AnswerButton.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/AnswerButton.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallAvatar.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallAvatar.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallBody.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallBody.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallControls.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallControls.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallDraggable.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallDraggable.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallHeader.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallHeader.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CloseButton.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CloseButton.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/EndButton.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/EndButton.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/FullScreenButton.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/FullScreenButton.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/MuteButton.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/MuteButton.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/SmartCallButton.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/SmartCallButton.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/VideoButton.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/VideoButton.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/AvatarItem.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/AvatarItem.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Checkbox.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Checkbox.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ConnectionState.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ConnectionState.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ContactDetails.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ContactDetails.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ContactItem.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ContactItem.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/CustomScroller.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/CustomScroller.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/DropZone.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/DropZone.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/EmojiDropdown.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/EmojiDropdown.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Favicon.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Favicon.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Fold.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Fold.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Image.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Image.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/MentionDropdown.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/MentionDropdown.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/MenuOverlay.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/MenuOverlay.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Scrollbar.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Scrollbar.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Scroller.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Scroller.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/SelectList.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/SelectList.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/SelectListItem.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/SelectListItem.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Failure.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Failure.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Pending.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Pending.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Processing.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Processing.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Root.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Root.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Success.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Success.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/index.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/SvgIcon.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/SvgIcon.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/TextField.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/TextField.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ToggleFavorite.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ToggleFavorite.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ToggleNotifications.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ToggleNotifications.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/UserMenu.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/UserMenu.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/VoiceRecorder.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/VoiceRecorder.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/dropdown/MessageActions.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/dropdown/MessageActions.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/dropdown/RecentContextMenu.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/dropdown/RecentContextMenu.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dev/LoggerFilter.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dev/LoggerFilter.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dev/LoggerRow.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dev/LoggerRow.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dev/LoggerSection.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dev/LoggerSection.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/ComposeSection.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/ComposeSection.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/DialogFooter.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/DialogFooter.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/DialogHeader.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/DialogHeader.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/MessagesList.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/MessagesList.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/MessagesSection.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/MessagesSection.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/TypingSection.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/TypingSection.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/compose/BotCommandsHint.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/compose/BotCommandsHint.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/compose/ComposeMarkdownHint.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/compose/ComposeMarkdownHint.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/compose/ComposeTextArea.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/compose/ComposeTextArea.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/header/MoreDropdown.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/header/MoreDropdown.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Animation.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Animation.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Contact.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Contact.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Document.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Document.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Loading.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Loading.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Location.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Location.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/MessageContent.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/MessageContent.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/MessageEdit.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/MessageEdit.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/MessageItem.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/MessageItem.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Modern.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Modern.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Photo.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Photo.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Reactions.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Reactions.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Service.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Service.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/State.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/State.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Sticker.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Sticker.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Text.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Text.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Voice.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Voice.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Welcome.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Welcome.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/EmojiItem.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/EmojiItem.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/EmojiTab.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/EmojiTab.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Emojis.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Emojis.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/MessageArt.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/MessageArt.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Popup.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Popup.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Sticker.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Sticker.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Stickers.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Stickers.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Trigger.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Trigger.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/emojiData.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/emojiData.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/AddContact.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/AddContact.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Attachments.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Attachments.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/CreateGroup.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/CreateGroup.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Crop.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Crop.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/EditGroup.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/EditGroup.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Groups.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Groups.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Invite.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Invite.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/InviteByLink.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/InviteByLink.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/ModalCloseButton.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/ModalCloseButton.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/ModalsWrapper.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/ModalsWrapper.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/MyProfile.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/MyProfile.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/People.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/People.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Preferences.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Preferences.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Profile.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Profile.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/QuickSearch.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/QuickSearch.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/addContact/ContactItem.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/addContact/ContactItem.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/attachments/Attachment.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/attachments/Attachment.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/attachments/Pagination.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/attachments/Pagination.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/createGroup/Form.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/createGroup/Form.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/groups/Group.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/groups/Group.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/peoples/PeopleItem.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/peoples/PeopleItem.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/preferences/BlockedUsers.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/preferences/BlockedUsers.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/preferences/Session.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/preferences/Session.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/profile/PictureChanger.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/profile/PictureChanger.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/DialogSearch.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/DialogSearch.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/SearchInput.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/SearchInput.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/SearchResultItem.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/SearchResultItem.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/SearchResults.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/SearchResults.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/SearchSection.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/SearchSection.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/ToolbarSearch.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/ToolbarSearch.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/ToolbarSearchResults.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/ToolbarSearchResults.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/HeaderSection.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/HeaderSection.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/QuickSearchButton.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/QuickSearchButton.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/Recent.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/Recent.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/RecentGroup.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/RecentGroup.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/RecentItem.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/RecentItem.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/SidebarLink.react.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/SidebarLink.react.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/constants/ActorAppConstants.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/constants/ActorAppConstants.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/dispatcher/ActorAppDispatcher.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/dispatcher/ActorAppDispatcher.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/en-US.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/en-US.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/es-ES.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/es-ES.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/index.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/pt-BR.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/pt-BR.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/ru-RU.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/ru-RU.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/zh-CN.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/zh-CN.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/sdk/actor-sdk-delegate.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/sdk/actor-sdk-delegate.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/sdk/actor-sdk.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/sdk/actor-sdk.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ActivityStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ActivityStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/AddContactStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/AddContactStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/AllDialogsStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/AllDialogsStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ArchiveStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ArchiveStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/AttachmentsStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/AttachmentsStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/BlockedUsersStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/BlockedUsersStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/CallStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/CallStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ComposeStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ComposeStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ConnectionStateStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ConnectionStateStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ContactsStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ContactsStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/CreateGroupStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/CreateGroupStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/CropAvatarStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/CropAvatarStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DialogInfoStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DialogInfoStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DialogSearchStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DialogSearchStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DialogStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DialogStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DraftStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DraftStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DropdownStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DropdownStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/EditGroupStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/EditGroupStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/EmojiStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/EmojiStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/FaviconStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/FaviconStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/GroupListStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/GroupListStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/GroupStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/GroupStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/GrouppreStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/GrouppreStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/InviteUserStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/InviteUserStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/JoinGroupStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/JoinGroupStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/KickUserStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/KickUserStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/LoggerStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/LoggerStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/LoginStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/LoginStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/MessageArtStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/MessageArtStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/MessageStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/MessageStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ModalStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ModalStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/MyProfileStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/MyProfileStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/NotificationsStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/NotificationsStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/OnlineStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/OnlineStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/PeerStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/PeerStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/PeopleStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/PeopleStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/PreferencesStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/PreferencesStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ProfileStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ProfileStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/QuickSearchStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/QuickSearchStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/SearchMessagesStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/SearchMessagesStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/SearchStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/SearchStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/TypingStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/TypingStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/UserStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/UserStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/VisibilityStore.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/stores/VisibilityStore.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/styles/index.css" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/ActorClient.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/ActorClient.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/ComposeUtils.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/ComposeUtils.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/DelegateContainer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/DelegateContainer.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/EmojiUtils.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/EmojiUtils.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/GroupUtils.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/GroupUtils.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/HotkeyUtils.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/HotkeyUtils.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/ImageUtils.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/ImageUtils.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/Inputs.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/Inputs.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/LocationContainer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/LocationContainer.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/MessageUtils.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/MessageUtils.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/PeerUtils.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/PeerUtils.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/RouterHooks.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/RouterHooks.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/SearchUtils.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/SearchUtils.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/SharedContainer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/SharedContainer.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/alert.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/alert.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/blobToFile.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/blobToFile.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/confirm.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/confirm.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/convertImage.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/convertImage.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/createTimer.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/createTimer.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/defaultLogHandler.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/defaultLogHandler.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/history.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/history.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/humanFileSize.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/humanFileSize.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/isInside.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/isInside.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/isMobile.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/utils/isMobile.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/canvasBlurRect.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/libwebp-0.2.0.min.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/workers/index.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/workers/index.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/workers/offline-worker.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/workers/offline-worker.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/workers/serviceworker-cache-polyfill.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/build/workers/serviceworker-cache-polyfill.js.map" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/src/actions/GroupPreActionCreators.js" afterPath="$PROJECT_DIR$/src/actions/GroupPreActionCreators.js" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.react.js" afterPath="$PROJECT_DIR$/src/components/Login.react.js" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/devapp/index.js" afterPath="$PROJECT_DIR$/devapp/index.js" />
+      <change beforePath="$PROJECT_DIR$/src/components/activity/GroupProfile.react.js" afterPath="$PROJECT_DIR$/src/components/activity/GroupProfile.react.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -669,181 +16,26 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DockManager">
-    <window id="1">
-      <content type="file-editors">
-        <state>
-          <leaf>
-            <file leaf-file-name="Archive.react.js" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/components/Archive.react.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="-18">
-                    <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
-                    <folding>
-                      <element signature="e#60#99#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="ArchiveActionCreators.js" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/actions/ArchiveActionCreators.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="288">
-                    <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-                    <folding>
-                      <element signature="e#60#125#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="ArchiveStore.js" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/stores/ArchiveStore.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="658">
-                    <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="28" />
-                    <folding>
-                      <element signature="e#60#95#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="Dialog.react.js" pinned="false" current-in-tab="true">
-              <entry file="file://$PROJECT_DIR$/src/components/Dialog.react.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="540">
-                    <caret line="59" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="DialogActionCreators.js" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/actions/DialogActionCreators.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="712">
-                    <caret line="142" column="45" lean-forward="false" selection-start-line="142" selection-start-column="27" selection-end-line="142" selection-end-column="45" />
-                    <folding>
-                      <element signature="e#60#135#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="MessageStore.js" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/stores/MessageStore.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="1458">
-                    <caret line="88" column="23" lean-forward="false" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="EditGroup.react.js" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/components/modals/EditGroup.react.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="159">
-                    <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-                    <folding>
-                      <element signature="n#!!doc" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="EditGroupActionCreators.js" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/actions/EditGroupActionCreators.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="101">
-                    <caret line="19" column="44" lean-forward="false" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-                    <folding>
-                      <element signature="e#60#135#0" expanded="true" />
-                    </folding>
-                  </state>
-                </provider>
-              </entry>
-            </file>
-            <file leaf-file-name="EditGroupStore.js" pinned="false" current-in-tab="false">
-              <entry file="file://$PROJECT_DIR$/src/stores/EditGroupStore.js">
-                <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="195">
-                    <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="41" />
-                    <folding />
-                  </state>
-                </provider>
-              </entry>
-            </file>
-          </leaf>
-        </state>
-      </content>
-    </window>
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/devapp/index.js">
+      <file leaf-file-name="GroupProfile.react.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/activity/GroupProfile.react.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="16" />
+            <state relative-caret-position="2268">
+              <caret line="153" column="37" lean-forward="false" selection-start-line="153" selection-start-column="37" selection-end-line="153" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Login.react.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Login.react.js">
+      <file leaf-file-name="GroupStore.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/stores/GroupStore.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="150" column="23" lean-forward="false" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Grouppre.react.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Grouppre.react.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="379">
-              <caret line="48" column="35" lean-forward="false" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
+            <state relative-caret-position="186">
+              <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
               <folding>
-                <element signature="e#60#99#0" expanded="true" />
+                <element signature="e#60#101#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GroupPreActionCreators.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/actions/GroupPreActionCreators.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-                <element signature="e#60#135#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gulpfile.babel.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-596">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-648">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -871,8 +63,6 @@
       <find>componentDid</find>
       <find>componentWill</find>
       <find>dispatch</find>
-      <find>GROUP_INFO_CHANGED</find>
-      <find>EditGroupStore</find>
       <find>Grouppre</find>
       <find>calculateState</find>
       <find>calculateCallState</find>
@@ -882,6 +72,8 @@
       <find>DefaultJoin</find>
       <find>Join</find>
       <find>br.com.diegosilva.actorlotericas</find>
+      <find>GROUP_INFO_CHANGED</find>
+      <find>EditGroupStore</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/node_modules</dir>
@@ -923,7 +115,6 @@
         <option value="$PROJECT_DIR$/webpack.server.js" />
         <option value="$PROJECT_DIR$/src/components/common/VoiceRecorder.react.js" />
         <option value="$PROJECT_DIR$/src/components/dialog/messages/State.react.js" />
-        <option value="$PROJECT_DIR$/src/components/activity/GroupProfile.react.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/actions/MessageActionCreators.js" />
         <option value="$PROJECT_DIR$/src/components/dialog/messages/MessageContent.react.js" />
@@ -934,7 +125,6 @@
         <option value="$PROJECT_DIR$/src/stores/LoginStore.js" />
         <option value="$PROJECT_DIR$/src/l18n/en-US.js" />
         <option value="$PROJECT_DIR$/src/l18n/pt-BR.js" />
-        <option value="$PROJECT_DIR$/devapp/index.js" />
         <option value="$PROJECT_DIR$/src/styles/app.scss" />
         <option value="$PROJECT_DIR$/src/styles/_variables.scss" />
         <option value="$PROJECT_DIR$/src/components/Toolbar.react.js" />
@@ -947,6 +137,8 @@
         <option value="$PROJECT_DIR$/src/components/Grouppre.react.js" />
         <option value="$PROJECT_DIR$/src/components/Login.react.js" />
         <option value="$PROJECT_DIR$/src/actions/GroupPreActionCreators.js" />
+        <option value="$PROJECT_DIR$/devapp/index.js" />
+        <option value="$PROJECT_DIR$/src/components/activity/GroupProfile.react.js" />
       </list>
     </option>
   </component>
@@ -1073,6 +265,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1096,12 +290,17 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ActorSDK-Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ActorSDK-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="activity" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1249,28 +448,28 @@
       <workItem from="1520299874539" duration="3402000" />
       <workItem from="1520534320995" duration="48000" />
       <workItem from="1520534389453" duration="18285000" />
-      <workItem from="1521075064324" duration="39080000" />
+      <workItem from="1521075064324" duration="40419000" />
+      <workItem from="1521460223434" duration="1264000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="190654000" />
+    <option name="totallyTimeSpent" value="193257000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="27" width="1920" height="1053" extended-state="6" />
+    <frame x="441" y="196" width="1920" height="1053" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22845088" sideWeight="0.5054602" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21677215" sideWeight="0.49453977" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44945055" sideWeight="0.3611111" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18571429" sideWeight="0.6388889" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21648352" sideWeight="0.6388889" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3021978" sideWeight="0.8259494" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22845088" sideWeight="0.5054602" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1877637" sideWeight="0.49453977" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26153848" sideWeight="0.45886075" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3021978" sideWeight="0.8259494" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41538462" sideWeight="0.6698312" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1279,6 +478,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26153848" sideWeight="0.45886075" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -1348,45 +548,10 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/Toolbar.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="37" column="8" lean-forward="false" selection-start-line="37" selection-start-column="8" selection-end-line="37" selection-end-column="46" />
-          <folding>
-            <element signature="e#65#117#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/sidebar/Recent.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="228" column="6" lean-forward="false" selection-start-line="228" selection-start-column="6" selection-end-line="228" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Sidebar.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="9" column="13" lean-forward="true" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/utils/ActorClient.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="97" column="24" lean-forward="false" selection-start-line="97" selection-start-column="24" selection-end-line="97" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/actions/DialogInfoActionCreators.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="8" column="2" lean-forward="false" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1394,7 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1402,7 +566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1170">
           <caret line="74" column="41" lean-forward="false" selection-start-line="74" selection-start-column="25" selection-end-line="74" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1410,7 +573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="28" column="9" lean-forward="false" selection-start-line="28" selection-start-column="9" selection-end-line="28" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1418,7 +580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="41" lean-forward="true" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1426,7 +587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
           <caret line="46" column="38" lean-forward="false" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1442,9 +602,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="18" column="37" lean-forward="false" selection-start-line="18" selection-start-column="37" selection-end-line="18" selection-end-column="37" />
-          <folding>
-            <element signature="e#60#125#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1453,7 +610,7 @@
         <state relative-caret-position="-18">
           <caret line="28" column="36" lean-forward="false" selection-start-line="28" selection-start-column="36" selection-end-line="28" selection-end-column="36" />
           <folding>
-            <element signature="e#60#99#0" expanded="true" />
+            <element signature="e#60#99#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1462,7 +619,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-330">
           <caret line="24" column="9" lean-forward="false" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1470,15 +626,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="60" column="20" lean-forward="true" selection-start-line="60" selection-start-column="20" selection-end-line="60" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Main.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="54" column="1" lean-forward="true" selection-start-line="54" selection-start-column="1" selection-end-line="56" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1504,9 +651,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1514,9 +658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1524,9 +665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1542,7 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="129" column="34" lean-forward="false" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="34" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1550,7 +687,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="13" column="43" lean-forward="false" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1558,9 +694,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="658">
           <caret line="48" column="8" lean-forward="false" selection-start-line="48" selection-start-column="8" selection-end-line="48" selection-end-column="28" />
-          <folding>
-            <element signature="e#60#95#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1568,7 +701,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="19" column="41" lean-forward="false" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1576,9 +708,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="101">
           <caret line="19" column="44" lean-forward="false" selection-start-line="19" selection-start-column="44" selection-end-line="19" selection-end-column="44" />
-          <folding>
-            <element signature="e#60#135#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1586,9 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="159">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1596,7 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="211">
           <caret line="49" column="19" lean-forward="true" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1612,7 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-170">
           <caret line="8" column="6" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1620,7 +744,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="4" column="6" lean-forward="false" selection-start-line="4" selection-start-column="6" selection-end-line="4" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1628,7 +751,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1458">
           <caret line="88" column="23" lean-forward="false" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1637,7 +759,7 @@
         <state relative-caret-position="712">
           <caret line="142" column="45" lean-forward="false" selection-start-line="142" selection-start-column="27" selection-end-line="142" selection-end-column="45" />
           <folding>
-            <element signature="e#60#135#0" expanded="true" />
+            <element signature="e#60#135#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1653,19 +775,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Dialog.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="59" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/styles/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="249">
           <caret line="54" column="3" lean-forward="false" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1673,7 +786,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="494">
           <caret line="68" column="15" lean-forward="false" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1681,9 +793,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1691,9 +800,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="11" column="10" lean-forward="false" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="10" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1701,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="241">
           <caret line="28" column="2" lean-forward="false" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1713,21 +818,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/activity/GroupProfile.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="169" column="37" lean-forward="false" selection-start-line="169" selection-start-column="37" selection-end-line="169" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/dialog/ComposeSection.react.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3599">
           <caret line="214" column="18" lean-forward="false" selection-start-line="214" selection-start-column="2" selection-end-line="214" selection-end-column="18" />
-          <folding>
-            <element signature="e#65#98#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1735,25 +829,71 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="6" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="60" column="26" lean-forward="false" selection-start-line="60" selection-start-column="25" selection-end-line="60" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-596">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Dialog.react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="59" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/HelpActionCreators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/common/UserMenu.react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="179" column="21" lean-forward="false" selection-start-line="179" selection-start-column="12" selection-end-line="179" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Toolbar.react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="599">
+          <caret line="52" column="16" lean-forward="false" selection-start-line="52" selection-start-column="16" selection-end-line="52" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Main.react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="39" column="76" lean-forward="false" selection-start-line="39" selection-start-column="76" selection-end-line="39" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/actions/GroupPreActionCreators.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="47" lean-forward="true" selection-start-line="6" selection-start-column="47" selection-end-line="6" selection-end-column="47" />
           <folding>
             <element signature="n#!!doc" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/devapp/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Login.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="150" column="23" lean-forward="false" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1762,35 +902,42 @@
         <state relative-caret-position="379">
           <caret line="48" column="35" lean-forward="false" selection-start-line="48" selection-start-column="35" selection-end-line="48" selection-end-column="35" />
           <folding>
-            <element signature="e#60#99#0" expanded="true" />
+            <element signature="e#60#99#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/actions/GroupPreActionCreators.js">
+    <entry file="file://$PROJECT_DIR$/src/components/Login.react.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        <state relative-caret-position="18">
+          <caret line="150" column="23" lean-forward="false" selection-start-line="150" selection-start-column="23" selection-end-line="150" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/devapp/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="22" column="25" lean-forward="false" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/activity/GroupProfile.react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2268">
+          <caret line="153" column="37" lean-forward="false" selection-start-line="153" selection-start-column="37" selection-end-line="153" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/stores/GroupStore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="14" column="3" lean-forward="true" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#60#135#0" expanded="true" />
+            <element signature="e#60#101#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-596">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
