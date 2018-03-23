@@ -57,6 +57,17 @@ class EditGroupActionCreators extends ActionCreators {
     }
   }
 
+  editGroupRestrictedDomains(gid, restrictedDomains) {
+    restrictedDomains = restrictedDomains === '' ? null : restrictedDomains;
+    if (restrictedDomains !== EditGroupStore.getRestrictedDomains()) {
+        dispatchAsync(ActorClient.updateRestrictedDomains(gid, restrictedDomains), {
+            request: ActionTypes.GROUP_EDIT_RESTRICTED_DOMAINS,
+            success: ActionTypes.GROUP_EDIT_RESTRICTED_DOMAINS_SUCCESS,
+            failure: ActionTypes.GROUP_EDIT_RESTRICTED_DOMAINS_ERROR
+        }, { gid, restrictedDomains });
+    }
+  }
+
   removeGroupAvatar(gid) {
     ActorClient.removeGroupAvatar(gid)
   }

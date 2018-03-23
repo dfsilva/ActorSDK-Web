@@ -69,6 +69,12 @@
   }
 }
 
+.profile_div_title{
+  margin: 25px 0 5px 24px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
 .user_profile {
   @include side-profile();
   &__meta {
@@ -313,6 +319,12 @@
       height: 98px;
       margin-top: 18px;
       margin-left: -9px;
+    }
+  }
+
+  &__integration2 {
+    .fold__content {
+      padding-right: 16px;
     }
   }
 

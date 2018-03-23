@@ -37,7 +37,9 @@ var GroupStore = function (_ReduceStore) {
 
   GroupStore.prototype.getInitialState = function getInitialState() {
     return {
-      token: null
+      token: null,
+      groupPermissionsLoading: true,
+      groupPermissions: GroupStore.defaultGroupPermissions
     };
   };
 
@@ -50,9 +52,29 @@ var GroupStore = function (_ReduceStore) {
         return _extends({}, state, {
           token: action.response
         });
+      case _ActorAppConstants.ActionTypes.GROUP_PERMISSIONS_LOAD:
+        return _extends({}, state, {
+          groupPermissionsLoading: true,
+          groupPermissions: GroupStore.defaultGroupPermissions
+        });
+      case _ActorAppConstants.ActionTypes.GROUP_PERMISSIONS_LOAD_SUCCESS:
+        return _extends({}, state, {
+          groupPermissionsLoading: false,
+          groupPermissions: action.permissions
+        });
+      case _ActorAppConstants.ActionTypes.GROUP_PERMISSIONS_LOAD_ERROR:
+        return _extends({}, state, {
+          adminSettingsLoading: false,
+          groupPermissions: GroupStore.defaultGroupPermissions
+        });
       case _ActorAppConstants.ActionTypes.GROUP_GET_TOKEN_ERROR:
-        return this.getInitialState();
-
+        return state;
+      case _ActorAppConstants.ActionTypes.GROUP_PERMISSIONS_SAVE_SUCCESS:
+      case _ActorAppConstants.ActionTypes.GROUP_PERMISSIONS_SAVE_ERROR:
+      case _ActorAppConstants.ActionTypes.GROUP_PERMISSIONS_SAVE:
+        return _extends({}, state, {
+          groupPermissions: action.groupPermissions
+        });
       case _ActorAppConstants.ActionTypes.GROUP_CLEAR:
       case _ActorAppConstants.ActionTypes.GROUP_CLEAR_SUCCESS:
       case _ActorAppConstants.ActionTypes.GROUP_CLEAR_ERROR:
@@ -90,8 +112,28 @@ var GroupStore = function (_ReduceStore) {
     return this.getState().token;
   };
 
+  /**
+   * @returns {{showAdminsToMembers: boolean,
+   * canMembersInvite: boolean,
+   * canMembersEditGroupInfo: boolean,
+   * canAdminsEditGroupInfo: boolean,
+   * showJoinLeaveMessages: boolean}|*}
+   */
+
+
+  GroupStore.prototype.getGroupPermissions = function getGroupPermissions() {
+    return this.getState().groupPermissions;
+  };
+
   return GroupStore;
 }(_utils.ReduceStore);
 
+GroupStore.defaultGroupPermissions = {
+  showAdminsToMembers: false,
+  canMembersInvite: false,
+  canMembersEditGroupInfo: false,
+  canAdminsEditGroupInfo: false,
+  showJoinLeaveMessages: false
+};
 exports.default = new GroupStore(_ActorAppDispatcher2.default);
 //# sourceMappingURL=GroupStore.js.map

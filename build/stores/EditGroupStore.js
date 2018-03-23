@@ -69,9 +69,13 @@ var EditGroupStore = function (_ReduceStore) {
     return this.getState().group.name;
   };
 
+  EditGroupStore.prototype.getRestrictedDomains = function getRestrictedDomains() {
+    return this.getState().group.restrictedDomains;
+  };
+
   EditGroupStore.prototype.isAdmin = function isAdmin() {
     var myID = _ActorClient2.default.getUid();
-    return this.getState().group.adminId === myID;
+    return this.getState().group.ownerId === myID;
   };
 
   return EditGroupStore;

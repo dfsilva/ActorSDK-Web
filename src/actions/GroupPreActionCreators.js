@@ -6,8 +6,6 @@ import { dispatch, dispatchAsync } from '../dispatcher/ActorAppDispatcher';
 import { ActionTypes } from '../constants/ActorAppConstants';
 import ActorClient from "../utils/ActorClient";
 
-import GrouppreStore from "../stores/GrouppreStore"
-
 import ActionCreators from "./ActionCreators";
 
 class GroupPreActionCreators extends ActionCreators {

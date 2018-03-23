@@ -64,7 +64,7 @@ class Grouppre extends Component {
             <div className="archive-section__list__item col-xs-12 col-sm-12 col-md-12 col-lg-12" key={index}>
                 {group.isMember ?
                     <Link to={`/im/${groupPeer.key}`} className="archive-item row">
-                        <div className="archive-item__user">
+                        <div className="archive-item__user margin_top_8px">
                             <AvatarItem
                                 className="archive-item__avatar"
                                 size="medium"
@@ -74,12 +74,13 @@ class Grouppre extends Component {
                             />
                         </div>
                         <div className="col-xs">
-                            <h4 className="archive-item__title">{group.name}</h4>
+                            <h4 className="archive-item__title">{group.name}{group.restrictedDomains ? " ("+group.restrictedDomains+")" : ""}</h4>
+                            <div className="archive-item__subtitle">{group.about}</div>
                         </div>
                     </Link>
                     :
                     <Link to={`/im/join/${group.shortName}`} className="archive-item row">
-                        <div className="archive-item__user">
+                        <div className="archive-item__user margin_top_8px">
                             <AvatarItem
                                 className="archive-item__avatar"
                                 size="medium"
@@ -89,7 +90,8 @@ class Grouppre extends Component {
                             />
                         </div>
                         <div className="col-xs">
-                            <h4 className="archive-item__title">{group.name}</h4>
+                            <h4 className="archive-item__title">{group.name}{group.restrictedDomains ? " ("+group.restrictedDomains+")" : ""}</h4>
+                            <div className="archive-item__subtitle">{group.about}</div>
                         </div>
                     </Link>
                 }

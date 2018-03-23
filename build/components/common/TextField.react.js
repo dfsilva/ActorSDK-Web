@@ -95,6 +95,7 @@ var TextField = function (_Component) {
       onChange: this.handleChange,
       onFocus: this.handleFocus,
       onBlur: this.handleBlur,
+      value: value,
       disabled: disabled,
       ref: ref ? ref : 'input'
     };

@@ -25,7 +25,8 @@ class EditGroup extends Component {
       group: EditGroupStore.getGroup(),
       isAdmin: EditGroupStore.isAdmin(),
       title: EditGroupStore.getTitle(),
-      about: EditGroupStore.getAbout()
+      about: EditGroupStore.getAbout(),
+      restrictedDomains: EditGroupStore.getRestrictedDomains()
     }
   }
 
@@ -35,11 +36,11 @@ class EditGroup extends Component {
     this.handleClose = this.handleClose.bind(this);
     this.handleTitleChange = this.handleTitleChange.bind(this);
     this.handleAboutChange = this.handleAboutChange.bind(this);
+    this.handleRestrictedDomainsChange = this.handleRestrictedDomainsChange.bind(this);
     this.handleSave = this.handleSave.bind(this);
     this.handleChangeGroupAvatar = this.handleChangeGroupAvatar.bind(this);
     this.handleRemoveGroupPicture = this.handleRemoveGroupPicture.bind(this);
   }
-
 
   handleClose() {
     EditGroupActionCreators.hide();
@@ -53,11 +54,16 @@ class EditGroup extends Component {
     this.setState({ about: event.target.value });
   }
 
+  handleRestrictedDomainsChange(event) {
+    this.setState({ restrictedDomains: event.target.value });
+  }
+
   handleSave() {
-    const { group, title, about, isAdmin } = this.state;
+    const { group, title, about, isAdmin, restrictedDomains } = this.state;
     EditGroupActionCreators.editGroupTitle(group.id, title);
     if (isAdmin) {
       EditGroupActionCreators.editGroupAbout(group.id, about);
+      EditGroupActionCreators.editGroupRestrictedDomains(group.id, restrictedDomains);
     }
     this.handleClose();
   }
@@ -74,13 +80,12 @@ class EditGroup extends Component {
 
   renderTitle() {
     const { title } = this.state;
-
     return (
       <TextField
         className="input__material--wide"
         floatingLabel={<FormattedMessage id="modal.group.name"/>}
         onChange={this.handleTitleChange}
-        ref="name"
+        ref="groupTitle"
         value={title}/>
     );
   }
@@ -88,13 +93,25 @@ class EditGroup extends Component {
   renderAbout() {
     const { isAdmin, about } = this.state;
     if (!isAdmin) return null;
-
     return (
       <div className="about">
         <label htmlFor="about"><FormattedMessage id="modal.group.about"/></label>
         <textarea className="textarea" value={about} onChange={this.handleAboutChange} id="about"/>
       </div>
     );
+  }
+
+  renderRestrictedDomains(){
+     const { isAdmin, restrictedDomains } = this.state;
+     if (!isAdmin) return null;
+     return (
+      <TextField
+          className="input__material--wide"
+          floatingLabel={"Restricted Domains"}
+          onChange={this.handleRestrictedDomainsChange}
+          ref="restrictedDomains"
+          value={restrictedDomains}/>
+     );
   }
 
   render() {
@@ -122,6 +139,7 @@ class EditGroup extends Component {
               <div className="col-xs">
                 {this.renderTitle()}
                 {this.renderAbout()}
+                {this.renderRestrictedDomains()}
               </div>
 
               <PictureChanger {...group}

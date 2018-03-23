@@ -44,13 +44,14 @@ class TextField extends Component {
     });
 
     const inputProps = {
-      type: type || 'text',
-      id: inputId,
-      onChange: this.handleChange,
-      onFocus: this.handleFocus,
-      onBlur: this.handleBlur,
-      disabled,
-      ref: ref ? ref : 'input'
+        type: type || 'text',
+        id: inputId,
+        onChange: this.handleChange,
+        onFocus: this.handleFocus,
+        onBlur: this.handleBlur,
+        value,
+        disabled,
+        ref: ref ? ref : 'input'
     };
 
     return (

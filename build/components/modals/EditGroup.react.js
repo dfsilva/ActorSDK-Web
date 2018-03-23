@@ -56,7 +56,8 @@ var EditGroup = function (_Component) {
       group: _EditGroupStore2.default.getGroup(),
       isAdmin: _EditGroupStore2.default.isAdmin(),
       title: _EditGroupStore2.default.getTitle(),
-      about: _EditGroupStore2.default.getAbout()
+      about: _EditGroupStore2.default.getAbout(),
+      restrictedDomains: _EditGroupStore2.default.getRestrictedDomains()
     };
   };
 
@@ -68,6 +69,7 @@ var EditGroup = function (_Component) {
     _this.handleClose = _this.handleClose.bind(_this);
     _this.handleTitleChange = _this.handleTitleChange.bind(_this);
     _this.handleAboutChange = _this.handleAboutChange.bind(_this);
+    _this.handleRestrictedDomainsChange = _this.handleRestrictedDomainsChange.bind(_this);
     _this.handleSave = _this.handleSave.bind(_this);
     _this.handleChangeGroupAvatar = _this.handleChangeGroupAvatar.bind(_this);
     _this.handleRemoveGroupPicture = _this.handleRemoveGroupPicture.bind(_this);
@@ -86,16 +88,22 @@ var EditGroup = function (_Component) {
     this.setState({ about: event.target.value });
   };
 
+  EditGroup.prototype.handleRestrictedDomainsChange = function handleRestrictedDomainsChange(event) {
+    this.setState({ restrictedDomains: event.target.value });
+  };
+
   EditGroup.prototype.handleSave = function handleSave() {
     var _state = this.state,
         group = _state.group,
         title = _state.title,
         about = _state.about,
-        isAdmin = _state.isAdmin;
+        isAdmin = _state.isAdmin,
+        restrictedDomains = _state.restrictedDomains;
 
     _EditGroupActionCreators2.default.editGroupTitle(group.id, title);
     if (isAdmin) {
       _EditGroupActionCreators2.default.editGroupAbout(group.id, about);
+      _EditGroupActionCreators2.default.editGroupRestrictedDomains(group.id, restrictedDomains);
     }
     this.handleClose();
   };
@@ -115,12 +123,11 @@ var EditGroup = function (_Component) {
   EditGroup.prototype.renderTitle = function renderTitle() {
     var title = this.state.title;
 
-
     return _react2.default.createElement(_TextField2.default, {
       className: 'input__material--wide',
       floatingLabel: _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'modal.group.name' }),
       onChange: this.handleTitleChange,
-      ref: 'name',
+      ref: 'groupTitle',
       value: title });
   };
 
@@ -130,7 +137,6 @@ var EditGroup = function (_Component) {
         about = _state2.about;
 
     if (!isAdmin) return null;
-
     return _react2.default.createElement(
       'div',
       { className: 'about' },
@@ -141,6 +147,20 @@ var EditGroup = function (_Component) {
       ),
       _react2.default.createElement('textarea', { className: 'textarea', value: about, onChange: this.handleAboutChange, id: 'about' })
     );
+  };
+
+  EditGroup.prototype.renderRestrictedDomains = function renderRestrictedDomains() {
+    var _state3 = this.state,
+        isAdmin = _state3.isAdmin,
+        restrictedDomains = _state3.restrictedDomains;
+
+    if (!isAdmin) return null;
+    return _react2.default.createElement(_TextField2.default, {
+      className: 'input__material--wide',
+      floatingLabel: "Restricted Domains",
+      onChange: this.handleRestrictedDomainsChange,
+      ref: 'restrictedDomains',
+      value: restrictedDomains });
   };
 
   EditGroup.prototype.render = function render() {
@@ -182,7 +202,8 @@ var EditGroup = function (_Component) {
               'div',
               { className: 'col-xs' },
               this.renderTitle(),
-              this.renderAbout()
+              this.renderAbout(),
+              this.renderRestrictedDomains()
             ),
             _react2.default.createElement(_PictureChanger2.default, _extends({}, group, {
               small: true,

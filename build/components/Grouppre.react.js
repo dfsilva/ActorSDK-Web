@@ -107,7 +107,7 @@ var Grouppre = function (_Component) {
                     { to: '/im/' + groupPeer.key, className: 'archive-item row' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'archive-item__user' },
+                        { className: 'archive-item__user margin_top_8px' },
                         _react2.default.createElement(_AvatarItem2.default, {
                             className: 'archive-item__avatar',
                             size: 'medium',
@@ -122,7 +122,13 @@ var Grouppre = function (_Component) {
                         _react2.default.createElement(
                             'h4',
                             { className: 'archive-item__title' },
-                            group.name
+                            group.name,
+                            group.restrictedDomains ? " (" + group.restrictedDomains + ")" : ""
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'archive-item__subtitle' },
+                            group.about
                         )
                     )
                 ) : _react2.default.createElement(
@@ -130,7 +136,7 @@ var Grouppre = function (_Component) {
                     { to: '/im/join/' + group.shortName, className: 'archive-item row' },
                     _react2.default.createElement(
                         'div',
-                        { className: 'archive-item__user' },
+                        { className: 'archive-item__user margin_top_8px' },
                         _react2.default.createElement(_AvatarItem2.default, {
                             className: 'archive-item__avatar',
                             size: 'medium',
@@ -145,7 +151,13 @@ var Grouppre = function (_Component) {
                         _react2.default.createElement(
                             'h4',
                             { className: 'archive-item__title' },
-                            group.name
+                            group.name,
+                            group.restrictedDomains ? " (" + group.restrictedDomains + ")" : ""
+                        ),
+                        _react2.default.createElement(
+                            'div',
+                            { className: 'archive-item__subtitle' },
+                            group.about
                         )
                     )
                 )

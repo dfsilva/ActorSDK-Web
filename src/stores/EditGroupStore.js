@@ -43,9 +43,13 @@ class EditGroupStore extends ReduceStore {
     return this.getState().group.name;
   }
 
+  getRestrictedDomains() {
+     return this.getState().group.restrictedDomains;
+  }
+
   isAdmin() {
     const myID = ActorClient.getUid();
-    return this.getState().group.adminId === myID;
+    return (this.getState().group.ownerId === myID);
   }
 
 }

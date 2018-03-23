@@ -7,6 +7,7 @@ import { FormattedMessage } from 'react-intl';
 import { lightbox } from '../../utils/ImageUtils';
 import { Container } from 'flux/utils';
 import Scrollbar from '../common/Scrollbar.react';
+import TextField from '../common/TextField.react';
 
 import { escapeWithEmoji } from '../../utils/EmojiUtils'
 
@@ -25,6 +26,7 @@ import GroupProfileMembers from '../activity/GroupProfileMembers.react';
 import GroupPreProperties from '../activity/GroupPreProperties.react';
 import Fold from '../common/Fold.react';
 import ToggleNotifications from '../common/ToggleNotifications.react';
+import GroupPermissionsActionCreators from '../../actions/GroupPermissionsActionCreators'
 
 class GroupProfile extends Component {
   static propTypes = {
@@ -43,7 +45,8 @@ class GroupProfile extends Component {
       peer,
       isNotificationsEnabled: peer ? notificationEnabled : true,
       integrationToken: GroupStore.getToken(),
-      message: OnlineStore.getMessage()
+      message: OnlineStore.getMessage(),
+      groupPermissions: GroupStore.getGroupPermissions()
     };
   }
 
@@ -53,6 +56,14 @@ class GroupProfile extends Component {
     this.handleNotificationChange = this.handleNotificationChange.bind(this);
     this.handleTokenSelect = this.handleTokenSelect.bind(this);
     this.handleAvatarClick = this.handleAvatarClick.bind(this);
+    this.handleGroupPermissionsFoldChange = this.handleGroupPermissionsFoldChange.bind(this);
+    this.handleShowAdminsToMembersChange = this.handleShowAdminsToMembersChange.bind(this);
+    this.handleCanMembersInviteChange = this.handleCanMembersInviteChange.bind(this);
+    this.handleCanMembersEditGroupInfoChange = this.handleCanMembersEditGroupInfoChange.bind(this);
+    this.handleCanAdminsEditGroupInfoChange = this.handleCanAdminsEditGroupInfoChange.bind(this);
+    this.handleShowJoinLeaveMessagesChange = this.handleShowJoinLeaveMessagesChange.bind(this);
+    this.handlerSavePermissions = this.handlerSavePermissions.bind(this);
+
   }
 
   handleNotificationChange(event) {
@@ -68,9 +79,59 @@ class GroupProfile extends Component {
     lightbox.open(this.props.group.bigAvatar);
   }
 
+  handleGroupPermissionsFoldChange(foldState){
+      if(foldState){
+          GroupPermissionsActionCreators.loadGroupPermissions(this.props.group.id)
+      }
+  }
+
+  handleShowAdminsToMembersChange(event) {
+      this.setState({ ...this.state,
+          groupPermissions: { ...this.state.groupPermissions,
+            showAdminsToMembers: event.target.checked
+          }
+      });
+  }
+
+  handleCanMembersInviteChange(event) {
+      this.setState({ ...this.state,
+          groupPermissions: { ...this.state.groupPermissions,
+              canMembersInvite: event.target.checked
+          }
+      });
+  }
+
+  handleCanMembersEditGroupInfoChange(event) {
+      this.setState({ ...this.state,
+          groupPermissions: { ...this.state.groupPermissions,
+              canMembersEditGroupInfo: event.target.checked
+          }
+      });
+  }
+
+  handleCanAdminsEditGroupInfoChange(event) {
+      this.setState({ ...this.state,
+          groupPermissions: { ...this.state.groupPermissions,
+              canAdminsEditGroupInfo: event.target.checked
+          }
+      });
+  }
+
+  handleShowJoinLeaveMessagesChange(event) {
+      this.setState({ ...this.state,
+          groupPermissions: { ...this.state.groupPermissions,
+              showJoinLeaveMessages: event.target.checked
+          }
+      });
+  }
+
+  handlerSavePermissions(event){
+      GroupPermissionsActionCreators.savePermissions(this.props.group.id, this.state.groupPermissions);
+  }
+
   renderMainInfo() {
     const { group } = this.props;
-    const admin = UserStore.getUser(group.adminId);
+    const admin = UserStore.getUser(group.ownerId);
 
     return (
       <header>
@@ -113,11 +174,11 @@ class GroupProfile extends Component {
   }
 
   renderToken() {
-    const { group: { adminId } } = this.props;
+    const { group: { ownerId } } = this.props;
     const { integrationToken } = this.state;
     const myId = UserStore.getMyId();
 
-    if (adminId !== myId) {
+    if (ownerId !== myId) {
       return null;
     }
 
@@ -142,12 +203,98 @@ class GroupProfile extends Component {
   }
 
   renderGroupPermissions(){
-      const { group: { adminId } } = this.props;
-      const myId = UserStore.getMyId();
+      const { group: {isCanEditAdministration} } = this.props;
+      const { groupPermissions } = this.state;
 
-      if (adminId !== myId) {
+      if (!isCanEditAdministration) {
           return null;
       }
+
+      return (
+          <li className="profile__list__item group_profile__integration2 no-p">
+              <Fold icon="lock_open" iconClassName="icon--squash" title="Security Configurations"
+                    onStateChange={this.handleGroupPermissionsFoldChange}>
+                  <ul className="profile__list">
+                      <li className="profile__list__item no-p">
+                          <label htmlFor="showAdminsToMembers">
+                              {"Show Admins to Members"}
+                              <div className="switch pull-right">
+                                  <input
+                                      checked={groupPermissions.showAdminsToMembers}
+                                      id="showAdminsToMembers"
+                                      type="checkbox"
+                                      onChange={this.handleShowAdminsToMembersChange}
+                                  />
+                                  <label htmlFor="showAdminsToMembers"/>
+                              </div>
+                          </label>
+                      </li>
+                      <li className="profile__list__item no-p">
+                          <label htmlFor="canMembersInvite">
+                              {"Can Members Invite"}
+                              <div className="switch pull-right">
+                                  <input
+                                      checked={groupPermissions.canMembersInvite}
+                                      id="canMembersInvite"
+                                      type="checkbox"
+                                      onChange={this.handleCanMembersInviteChange}
+                                  />
+                                  <label htmlFor="canMembersInvite"/>
+                              </div>
+                          </label>
+                      </li>
+                      <li className="profile__list__item no-p">
+                          <label htmlFor="canMembersEditGroupInfo">
+                              {"Can Members Edit Group Info"}
+                              <div className="switch pull-right">
+                                  <input
+                                      checked={groupPermissions.canMembersEditGroupInfo}
+                                      id="canMembersEditGroupInfo"
+                                      type="checkbox"
+                                      onChange={this.handleCanMembersEditGroupInfoChange}
+                                  />
+                                  <label htmlFor="canMembersEditGroupInfo"/>
+                              </div>
+                          </label>
+                      </li>
+                      <li className="profile__list__item no-p">
+                          <label htmlFor="canMembersEditGroupInfo">
+                              {"Can Admins Edit Group Info"}
+                              <div className="switch pull-right">
+                                  <input
+                                      checked={groupPermissions.canAdminsEditGroupInfo}
+                                      id="canAdminsEditGroupInfo"
+                                      type="checkbox"
+                                      onChange={this.handleCanAdminsEditGroupInfoChange}
+                                  />
+                                  <label htmlFor="canAdminsEditGroupInfo"/>
+                              </div>
+                          </label>
+                      </li>
+                      <li className="profile__list__item no-p">
+                          <label htmlFor="showJoinLeaveMessages">
+                              {"Show Join Leave Messages"}
+                              <div className="switch pull-right">
+                                  <input
+                                      checked={groupPermissions.showJoinLeaveMessages}
+                                      id="showJoinLeaveMessages"
+                                      type="checkbox"
+                                      onChange={this.handleShowJoinLeaveMessagesChange}
+                                  />
+                                  <label htmlFor="showJoinLeaveMessages"/>
+                              </div>
+                          </label>
+                      </li>
+                  </ul>
+
+                  <button className="button button--lightblue pull-left" ref="saveAdmins"
+                          onClick={this.handlerSavePermissions}>
+                      {"Save"}
+                  </button>
+
+              </Fold>
+          </li>
+      );
   }
 
   renderGroupPre() {
@@ -219,6 +366,7 @@ class GroupProfile extends Component {
                 <GroupPreProperties groupId={group.id} groups={[]}/>
             </li>*/}
             {this.renderToken()}
+            {this.renderGroupPermissions()}
           </ul>
         </Scrollbar>
       </div>

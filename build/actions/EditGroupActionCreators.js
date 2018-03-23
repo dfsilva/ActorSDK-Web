@@ -83,6 +83,17 @@ var EditGroupActionCreators = function (_ActionCreators) {
     }
   };
 
+  EditGroupActionCreators.prototype.editGroupRestrictedDomains = function editGroupRestrictedDomains(gid, restrictedDomains) {
+    restrictedDomains = restrictedDomains === '' ? null : restrictedDomains;
+    if (restrictedDomains !== _EditGroupStore2.default.getRestrictedDomains()) {
+      (0, _ActorAppDispatcher.dispatchAsync)(_ActorClient2.default.updateRestrictedDomains(gid, restrictedDomains), {
+        request: _ActorAppConstants.ActionTypes.GROUP_EDIT_RESTRICTED_DOMAINS,
+        success: _ActorAppConstants.ActionTypes.GROUP_EDIT_RESTRICTED_DOMAINS_SUCCESS,
+        failure: _ActorAppConstants.ActionTypes.GROUP_EDIT_RESTRICTED_DOMAINS_ERROR
+      }, { gid: gid, restrictedDomains: restrictedDomains });
+    }
+  };
+
   EditGroupActionCreators.prototype.removeGroupAvatar = function removeGroupAvatar(gid) {
     _ActorClient2.default.removeGroupAvatar(gid);
   };

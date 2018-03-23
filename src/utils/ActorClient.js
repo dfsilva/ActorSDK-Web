@@ -360,6 +360,14 @@ class ActorClient {
     return window.messenger.editGroupAbout(gid, about);
   }
 
+  updateRestrictedDomains(gid, restrictedDomains){
+    return window.messenger.updateRestrictedDomains(gid, restrictedDomains);
+  }
+
+  saveGroupAdminSettings(gid, adminSettings){
+      return window.messenger.saveAdminSettings(gid, adminSettings)
+  }
+
   renderMarkdown(markdownText) {
     return window.messenger.renderMarkdown(markdownText);
   }
@@ -543,6 +551,10 @@ class ActorClient {
 
   loadBlockedUsers() {
     return window.messenger.loadBlockedUsers();
+  }
+
+  loadGroupPermissions(gid) {
+      return window.messenger.loadGroupPermissions(gid);
   }
 }
 

@@ -380,6 +380,14 @@ var ActorClient = function () {
     return window.messenger.editGroupAbout(gid, about);
   };
 
+  ActorClient.prototype.updateRestrictedDomains = function updateRestrictedDomains(gid, restrictedDomains) {
+    return window.messenger.updateRestrictedDomains(gid, restrictedDomains);
+  };
+
+  ActorClient.prototype.saveGroupAdminSettings = function saveGroupAdminSettings(gid, adminSettings) {
+    return window.messenger.saveAdminSettings(gid, adminSettings);
+  };
+
   ActorClient.prototype.renderMarkdown = function renderMarkdown(markdownText) {
     return window.messenger.renderMarkdown(markdownText);
   };
@@ -563,6 +571,10 @@ var ActorClient = function () {
 
   ActorClient.prototype.loadBlockedUsers = function loadBlockedUsers() {
     return window.messenger.loadBlockedUsers();
+  };
+
+  ActorClient.prototype.loadGroupPermissions = function loadGroupPermissions(gid) {
+    return window.messenger.loadGroupPermissions(gid);
   };
 
   return ActorClient;

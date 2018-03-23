@@ -36,8 +36,10 @@
         }
       }
     }
+  }
 
-
+  .margin_top_8px{
+    margin-top: 8px;
   }
 
   .archive-item {
@@ -61,6 +63,15 @@
       line-height: 24px;
       color: rgba(black, .6);
     }
+
+    &__subtitle {
+      margin: 0;
+      padding: 0px 0;
+      font-weight: 100;
+      line-height: 15px;
+      color: rgba(black, .6);
+    }
+
     &__counter {
       position: absolute;
       top: -2px;

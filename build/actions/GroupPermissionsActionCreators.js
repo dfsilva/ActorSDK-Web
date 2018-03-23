@@ -14,6 +14,10 @@ var _ActionCreators2 = require('./ActionCreators');
 
 var _ActionCreators3 = _interopRequireDefault(_ActionCreators2);
 
+var _EditGroupStore = require('../stores/EditGroupStore');
+
+var _EditGroupStore2 = _interopRequireDefault(_EditGroupStore);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -24,29 +28,34 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * Copyright (C) 2015 Actor LLC. <https://actor.im>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 */
 
-var GroupPreActionCreators = function (_ActionCreators) {
-    _inherits(GroupPreActionCreators, _ActionCreators);
+var GroupPermissionsActionCreators = function (_ActionCreators) {
+    _inherits(GroupPermissionsActionCreators, _ActionCreators);
 
-    function GroupPreActionCreators() {
-        _classCallCheck(this, GroupPreActionCreators);
+    function GroupPermissionsActionCreators() {
+        _classCallCheck(this, GroupPermissionsActionCreators);
 
         return _possibleConstructorReturn(this, _ActionCreators.apply(this, arguments));
     }
 
-    GroupPreActionCreators.prototype.setGroupsPre = function setGroupsPre(groupspre) {
-        (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.GROUPPRE_LOAD_SUCCESS, { groupspre: groupspre });
+    GroupPermissionsActionCreators.prototype.loadGroupPermissions = function loadGroupPermissions(gid) {
+        (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.GROUP_PERMISSIONS_LOAD);
+        _ActorClient2.default.loadGroupPermissions(gid).then(function (permissions) {
+            (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.GROUP_PERMISSIONS_LOAD_SUCCESS, { permissions: permissions });
+        }).catch(function (error) {
+            (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.GROUP_PERMISSIONS_LOAD_ERROR, { error: error });
+        });
     };
 
-    GroupPreActionCreators.prototype.showGroupsPre = function showGroupsPre(parentId) {
-        var _this2 = this;
-
-        setTimeout(function () {
-            _this2.setBindings('groupspre', [_ActorClient2.default.bindGroupspre(parentId, _this2.setGroupsPre)]);
-        }, 500);
+    GroupPermissionsActionCreators.prototype.savePermissions = function savePermissions(gid, groupPermissions) {
+        (0, _ActorAppDispatcher.dispatchAsync)(_ActorClient2.default.saveGroupAdminSettings(gid, groupPermissions), {
+            request: _ActorAppConstants.ActionTypes.GROUP_PERMISSIONS_SAVE,
+            success: _ActorAppConstants.ActionTypes.GROUP_PERMISSIONS_SAVE_SUCCESS,
+            failure: _ActorAppConstants.ActionTypes.GROUP_PERMISSIONS_SAVE_ERROR
+        }, { gid: gid, groupPermissions: groupPermissions });
     };
 
-    return GroupPreActionCreators;
+    return GroupPermissionsActionCreators;
 }(_ActionCreators3.default);
 
-exports.default = new GroupPreActionCreators();
-//# sourceMappingURL=GroupPreActionCreators.js.map
+exports.default = new GroupPermissionsActionCreators();
+//# sourceMappingURL=GroupPermissionsActionCreators.js.map

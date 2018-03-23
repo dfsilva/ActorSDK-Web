@@ -6,6 +6,7 @@ import React, { Component, PropTypes } from 'react';
 import classnames from 'classnames';
 
 class Fold extends Component {
+
   static propTypes = {
     children: PropTypes.oneOfType([
       PropTypes.arrayOf(PropTypes.node),
@@ -14,18 +15,27 @@ class Fold extends Component {
     icon: PropTypes.string,
     iconClassName: PropTypes.string,
     iconElement: PropTypes.element,
-    title: PropTypes.node.isRequired
+    title: PropTypes.node.isRequired,
+    onStateChange: PropTypes.func
   };
 
   constructor(props) {
     super(props);
+
+    this.onClick = this.onClick.bind(this);
 
     this.state = {
       isOpen: false
     }
   }
 
-  onClick = () => this.setState({ isOpen: !this.state.isOpen });
+  onClick = () => {
+    const updatedState = !this.state.isOpen;
+    if(this.props.onStateChange) {
+        this.props.onStateChange(updatedState);
+    }
+    this.setState({ isOpen: updatedState });
+  }
 
   render() {
     const { icon, iconClassName, title, iconElement } = this.props;

@@ -29,8 +29,14 @@ var Fold = function (_Component) {
     var _this = _possibleConstructorReturn(this, _Component.call(this, props));
 
     _this.onClick = function () {
-      return _this.setState({ isOpen: !_this.state.isOpen });
+      var updatedState = !_this.state.isOpen;
+      if (_this.props.onStateChange) {
+        _this.props.onStateChange(updatedState);
+      }
+      _this.setState({ isOpen: updatedState });
     };
+
+    _this.onClick = _this.onClick.bind(_this);
 
     _this.state = {
       isOpen: false
@@ -93,7 +99,8 @@ Fold.propTypes = {
   icon: _react.PropTypes.string,
   iconClassName: _react.PropTypes.string,
   iconElement: _react.PropTypes.element,
-  title: _react.PropTypes.node.isRequired
+  title: _react.PropTypes.node.isRequired,
+  onStateChange: _react.PropTypes.func
 };
 exports.default = Fold;
 //# sourceMappingURL=Fold.react.js.map
