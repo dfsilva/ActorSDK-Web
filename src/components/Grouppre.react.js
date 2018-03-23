@@ -25,7 +25,8 @@ class Grouppre extends Component {
     return {
       parentId: GrouppreStore.getParentId(),
       isLoading: GrouppreStore.getIsLoading(),
-      isAllLoaded: GrouppreStore.getIsLoaded(),
+      isLoaded: GrouppreStore.getIsLoaded(),
+      isGroupsLoaded: GrouppreStore.getIsGroupsLoaded(),
       groups: GrouppreStore.getGroups()
     }
   }
@@ -42,6 +43,14 @@ class Grouppre extends Component {
   }
 
   componentDidUpdate() {
+      this.verifiGroupspreLoaded();
+  }
+
+  verifiGroupspreLoaded(){
+      const {isLoaded, isGroupsLoaded} = this.state;
+      if(isLoaded && !isGroupsLoaded) {
+        GroupPreActionCreators.loadGroups();
+      }
   }
 
   componentDidMount() {

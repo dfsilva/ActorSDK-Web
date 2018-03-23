@@ -13,12 +13,12 @@ class GrouppreStore extends ReduceStore {
             groups: [],
             parentId: 0,
             isLoading: true,
-            isLoaded: false
+            isLoaded: false,
+            isGroupsLoaded: false
         };
     }
 
     reduce(state, action) {
-        console.log("reduce called: "+action.type)
         switch (action.type) {
             case ActionTypes.GROUPPRE_LOAD_SUCCESS:
                return {
@@ -26,6 +26,11 @@ class GrouppreStore extends ReduceStore {
                     isLoading: false,
                     isLoaded: true,
                     groups: action.groupspre
+                }
+            case ActionTypes.GROUPPRE_ADD_GROUP:
+                return {
+                    ...state,
+                    isGroupsLoaded: true
                 }
             default:
                 return state;
@@ -38,6 +43,10 @@ class GrouppreStore extends ReduceStore {
 
     getIsLoaded(){
         return this.getState().isLoaded;
+    }
+
+    getIsGroupsLoaded(){
+        return this.getState().isGroupsLoaded;
     }
 
     getGroups() {

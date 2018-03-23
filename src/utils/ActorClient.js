@@ -81,10 +81,6 @@ class ActorClient {
       return ActorClient.createBindings('bindGroupspre', 'unbindGroupspre', parentId, callback);
   }
 
-  bindGroups(callback) {
-      return ActorClient.createBindings('bindGroups', 'unbindGroups', callback);
-  }
-
   bindChannels(callback) {
       return ActorClient.createBindings('bindChannels', 'unbindChannels', callback);
   }
@@ -461,7 +457,6 @@ class ActorClient {
   // Search
 
   findGroups(query) {
-    console.log("Buscando grupos: "+query);
     return window.messenger.findGroups(query);
   }
 

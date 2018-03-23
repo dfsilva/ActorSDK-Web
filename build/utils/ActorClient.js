@@ -99,10 +99,6 @@ var ActorClient = function () {
     return ActorClient.createBindings('bindGroupspre', 'unbindGroupspre', parentId, callback);
   };
 
-  ActorClient.prototype.bindGroups = function bindGroups(callback) {
-    return ActorClient.createBindings('bindGroups', 'unbindGroups', callback);
-  };
-
   ActorClient.prototype.bindChannels = function bindChannels(callback) {
     return ActorClient.createBindings('bindChannels', 'unbindChannels', callback);
   };
@@ -481,7 +477,6 @@ var ActorClient = function () {
   // Search
 
   ActorClient.prototype.findGroups = function findGroups(query) {
-    console.log("Buscando grupos: " + query);
     return window.messenger.findGroups(query);
   };
 

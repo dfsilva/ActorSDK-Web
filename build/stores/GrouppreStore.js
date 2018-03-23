@@ -36,18 +36,22 @@ var GrouppreStore = function (_ReduceStore) {
             groups: [],
             parentId: 0,
             isLoading: true,
-            isLoaded: false
+            isLoaded: false,
+            isGroupsLoaded: false
         };
     };
 
     GrouppreStore.prototype.reduce = function reduce(state, action) {
-        console.log("reduce called: " + action.type);
         switch (action.type) {
             case _ActorAppConstants.ActionTypes.GROUPPRE_LOAD_SUCCESS:
                 return _extends({}, state, {
                     isLoading: false,
                     isLoaded: true,
                     groups: action.groupspre
+                });
+            case _ActorAppConstants.ActionTypes.GROUPPRE_ADD_GROUP:
+                return _extends({}, state, {
+                    isGroupsLoaded: true
                 });
             default:
                 return state;
@@ -60,6 +64,10 @@ var GrouppreStore = function (_ReduceStore) {
 
     GrouppreStore.prototype.getIsLoaded = function getIsLoaded() {
         return this.getState().isLoaded;
+    };
+
+    GrouppreStore.prototype.getIsGroupsLoaded = function getIsGroupsLoaded() {
+        return this.getState().isGroupsLoaded;
     };
 
     GrouppreStore.prototype.getGroups = function getGroups() {

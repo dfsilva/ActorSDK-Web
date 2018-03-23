@@ -53,7 +53,7 @@ class Dialog extends Component {
       isMember: DialogStore.isMember(),
       isActivityOpen: ActivityStore.isOpen(),
       message: OnlineStore.getMessage(),
-      isFavorite: DialogStore.isFavorite(peer.id),
+      isFavorite: DialogStore.isFavorite(peer ? peer.id : 0),
       call: Dialog.calculateCallState(peer),
       search: SearchMessagesStore.getState()
     };

@@ -64,7 +64,6 @@ var DialogStore = function (_ReduceStore) {
       var group = _ActorClient2.default.getGroup(peer.id);
       return group && group.members.length !== 0;
     }
-
     return true;
   };
 

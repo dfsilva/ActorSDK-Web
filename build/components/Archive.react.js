@@ -75,7 +75,6 @@ var Archive = function (_Component) {
   };
 
   Archive.calculateState = function calculateState() {
-    console.log("calculateState");
     return {
       isLoading: _ArchiveStore2.default.isArchiveLoading(),
       isInitialLoadingComplete: _ArchiveStore2.default.isInitialLoadingComplete(),

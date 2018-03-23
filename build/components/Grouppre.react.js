@@ -57,7 +57,8 @@ var Grouppre = function (_Component) {
         return {
             parentId: _GrouppreStore2.default.getParentId(),
             isLoading: _GrouppreStore2.default.getIsLoading(),
-            isAllLoaded: _GrouppreStore2.default.getIsLoaded(),
+            isLoaded: _GrouppreStore2.default.getIsLoaded(),
+            isGroupsLoaded: _GrouppreStore2.default.getIsGroupsLoaded(),
             groups: _GrouppreStore2.default.getGroups()
         };
     };
@@ -74,7 +75,19 @@ var Grouppre = function (_Component) {
         _GroupPreActionCreators2.default.removeBindings('groupspre');
     };
 
-    Grouppre.prototype.componentDidUpdate = function componentDidUpdate() {};
+    Grouppre.prototype.componentDidUpdate = function componentDidUpdate() {
+        this.verifiGroupspreLoaded();
+    };
+
+    Grouppre.prototype.verifiGroupspreLoaded = function verifiGroupspreLoaded() {
+        var _state = this.state,
+            isLoaded = _state.isLoaded,
+            isGroupsLoaded = _state.isGroupsLoaded;
+
+        if (isLoaded && !isGroupsLoaded) {
+            _GroupPreActionCreators2.default.loadGroups();
+        }
+    };
 
     Grouppre.prototype.componentDidMount = function componentDidMount() {
         var parentId = this.state.parentId;
@@ -83,9 +96,9 @@ var Grouppre = function (_Component) {
     };
 
     Grouppre.prototype.render = function render() {
-        var _state = this.state,
-            isLoading = _state.isLoading,
-            groups = _state.groups;
+        var _state2 = this.state,
+            isLoading = _state2.isLoading,
+            groups = _state2.groups;
 
 
         var archiveClassname = (0, _classnames2.default)('archive-section', {

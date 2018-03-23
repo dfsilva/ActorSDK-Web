@@ -32,7 +32,6 @@ class DialogStore extends ReduceStore {
       const group = ActorClient.getGroup(peer.id);
       return group && group.members.length !== 0;
     }
-
     return true;
   }
 

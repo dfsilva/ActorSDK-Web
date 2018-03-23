@@ -38,7 +38,6 @@ var GroupListStore = function (_ReduceStore) {
       case _ActorAppConstants.ActionTypes.GROUP_LIST_LOAD_SUCCESS:
         return action.response;
       case _ActorAppConstants.ActionTypes.GROUP_LIST_LOAD_ERROR:
-        console.error(action.error);
         return state;
       default:
         return state;

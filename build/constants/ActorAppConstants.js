@@ -256,6 +256,7 @@ var ActionTypes = exports.ActionTypes = (0, _keymirror2.default)({
   GROUPPRE_LOAD: null,
   GROUPPRE_LOAD_SUCCESS: null,
   GROUPPRE_LOAD_ERROR: null,
+  GROUPPRE_ADD_GROUP: null,
 
   FAVORITE_ADD: null,
   FAVORITE_ADD_SUCCESS: null,

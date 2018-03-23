@@ -124,7 +124,7 @@ var Dialog = function (_Component) {
       isMember: _DialogStore2.default.isMember(),
       isActivityOpen: _ActivityStore2.default.isOpen(),
       message: _OnlineStore2.default.getMessage(),
-      isFavorite: _DialogStore2.default.isFavorite(peer.id),
+      isFavorite: _DialogStore2.default.isFavorite(peer ? peer.id : 0),
       call: Dialog.calculateCallState(peer),
       search: _SearchMessagesStore2.default.getState()
     };

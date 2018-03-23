@@ -23,6 +23,14 @@ var ActionCreators = function () {
     }
   };
 
+  ActionCreators.prototype.addBinding = function addBinding(namespace, binding) {
+    if (!this.bindings.has(namespace)) {
+      console.error('You are trying to set bindings "%s#%s" but its not exists', this.constructor.name, namespace);
+    } else {
+      this.bindings.get(namespace).push(binding);
+    }
+  };
+
   ActionCreators.prototype.removeBindings = function removeBindings(namespace) {
     var bindings = this.bindings.get(namespace);
     if (bindings) {

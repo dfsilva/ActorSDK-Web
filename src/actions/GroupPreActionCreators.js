@@ -16,10 +16,17 @@ class GroupPreActionCreators extends ActionCreators {
 
   showGroupsPre(parentId){
       setTimeout(() => {
-          this.setBindings('groupspre', [
+          const bindings = [
               ActorClient.bindGroupspre(parentId, this.setGroupsPre)
-          ]);
+          ];
+          this.setBindings('groupspre', bindings);
       }, 500);
+  }
+
+  loadGroups() {
+      setTimeout(() => {
+          dispatch(ActionTypes.GROUPPRE_ADD_GROUP, { })
+      }, 1000);
   }
 }
 

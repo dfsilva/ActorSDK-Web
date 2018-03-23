@@ -16,7 +16,6 @@ class GroupListStore extends ReduceStore {
       case ActionTypes.GROUP_LIST_LOAD_SUCCESS:
         return action.response;
       case ActionTypes.GROUP_LIST_LOAD_ERROR:
-        console.error(action.error);
         return state;
       default:
         return state;

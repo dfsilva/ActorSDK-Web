@@ -26,7 +26,6 @@ class Archive extends Component {
   }
 
   static calculateState() {
-      console.log("calculateState");
     return {
       isLoading: ArchiveStore.isArchiveLoading(),
       isInitialLoadingComplete: ArchiveStore.isInitialLoadingComplete(),

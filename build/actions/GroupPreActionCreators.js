@@ -41,8 +41,15 @@ var GroupPreActionCreators = function (_ActionCreators) {
         var _this2 = this;
 
         setTimeout(function () {
-            _this2.setBindings('groupspre', [_ActorClient2.default.bindGroupspre(parentId, _this2.setGroupsPre)]);
+            var bindings = [_ActorClient2.default.bindGroupspre(parentId, _this2.setGroupsPre)];
+            _this2.setBindings('groupspre', bindings);
         }, 500);
+    };
+
+    GroupPreActionCreators.prototype.loadGroups = function loadGroups() {
+        setTimeout(function () {
+            (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.GROUPPRE_ADD_GROUP, {});
+        }, 1000);
     };
 
     return GroupPreActionCreators;
