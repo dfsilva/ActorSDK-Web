@@ -8,6 +8,8 @@ var _react2 = _interopRequireDefault(_react);
 
 var _utils = require('flux/utils');
 
+var _reactIntl = require('react-intl');
+
 var _ActorAppConstants = require('../constants/ActorAppConstants');
 
 var _JoinGroupStore = require('../stores/JoinGroupStore');
@@ -59,17 +61,27 @@ var Join = function (_Component) {
       case _ActorAppConstants.AsyncActionStates.PENDING:
         return _react2.default.createElement(
           'div',
-          { className: 'join__message' },
-          'Joining to ',
-          token,
-          '...'
+          null,
+          _react2.default.createElement(
+            'div',
+            { className: 'preloader' },
+            _react2.default.createElement('div', null),
+            _react2.default.createElement('div', null),
+            _react2.default.createElement('div', null),
+            _react2.default.createElement('div', null),
+            _react2.default.createElement('div', null)
+          ),
+          _react2.default.createElement(
+            'div',
+            { className: 'join__message' },
+            _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'join.joining', values: { token: token } })
+          )
         );
-
       case _ActorAppConstants.AsyncActionStates.SUCCESS:
         return _react2.default.createElement(
           'div',
           { className: 'join__message join__message--success' },
-          'Successfully joined to group!'
+          _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'join.success', values: {} })
         );
 
       case _ActorAppConstants.AsyncActionStates.FAILURE:

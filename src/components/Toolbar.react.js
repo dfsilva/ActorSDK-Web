@@ -16,7 +16,6 @@ class AppHeader extends Component {
 
   constructor(props) {
     super(props);
-
     const { appName } = SharedContainer.get();
     this.appName = appName;
   }

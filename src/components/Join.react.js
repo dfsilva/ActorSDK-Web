@@ -5,6 +5,8 @@
 import React, { Component, PropTypes } from 'react';
 import { Container } from 'flux/utils';
 
+import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
+
 import { AsyncActionStates } from '../constants/ActorAppConstants';
 import JoinGroupStore from '../stores/JoinGroupStore';
 import JoinGroupActions from '../actions/JoinGroupActions';
@@ -36,15 +38,17 @@ class Join extends Component {
       case AsyncActionStates.PROCESSING:
       case AsyncActionStates.PENDING:
         return (
-          <div className="join__message">
-            Joining to {token}...
-          </div>
+            <div>
+              <div className="preloader"><div/><div/><div/><div/><div/></div>
+              <div className="join__message">
+                  <FormattedMessage id="join.joining" values={{ token: token }}/>
+              </div>
+            </div>
         );
-
       case AsyncActionStates.SUCCESS:
         return (
           <div className="join__message join__message--success">
-            Successfully joined to group!
+              <FormattedMessage id="join.success" values={{}}/>
           </div>
         );
 

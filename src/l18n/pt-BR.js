@@ -181,6 +181,10 @@ export default {
 
     search: {
       'placeholder': 'Busca'
+    },
+    join:{
+        'joining': 'Entrando em {token}...',
+        'success': 'Você entrou com sucesso no grupo! Aguarde, abrindo o grupo...'
     }
   }
 };

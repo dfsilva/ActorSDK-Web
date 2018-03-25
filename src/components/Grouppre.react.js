@@ -43,10 +43,10 @@ class Grouppre extends Component {
   }
 
   componentDidUpdate() {
-      this.verifiGroupspreLoaded();
+      this.checkGroupspreLoaded();
   }
 
-  verifiGroupspreLoaded(){
+  checkGroupspreLoaded(){
       const {isLoaded, isGroupsLoaded} = this.state;
       if(isLoaded && !isGroupsLoaded) {
         GroupPreActionCreators.loadGroups();

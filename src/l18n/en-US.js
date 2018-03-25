@@ -402,6 +402,10 @@ export default {
       'notFound': 'Nothing found for "{query}"<br/>Maybe you\'ll get luckier with another request',
       hint: '<h4>Fast search</h4><p>You can search for contacts, dialogs, or messages from the current dialog here.</p>',
       inDialog: 'Search messages in current dialog'
+    },
+    join:{
+        'joining': 'Joining to {token}...',
+        'success': 'Successfully joined to group! Wait, opening the group...'
     }
   }
 };

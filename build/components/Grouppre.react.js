@@ -76,10 +76,10 @@ var Grouppre = function (_Component) {
     };
 
     Grouppre.prototype.componentDidUpdate = function componentDidUpdate() {
-        this.verifiGroupspreLoaded();
+        this.checkGroupspreLoaded();
     };
 
-    Grouppre.prototype.verifiGroupspreLoaded = function verifiGroupspreLoaded() {
+    Grouppre.prototype.checkGroupspreLoaded = function checkGroupspreLoaded() {
         var _state = this.state,
             isLoaded = _state.isLoaded,
             isGroupsLoaded = _state.isGroupsLoaded;

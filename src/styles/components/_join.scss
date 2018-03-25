@@ -1,14 +1,16 @@
 .join__container {
-  display: flex;
+  display: block;
   align-items: center;
   justify-content: center;
+  text-align: center;
   width: 100%;
   height: 100%;
   background-color: #fff;
+  padding: 25px;
 }
 
 .join__message {
-  font-size: 14px;
+  font-size: 16px;
 
   &--success {
     color: $apple;
