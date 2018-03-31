@@ -34,7 +34,6 @@ class MessageEdit extends Component {
   }
 
   componentDidMount() {
-    console.debug('REPORT ABOUT MOUNT!');
   }
 
   onSubmit() {

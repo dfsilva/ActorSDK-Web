@@ -208,7 +208,7 @@ class MessageItem extends Component {
         {this.renderLeftBlock()}
         <div className="message__body">
           {this.renderHeader()}
-          <MessageContent content={message.content} />
+          <MessageContent content={message.content} rid={message.rid}/>
         </div>
         {this.renderActions()}
       </div>

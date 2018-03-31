@@ -24,7 +24,8 @@ class MessageContent extends Component {
   }
 
   static propTypes = {
-    content: PropTypes.object.isRequired
+    content: PropTypes.object.isRequired,
+    rid: PropTypes.string.isRequired
   }
 
   constructor(props, context) {
@@ -97,7 +98,7 @@ class MessageContent extends Component {
             className="message__content message__content--photo"
           />
         );
-      case MessageContentTypes.DOCUMENT:
+        case MessageContentTypes.DOCUMENT:
         return (
           <Document
             {...content}

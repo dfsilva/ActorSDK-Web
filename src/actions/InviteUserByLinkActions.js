@@ -15,7 +15,6 @@ export default {
       dispatch(ActionTypes.INVITE_USER_BY_LINK_MODAL_SHOW, { group, url, prevModal });
       ComposeActionCreators.toggleAutoFocus(false);
     }).catch((e) => {
-      // TODO: handle error
       console.error(e);
     });
   },

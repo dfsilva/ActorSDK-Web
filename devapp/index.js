@@ -17,7 +17,7 @@ const delegate = new ActorSDKDelegate({
 const app = new ActorSDK({
     delegate,
     endpoints: [
-        'ws://191.252.92.246:9080/'
+        'ws://192.168.31.241:9080/'
     ],
     isExperimental: true,
     forceLocale: 'pt-BR',

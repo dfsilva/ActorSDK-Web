@@ -45,9 +45,13 @@ class Document extends Component {
         <span><FormattedMessage id="message.uploading"/></span>
       );
     } else {
-      return (
-        <a href={fileUrl}><FormattedMessage id="message.download"/></a>
-      );
+      if(fileUrl){
+          return (
+              <a href={fileUrl}><FormattedMessage id="message.download"/></a>
+          );
+      }else{
+        return null;
+      }
     }
   }
 

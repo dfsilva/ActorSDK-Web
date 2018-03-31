@@ -198,6 +198,10 @@ class ActorClient {
     window.messenger.sendFile(peer, file);
   }
 
+  requestUploadState(rid, callback){
+    window.messenger.requestUploadState(rid, callback);
+  }
+
   sendPhotoMessage(peer, photo) {
     window.messenger.sendPhoto(peer, photo);
   }
