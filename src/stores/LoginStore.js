@@ -5,13 +5,12 @@
 import { Store } from 'flux/utils';
 import Dispatcher from '../dispatcher/ActorAppDispatcher';
 import { ActionTypes, AuthSteps } from '../constants/ActorAppConstants';
-
-
+import SharedContainer from '../utils/SharedContainer';
 import ActorClient from '../utils/ActorClient';
-
 import { getIntlData } from '../l18n';
 
 let step = AuthSteps.LOGIN_WAIT,
+    loginType = 0,
     errors = {
       login: null,
       code: null,
@@ -34,6 +33,7 @@ class LoginStore extends Store {
   }
 
   getStep = () => step;
+  getLoginType = () => loginType;
   getErrors = () => errors;
   getLogin = () => login;
   getCode = () => code;
@@ -46,6 +46,7 @@ class LoginStore extends Store {
 
   resetStore = () => {
     step = AuthSteps.LOGIN_WAIT;
+    loginType = SharedContainer.get().loginType;
     errors = {
       login: null,
       code: null,
@@ -58,7 +59,10 @@ class LoginStore extends Store {
 
   __onDispatch(action) {
     switch (action.type) {
-
+      case ActionTypes.AUTH_START:
+          loginType = SharedContainer.get().loginType;
+          this.__emitChange();
+          break;
       case ActionTypes.AUTH_CHANGE_LOGIN:
         login = action.login;
         this.__emitChange();
@@ -71,7 +75,6 @@ class LoginStore extends Store {
         name = action.name;
         this.__emitChange();
         break;
-
       case ActionTypes.AUTH_CODE_REQUEST:
         isCodeRequested = true;
         this.__emitChange();
@@ -160,6 +163,14 @@ class LoginStore extends Store {
       case ActionTypes.AUTH_SET_LOGGED_OUT:
         localStorage.clear();
         location.reload();
+        break;
+      case ActionTypes.AUTH_TOOGLE_LOGIN_TYPE:
+          if(loginType == 1){
+            loginType = 2;
+          }else{
+            loginType = 1;
+          }
+          this.__emitChange();
         break;
       default:
     }

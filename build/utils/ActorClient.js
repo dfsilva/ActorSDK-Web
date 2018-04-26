@@ -216,6 +216,10 @@ var ActorClient = function () {
     window.messenger.sendFile(peer, file);
   };
 
+  ActorClient.prototype.requestUploadState = function requestUploadState(rid, callback) {
+    window.messenger.requestUploadState(rid, callback);
+  };
+
   ActorClient.prototype.sendPhotoMessage = function sendPhotoMessage(peer, photo) {
     window.messenger.sendPhoto(peer, photo);
   };

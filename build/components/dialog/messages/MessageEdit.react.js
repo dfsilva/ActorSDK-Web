@@ -47,9 +47,7 @@ var MessageEdit = function (_Component) {
   // TODO: pass real props
 
 
-  MessageEdit.prototype.componentDidMount = function componentDidMount() {
-    console.debug('REPORT ABOUT MOUNT!');
-  };
+  MessageEdit.prototype.componentDidMount = function componentDidMount() {};
 
   MessageEdit.prototype.onSubmit = function onSubmit() {
     this.props.onSubmit(this.props.message, this.state.text);

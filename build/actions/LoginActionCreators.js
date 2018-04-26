@@ -101,6 +101,14 @@ var LoginActionCreators = function (_ActionCreators) {
     (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.AUTH_RESTART);
   };
 
+  LoginActionCreators.prototype.restartAuth = function restartAuth() {
+    (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.AUTH_RESTART);
+  };
+
+  LoginActionCreators.prototype.toogleLoginType = function toogleLoginType() {
+    (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.AUTH_TOOGLE_LOGIN_TYPE);
+  };
+
   LoginActionCreators.prototype.requestCode = function requestCode(phone) {
     var promise = void 0;
     if (/@/.test(phone)) {

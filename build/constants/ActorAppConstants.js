@@ -45,6 +45,7 @@ var ActionTypes = exports.ActionTypes = (0, _keymirror2.default)({
   AUTH_SIGNUP_FAILURE: null,
   AUTH_SET_LOGGED_IN: null,
   AUTH_SET_LOGGED_OUT: null,
+  AUTH_TOOGLE_LOGIN_TYPE: null,
 
   BIND_DIALOG_PEER: null,
   UNBIND_DIALOG_PEER: null,

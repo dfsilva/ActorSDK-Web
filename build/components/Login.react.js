@@ -85,6 +85,10 @@ var Login = function (_Component) {
       _LoginActionCreators2.default.restartAuth();
     };
 
+    _this.toogleLoginType = function () {
+      _LoginActionCreators2.default.toogleLoginType();
+    };
+
     _this.handleFocus = function () {
       var step = _this.state.step;
 
@@ -103,11 +107,10 @@ var Login = function (_Component) {
       }
     };
 
-    _LoginActionCreators2.default.start();
-
     var SharedActor = _SharedContainer2.default.get();
     _this.appName = SharedActor.appName ? SharedActor.appName : _ActorAppConstants.appName;
-    _this.loginType = SharedActor.loginType;
+
+    _LoginActionCreators2.default.start();
     return _this;
   }
 
@@ -124,13 +127,13 @@ var Login = function (_Component) {
       errors: _LoginStore2.default.getErrors(),
       isCodeRequested: _LoginStore2.default.isCodeRequested(),
       isCodeSended: _LoginStore2.default.isCodeSended(),
-      isSignupStarted: _LoginStore2.default.isSignupStarted()
+      isSignupStarted: _LoginStore2.default.isSignupStarted(),
+      loginType: _LoginStore2.default.getLoginType()
     };
   };
 
   Login.prototype.componentDidMount = function componentDidMount() {
     this.handleFocus();
-    console.log(this.loginType);
   };
 
   Login.prototype.componentDidUpdate = function componentDidUpdate() {
@@ -152,9 +155,14 @@ var Login = function (_Component) {
         name = _state.name,
         isCodeRequested = _state.isCodeRequested,
         isCodeSended = _state.isCodeSended,
-        isSignupStarted = _state.isSignupStarted;
+        isSignupStarted = _state.isSignupStarted,
+        loginType = _state.loginType;
     var intl = this.context.intl;
 
+
+    var hiddenStyle = {
+      display: 'none'
+    };
 
     var requestFormClassName = (0, _classnames2.default)('login-new__forms__form', 'login-new__forms__form--request', {
       'login-new__forms__form--active': step === _ActorAppConstants.AuthSteps.LOGIN_WAIT,
@@ -252,8 +260,8 @@ var Login = function (_Component) {
             _react2.default.createElement(_TextField2.default, { className: 'login-new__forms__form__input input__material--wide',
               disabled: isCodeRequested || step !== _ActorAppConstants.AuthSteps.LOGIN_WAIT,
               errorText: errors.login,
-              type: this.loginType == 0 ? 'text' : this.loginType == 1 ? 'phone' : 'email',
-              floatingLabel: this.loginType == 0 ? intl.messages['login.phone_or_email'] : this.loginType == 1 ? intl.messages['login.phone'] : intl.messages['login.email'],
+              type: loginType == 0 ? 'text' : loginType == 1 ? 'phone' : 'email',
+              floatingLabel: loginType == 0 ? intl.messages['login.phone_or_email'] : loginType == 1 ? intl.messages['login.phone'] : intl.messages['login.email'],
               onChange: this.onLoginChange,
               ref: 'login',
               value: login }),
@@ -267,6 +275,12 @@ var Login = function (_Component) {
                   disabled: isCodeRequested },
                 _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'button.requestCode' }),
                 isCodeRequested ? spinner : null
+              ),
+              _react2.default.createElement(
+                'button',
+                { type: 'button', style: hiddenStyle,
+                  onClick: this.toogleLoginType },
+                'Change Login Type'
               )
             )
           ),

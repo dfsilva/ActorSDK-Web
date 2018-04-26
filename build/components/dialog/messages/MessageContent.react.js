@@ -177,7 +177,8 @@ MessageContent.contextTypes = {
   delegate: _react.PropTypes.object.isRequired
 };
 MessageContent.propTypes = {
-  content: _react.PropTypes.object.isRequired
+  content: _react.PropTypes.object.isRequired,
+  rid: _react.PropTypes.string.isRequired
 };
 exports.default = MessageContent;
 //# sourceMappingURL=MessageContent.react.js.map

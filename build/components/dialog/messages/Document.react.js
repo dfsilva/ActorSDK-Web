@@ -76,11 +76,15 @@ var Document = function (_Component) {
         _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'message.uploading' })
       );
     } else {
-      return _react2.default.createElement(
-        'a',
-        { href: fileUrl },
-        _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'message.download' })
-      );
+      if (fileUrl) {
+        return _react2.default.createElement(
+          'a',
+          { href: fileUrl },
+          _react2.default.createElement(_reactIntl.FormattedMessage, { id: 'message.download' })
+        );
+      } else {
+        return null;
+      }
     }
   };
 

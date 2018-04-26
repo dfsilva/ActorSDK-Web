@@ -24,7 +24,7 @@ const app = new ActorSDK({
     twitter: 'actorapp',
     homePage: 'https://actor.im',
     appName: 'Actor',
-    loginType: 0,
+    loginType: 1,
     helpPhone: +5555555555555
 });
 

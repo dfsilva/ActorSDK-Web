@@ -45,6 +45,14 @@ class LoginActionCreators extends ActionCreators {
     dispatch(ActionTypes.AUTH_RESTART);
   }
 
+  restartAuth() {
+      dispatch(ActionTypes.AUTH_RESTART);
+  }
+
+  toogleLoginType(){
+    dispatch(ActionTypes.AUTH_TOOGLE_LOGIN_TYPE);
+  }
+
   requestCode(phone) {
     let promise;
     if (/@/.test(phone)) {

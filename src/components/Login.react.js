@@ -6,7 +6,7 @@ import React, { Component, PropTypes } from 'react';
 import { Container } from 'flux/utils';
 import classnames from 'classnames';
 import SharedContainer from '../utils/SharedContainer';
-import { appName, AuthSteps, LoginTypes } from '../constants/ActorAppConstants';
+import { appName, AuthSteps } from '../constants/ActorAppConstants';
 import { FormattedMessage, FormattedHTMLMessage } from 'react-intl';
 
 import LoginActionCreators from '../actions/LoginActionCreators';
@@ -19,11 +19,10 @@ class Login extends Component {
   constructor(props) {
     super(props);
 
-    LoginActionCreators.start();
-
     const SharedActor = SharedContainer.get();
     this.appName = SharedActor.appName ? SharedActor.appName : appName;
-    this.loginType = SharedActor.loginType;
+
+    LoginActionCreators.start();
   }
 
   static getStores() {
@@ -39,7 +38,8 @@ class Login extends Component {
       errors: LoginStore.getErrors(),
       isCodeRequested: LoginStore.isCodeRequested(),
       isCodeSended: LoginStore.isCodeSended(),
-      isSignupStarted: LoginStore.isSignupStarted()
+      isSignupStarted: LoginStore.isSignupStarted(),
+      loginType : LoginStore.getLoginType()
     }
   }
 
@@ -49,7 +49,6 @@ class Login extends Component {
 
   componentDidMount() {
     this.handleFocus();
-    console.log(this.loginType);
   }
 
   componentDidUpdate() {
@@ -89,6 +88,10 @@ class Login extends Component {
     LoginActionCreators.restartAuth();
   };
 
+  toogleLoginType = () => {
+    LoginActionCreators.toogleLoginType();
+  };
+
   handleFocus = () => {
     const { step } = this.state;
 
@@ -107,8 +110,12 @@ class Login extends Component {
   };
 
   render() {
-    const { step, errors, login, code, name, isCodeRequested, isCodeSended, isSignupStarted } = this.state;
+    const { step, errors, login, code, name, isCodeRequested, isCodeSended, isSignupStarted, loginType } = this.state;
     const { intl } = this.context;
+
+    const hiddenStyle = {
+        display: 'none'
+    };
 
     let requestFormClassName = classnames('login-new__forms__form', 'login-new__forms__form--request', {
       'login-new__forms__form--active': step === AuthSteps.LOGIN_WAIT,
@@ -164,8 +171,8 @@ class Login extends Component {
               <TextField className="login-new__forms__form__input input__material--wide"
                          disabled={isCodeRequested || step !== AuthSteps.LOGIN_WAIT}
                          errorText={errors.login}
-                         type={this.loginType == 0 ? 'text' : this.loginType == 1 ? 'phone' : 'email'}
-                         floatingLabel={this.loginType == 0 ? intl.messages['login.phone_or_email'] : this.loginType == 1 ? intl.messages['login.phone'] : intl.messages['login.email']}
+                         type={loginType == 0 ? 'text' : loginType == 1 ? 'phone' : 'email'}
+                         floatingLabel={loginType == 0 ? intl.messages['login.phone_or_email'] : loginType == 1 ? intl.messages['login.phone'] : intl.messages['login.email']}
                          onChange={this.onLoginChange}
                          ref="login"
                          value={login}/>
@@ -177,6 +184,8 @@ class Login extends Component {
                   <FormattedMessage id="button.requestCode"/>
                   {isCodeRequested ? spinner : null}
                 </button>
+                <button type="button" style={hiddenStyle}
+                        onClick={this.toogleLoginType}>Change Login Type</button>
               </footer>
             </form>
             <form className={checkFormClassName} onSubmit={this.onSendCode}>

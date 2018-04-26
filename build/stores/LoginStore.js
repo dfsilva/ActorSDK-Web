@@ -10,6 +10,10 @@ var _ActorAppDispatcher2 = _interopRequireDefault(_ActorAppDispatcher);
 
 var _ActorAppConstants = require('../constants/ActorAppConstants');
 
+var _SharedContainer = require('../utils/SharedContainer');
+
+var _SharedContainer2 = _interopRequireDefault(_SharedContainer);
+
 var _ActorClient = require('../utils/ActorClient');
 
 var _ActorClient2 = _interopRequireDefault(_ActorClient);
@@ -27,6 +31,7 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 */
 
 var step = _ActorAppConstants.AuthSteps.LOGIN_WAIT,
+    loginType = 0,
     errors = {
   login: null,
   code: null,
@@ -51,6 +56,10 @@ var LoginStore = function (_Store) {
 
     _this.getStep = function () {
       return step;
+    };
+
+    _this.getLoginType = function () {
+      return loginType;
     };
 
     _this.getErrors = function () {
@@ -91,6 +100,7 @@ var LoginStore = function (_Store) {
 
     _this.resetStore = function () {
       step = _ActorAppConstants.AuthSteps.LOGIN_WAIT;
+      loginType = _SharedContainer2.default.get().loginType;
       errors = {
         login: null,
         code: null,
@@ -107,7 +117,10 @@ var LoginStore = function (_Store) {
 
   LoginStore.prototype.__onDispatch = function __onDispatch(action) {
     switch (action.type) {
-
+      case _ActorAppConstants.ActionTypes.AUTH_START:
+        loginType = _SharedContainer2.default.get().loginType;
+        this.__emitChange();
+        break;
       case _ActorAppConstants.ActionTypes.AUTH_CHANGE_LOGIN:
         login = action.login;
         this.__emitChange();
@@ -120,7 +133,6 @@ var LoginStore = function (_Store) {
         name = action.name;
         this.__emitChange();
         break;
-
       case _ActorAppConstants.ActionTypes.AUTH_CODE_REQUEST:
         isCodeRequested = true;
         this.__emitChange();
@@ -209,6 +221,14 @@ var LoginStore = function (_Store) {
       case _ActorAppConstants.ActionTypes.AUTH_SET_LOGGED_OUT:
         localStorage.clear();
         location.reload();
+        break;
+      case _ActorAppConstants.ActionTypes.AUTH_TOOGLE_LOGIN_TYPE:
+        if (loginType == 1) {
+          loginType = 2;
+        } else {
+          loginType = 1;
+        }
+        this.__emitChange();
         break;
       default:
     }

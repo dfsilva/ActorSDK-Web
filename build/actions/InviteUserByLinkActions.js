@@ -27,7 +27,6 @@ exports.default = {
       (0, _ActorAppDispatcher.dispatch)(_ActorAppConstants.ActionTypes.INVITE_USER_BY_LINK_MODAL_SHOW, { group: group, url: url, prevModal: prevModal });
       _ComposeActionCreators2.default.toggleAutoFocus(false);
     }).catch(function (e) {
-      // TODO: handle error
       console.error(e);
     });
   },

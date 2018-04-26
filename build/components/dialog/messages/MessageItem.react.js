@@ -277,7 +277,7 @@ var MessageItem = function (_Component) {
         'div',
         { className: 'message__body' },
         this.renderHeader(),
-        _react2.default.createElement(_MessageContent2.default, { content: message.content })
+        _react2.default.createElement(_MessageContent2.default, { content: message.content, rid: message.rid })
       ),
       this.renderActions()
     );
