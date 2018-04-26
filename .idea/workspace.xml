@@ -2,668 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36490998-0fab-470a-b071-7de8ce82e399" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/build/vendor/canvasBlurRect.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/vendor/libwebp-0.2.0.min.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/ActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/ActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ActivityActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/ActivityActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ActivityActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/ActivityActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/AddContactActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/AddContactActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/AddContactActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/AddContactActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ArchiveActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/ArchiveActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ArchiveActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/ArchiveActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/AttachmentsActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/AttachmentsActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/AttachmentsActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/AttachmentsActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/BannerActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/BannerActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/BannerActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/BannerActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/BlockedUsersActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/BlockedUsersActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/BlockedUsersActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/BlockedUsersActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/CallActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/CallActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/CallActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/CallActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ChannelsActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/ChannelsActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ChannelsActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/ChannelsActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ComposeActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/ComposeActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ComposeActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/ComposeActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ConnectionStateActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/ConnectionStateActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ConnectionStateActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/ConnectionStateActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ContactActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/ContactActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ContactActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/ContactActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/CreateGroupActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/CreateGroupActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/CreateGroupActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/CreateGroupActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/CropActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/CropActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/CropActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/CropActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DialogActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/DialogActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DialogActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/DialogActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DialogInfoActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/DialogInfoActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DialogInfoActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/DialogInfoActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DialogSearchActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/DialogSearchActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DialogSearchActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/DialogSearchActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DraftActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/DraftActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DraftActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/DraftActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DropdownActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/DropdownActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/DropdownActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/DropdownActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/EditGroupActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/EditGroupActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/EditGroupActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/EditGroupActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/EmojiActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/EmojiActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/EmojiActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/EmojiActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/EventBusActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/EventBusActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/EventBusActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/EventBusActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/FaviconActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/FaviconActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/FaviconActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/FaviconActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/FavoriteActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/FavoriteActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/FavoriteActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/FavoriteActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/GroupListActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/GroupListActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/GroupListActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/GroupListActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/GroupPermissionsActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/GroupPermissionsActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/GroupPermissionsActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/GroupPermissionsActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/GroupPreActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/GroupPreActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/GroupPreActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/GroupPreActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/GroupProfileActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/GroupProfileActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/GroupProfileActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/GroupProfileActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/HelpActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/HelpActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/HelpActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/HelpActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/InviteUserActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/InviteUserActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/InviteUserActions.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/InviteUserActions.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/InviteUserByLinkActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/InviteUserByLinkActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/InviteUserByLinkActions.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/InviteUserByLinkActions.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/JoinGroupActions.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/JoinGroupActions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/JoinGroupActions.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/JoinGroupActions.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/KickUserActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/KickUserActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/KickUserActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/KickUserActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/LoggerActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/LoggerActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/LoggerActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/LoggerActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/LoginActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/LoginActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/LoginActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/LoginActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/MessageActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/MessageActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/MessageActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/MessageActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/MessageArtActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/MessageArtActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/MessageArtActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/MessageArtActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/NotificationsActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/NotificationsActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/NotificationsActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/NotificationsActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/OnlineActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/OnlineActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/OnlineActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/OnlineActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/PreferencesActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/PreferencesActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/PreferencesActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/PreferencesActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ProfileActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/ProfileActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/ProfileActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/ProfileActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/QuickSearchActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/QuickSearchActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/QuickSearchActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/QuickSearchActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/SearchActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/SearchActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/SearchActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/SearchActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/SearchMessagesActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/SearchMessagesActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/SearchMessagesActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/SearchMessagesActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/StickersActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/StickersActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/StickersActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/StickersActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/TypingActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/TypingActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/TypingActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/TypingActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/VisibilityActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/VisibilityActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/actions/VisibilityActionCreators.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/actions/VisibilityActionCreators.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Material Icons/MaterialIcons-Regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Material Icons/MaterialIcons-Regular.ijmap" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Material Icons/MaterialIcons-Regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Material Icons/MaterialIcons-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Material Icons/MaterialIcons-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Material Icons/MaterialIcons-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Material Icons/material-icons.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-black.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-black.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-blackitalic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-blackitalic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-blackitalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-blackitalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-blackitalic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bold.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bolditalic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bolditalic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bolditalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bolditalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-bolditalic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-italic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-light.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-light.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-lightitalic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-lightitalic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-lightitalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-lightitalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-lightitalic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-medium.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-medium.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-mediumitalic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-mediumitalic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-mediumitalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-mediumitalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-mediumitalic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-regular.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thin.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thin.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thin.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thin.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thinitalic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thinitalic.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thinitalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thinitalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/Roboto/roboto-thinitalic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Black.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Black.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Black.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Black.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Bold.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Bold.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Bold.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Bold.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-BoldItalic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-BoldItalic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-BoldItalic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-BoldItalic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Italic.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Italic.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Italic.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Italic.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Light.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Light.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Light.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Light.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Medium.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Medium.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Medium.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Medium.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Regular.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Regular.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Regular.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Thin.eot" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Thin.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Thin.woff" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/fonts/RobotoDraft/RobotoDraft-Thin.woff2" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/about_logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/emoji/sheet_apple_64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/emoji/sheet_emojione_64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/emoji/sheet_google_64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/emoji/sheet_twitter_64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/logo.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/logo@2x.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/logo_splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/images/notification_icon_512.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/sound/notification.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/sound/notification.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/sound/ringtone.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/sound/ringtone.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/sound/tone.mp3" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/assets/sound/tone.ogg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Activity.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Activity.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Activity.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Activity.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/App.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/App.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/App.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/App.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Archive.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Archive.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Archive.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Archive.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Call.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Call.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Call.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Call.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Deactivated.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Deactivated.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Deactivated.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Deactivated.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Dialog.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Dialog.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Dialog.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Dialog.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Empty.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Empty.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Empty.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Empty.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Grouppre.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Grouppre.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Grouppre.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Grouppre.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Install.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Install.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Install.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Install.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Join.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Join.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Join.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Join.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Login.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Login.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Login.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Login.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Main.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Main.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Main.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Main.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Sidebar.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Sidebar.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Sidebar.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Sidebar.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/SmallCall.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/SmallCall.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/SmallCall.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/SmallCall.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Toolbar.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Toolbar.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/Toolbar.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/Toolbar.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/GroupMember.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/activity/GroupMember.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/GroupMember.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/activity/GroupMember.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/GroupPreProperties.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/activity/GroupPreProperties.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/GroupPreProperties.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/activity/GroupPreProperties.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/GroupProfile.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/activity/GroupProfile.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/GroupProfile.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/activity/GroupProfile.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/GroupProfileMembers.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/activity/GroupProfileMembers.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/GroupProfileMembers.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/activity/GroupProfileMembers.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/UserProfile.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/activity/UserProfile.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/activity/UserProfile.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/activity/UserProfile.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/AddUserButton.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/AddUserButton.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/AddUserButton.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/AddUserButton.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/AnswerButton.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/AnswerButton.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/AnswerButton.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/AnswerButton.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallAvatar.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/CallAvatar.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallAvatar.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/CallAvatar.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallBody.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/CallBody.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallBody.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/CallBody.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallControls.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/CallControls.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallControls.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/CallControls.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallDraggable.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/CallDraggable.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallDraggable.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/CallDraggable.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallHeader.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/CallHeader.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CallHeader.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/CallHeader.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CloseButton.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/CloseButton.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/CloseButton.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/CloseButton.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/EndButton.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/EndButton.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/EndButton.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/EndButton.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/FullScreenButton.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/FullScreenButton.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/FullScreenButton.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/FullScreenButton.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/MuteButton.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/MuteButton.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/MuteButton.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/MuteButton.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/SmartCallButton.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/SmartCallButton.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/SmartCallButton.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/SmartCallButton.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/VideoButton.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/VideoButton.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/call/VideoButton.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/call/VideoButton.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/AvatarItem.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/AvatarItem.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/AvatarItem.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/AvatarItem.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Checkbox.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Checkbox.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Checkbox.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Checkbox.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ConnectionState.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/ConnectionState.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ConnectionState.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/ConnectionState.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ContactDetails.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/ContactDetails.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ContactDetails.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/ContactDetails.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ContactItem.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/ContactItem.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ContactItem.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/ContactItem.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/CustomScroller.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/CustomScroller.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/CustomScroller.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/CustomScroller.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/DropZone.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/DropZone.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/DropZone.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/DropZone.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/EmojiDropdown.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/EmojiDropdown.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/EmojiDropdown.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/EmojiDropdown.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Favicon.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Favicon.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Favicon.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Favicon.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Fold.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Fold.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Fold.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Fold.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Image.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Image.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Image.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Image.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/MentionDropdown.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/MentionDropdown.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/MentionDropdown.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/MentionDropdown.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/MenuOverlay.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/MenuOverlay.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/MenuOverlay.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/MenuOverlay.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Scrollbar.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Scrollbar.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Scrollbar.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Scrollbar.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Scroller.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Scroller.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Scroller.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Scroller.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/SelectList.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/SelectList.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/SelectList.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/SelectList.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/SelectListItem.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/SelectListItem.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/SelectListItem.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/SelectListItem.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Stateful.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Stateful.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Failure.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Stateful/Failure.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Failure.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Stateful/Failure.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Pending.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Stateful/Pending.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Pending.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Stateful/Pending.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Processing.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Stateful/Processing.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Processing.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Stateful/Processing.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Root.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Stateful/Root.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Root.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Stateful/Root.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Success.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Stateful/Success.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/Success.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Stateful/Success.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Stateful/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/Stateful/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/Stateful/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/SvgIcon.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/SvgIcon.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/SvgIcon.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/SvgIcon.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/TextField.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/TextField.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/TextField.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/TextField.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ToggleFavorite.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/ToggleFavorite.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ToggleFavorite.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/ToggleFavorite.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ToggleNotifications.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/ToggleNotifications.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/ToggleNotifications.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/ToggleNotifications.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/UserMenu.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/UserMenu.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/UserMenu.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/UserMenu.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/VoiceRecorder.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/VoiceRecorder.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/VoiceRecorder.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/VoiceRecorder.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/dropdown/MessageActions.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/dropdown/MessageActions.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/dropdown/MessageActions.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/dropdown/MessageActions.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/dropdown/RecentContextMenu.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/dropdown/RecentContextMenu.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/common/dropdown/RecentContextMenu.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/common/dropdown/RecentContextMenu.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dev/LoggerFilter.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dev/LoggerFilter.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dev/LoggerFilter.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dev/LoggerFilter.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dev/LoggerRow.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dev/LoggerRow.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dev/LoggerRow.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dev/LoggerRow.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dev/LoggerSection.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dev/LoggerSection.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dev/LoggerSection.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dev/LoggerSection.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/ComposeSection.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/ComposeSection.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/ComposeSection.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/ComposeSection.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/DialogFooter.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/DialogFooter.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/DialogFooter.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/DialogFooter.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/DialogHeader.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/DialogHeader.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/DialogHeader.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/DialogHeader.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/MessagesList.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/MessagesList.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/MessagesList.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/MessagesList.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/MessagesSection.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/MessagesSection.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/MessagesSection.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/MessagesSection.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/TypingSection.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/TypingSection.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/TypingSection.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/TypingSection.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/compose/BotCommandsHint.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/compose/BotCommandsHint.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/compose/BotCommandsHint.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/compose/BotCommandsHint.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/compose/ComposeMarkdownHint.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/compose/ComposeMarkdownHint.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/compose/ComposeMarkdownHint.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/compose/ComposeMarkdownHint.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/compose/ComposeTextArea.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/compose/ComposeTextArea.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/compose/ComposeTextArea.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/compose/ComposeTextArea.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/header/MoreDropdown.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/header/MoreDropdown.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/header/MoreDropdown.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/header/MoreDropdown.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Animation.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Animation.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Animation.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Animation.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Contact.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Contact.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Contact.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Contact.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Document.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Document.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Document.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Document.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Loading.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Loading.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Loading.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Loading.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Location.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Location.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Location.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Location.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/MessageContent.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/MessageContent.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/MessageContent.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/MessageContent.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/MessageEdit.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/MessageEdit.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/MessageEdit.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/MessageEdit.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/MessageItem.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/MessageItem.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/MessageItem.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/MessageItem.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Modern.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Modern.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Modern.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Modern.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Photo.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Photo.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Photo.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Photo.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Reactions.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Reactions.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Reactions.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Reactions.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Service.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Service.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Service.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Service.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/State.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/State.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/State.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/State.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Sticker.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Sticker.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Sticker.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Sticker.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Text.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Text.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Text.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Text.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Voice.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Voice.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Voice.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Voice.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Welcome.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Welcome.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/dialog/messages/Welcome.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/dialog/messages/Welcome.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/EmojiItem.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/EmojiItem.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/EmojiItem.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/EmojiItem.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/EmojiTab.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/EmojiTab.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/EmojiTab.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/EmojiTab.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Emojis.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/Emojis.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Emojis.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/Emojis.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/MessageArt.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/MessageArt.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/MessageArt.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/MessageArt.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Popup.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/Popup.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Popup.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/Popup.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Sticker.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/Sticker.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Sticker.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/Sticker.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Stickers.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/Stickers.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Stickers.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/Stickers.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Trigger.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/Trigger.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/Trigger.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/Trigger.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/emojiData.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/emojiData.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/messageArt/emojiData.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/messageArt/emojiData.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/AddContact.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/AddContact.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/AddContact.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/AddContact.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Attachments.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/Attachments.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Attachments.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/Attachments.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/CreateGroup.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/CreateGroup.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/CreateGroup.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/CreateGroup.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Crop.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/Crop.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Crop.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/Crop.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/EditGroup.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/EditGroup.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/EditGroup.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/EditGroup.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Groups.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/Groups.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Groups.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/Groups.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Invite.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/Invite.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Invite.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/Invite.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/InviteByLink.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/InviteByLink.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/InviteByLink.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/InviteByLink.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/ModalCloseButton.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/ModalCloseButton.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/ModalCloseButton.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/ModalCloseButton.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/ModalsWrapper.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/ModalsWrapper.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/ModalsWrapper.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/ModalsWrapper.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/MyProfile.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/MyProfile.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/MyProfile.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/MyProfile.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/People.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/People.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/People.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/People.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Preferences.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/Preferences.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Preferences.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/Preferences.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Profile.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/Profile.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/Profile.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/Profile.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/QuickSearch.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/QuickSearch.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/QuickSearch.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/QuickSearch.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/addContact/ContactItem.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/addContact/ContactItem.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/addContact/ContactItem.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/addContact/ContactItem.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/attachments/Attachment.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/attachments/Attachment.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/attachments/Attachment.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/attachments/Attachment.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/attachments/Pagination.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/attachments/Pagination.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/attachments/Pagination.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/attachments/Pagination.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/createGroup/Form.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/createGroup/Form.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/createGroup/Form.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/createGroup/Form.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/groups/Group.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/groups/Group.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/groups/Group.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/groups/Group.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/peoples/PeopleItem.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/peoples/PeopleItem.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/peoples/PeopleItem.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/peoples/PeopleItem.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/preferences/BlockedUsers.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/preferences/BlockedUsers.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/preferences/BlockedUsers.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/preferences/BlockedUsers.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/preferences/Session.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/preferences/Session.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/preferences/Session.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/preferences/Session.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/profile/PictureChanger.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/profile/PictureChanger.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/modals/profile/PictureChanger.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/modals/profile/PictureChanger.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/DialogSearch.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/search/DialogSearch.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/DialogSearch.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/search/DialogSearch.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/SearchInput.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/search/SearchInput.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/SearchInput.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/search/SearchInput.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/SearchResultItem.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/search/SearchResultItem.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/SearchResultItem.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/search/SearchResultItem.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/SearchResults.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/search/SearchResults.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/SearchResults.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/search/SearchResults.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/SearchSection.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/search/SearchSection.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/SearchSection.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/search/SearchSection.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/ToolbarSearch.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/search/ToolbarSearch.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/ToolbarSearch.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/search/ToolbarSearch.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/ToolbarSearchResults.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/search/ToolbarSearchResults.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/search/ToolbarSearchResults.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/search/ToolbarSearchResults.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/HeaderSection.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/sidebar/HeaderSection.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/HeaderSection.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/sidebar/HeaderSection.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/QuickSearchButton.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/sidebar/QuickSearchButton.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/QuickSearchButton.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/sidebar/QuickSearchButton.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/Recent.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/sidebar/Recent.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/Recent.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/sidebar/Recent.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/RecentGroup.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/sidebar/RecentGroup.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/RecentGroup.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/sidebar/RecentGroup.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/RecentItem.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/sidebar/RecentItem.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/RecentItem.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/sidebar/RecentItem.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/SidebarLink.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/sidebar/SidebarLink.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/components/sidebar/SidebarLink.react.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/components/sidebar/SidebarLink.react.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/constants/ActorAppConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/constants/ActorAppConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/constants/ActorAppConstants.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/constants/ActorAppConstants.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dispatcher/ActorAppDispatcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/dispatcher/ActorAppDispatcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/dispatcher/ActorAppDispatcher.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/dispatcher/ActorAppDispatcher.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/en-US.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/l18n/en-US.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/en-US.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/l18n/en-US.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/es-ES.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/l18n/es-ES.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/es-ES.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/l18n/es-ES.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/l18n/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/l18n/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/pt-BR.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/l18n/pt-BR.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/pt-BR.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/l18n/pt-BR.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/ru-RU.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/l18n/ru-RU.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/ru-RU.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/l18n/ru-RU.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/zh-CN.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/l18n/zh-CN.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/l18n/zh-CN.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/l18n/zh-CN.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sdk/actor-sdk-delegate.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/sdk/actor-sdk-delegate.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sdk/actor-sdk-delegate.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/sdk/actor-sdk-delegate.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sdk/actor-sdk.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/sdk/actor-sdk.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/sdk/actor-sdk.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/sdk/actor-sdk.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ActivityStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/ActivityStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ActivityStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/ActivityStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/AddContactStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/AddContactStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/AddContactStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/AddContactStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/AllDialogsStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/AllDialogsStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/AllDialogsStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/AllDialogsStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ArchiveStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/ArchiveStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ArchiveStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/ArchiveStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/AttachmentsStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/AttachmentsStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/AttachmentsStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/AttachmentsStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/BlockedUsersStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/BlockedUsersStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/BlockedUsersStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/BlockedUsersStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/CallStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/CallStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/CallStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/CallStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ComposeStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/ComposeStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ComposeStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/ComposeStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ConnectionStateStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/ConnectionStateStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ConnectionStateStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/ConnectionStateStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ContactsStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/ContactsStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ContactsStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/ContactsStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/CreateGroupStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/CreateGroupStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/CreateGroupStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/CreateGroupStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/CropAvatarStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/CropAvatarStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/CropAvatarStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/CropAvatarStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DialogInfoStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/DialogInfoStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DialogInfoStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/DialogInfoStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DialogSearchStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/DialogSearchStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DialogSearchStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/DialogSearchStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DialogStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/DialogStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DialogStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/DialogStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DraftStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/DraftStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DraftStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/DraftStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DropdownStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/DropdownStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/DropdownStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/DropdownStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/EditGroupStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/EditGroupStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/EditGroupStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/EditGroupStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/EmojiStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/EmojiStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/EmojiStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/EmojiStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/FaviconStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/FaviconStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/FaviconStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/FaviconStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/GroupListStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/GroupListStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/GroupListStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/GroupListStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/GroupStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/GroupStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/GroupStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/GroupStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/GrouppreStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/GrouppreStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/GrouppreStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/GrouppreStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/InviteUserStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/InviteUserStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/InviteUserStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/InviteUserStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/JoinGroupStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/JoinGroupStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/JoinGroupStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/JoinGroupStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/KickUserStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/KickUserStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/KickUserStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/KickUserStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/LoggerStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/LoggerStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/LoggerStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/LoggerStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/LoginStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/LoginStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/LoginStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/LoginStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/MessageArtStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/MessageArtStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/MessageArtStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/MessageArtStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/MessageStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/MessageStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/MessageStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/MessageStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ModalStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/ModalStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ModalStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/ModalStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/MyProfileStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/MyProfileStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/MyProfileStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/MyProfileStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/NotificationsStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/NotificationsStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/NotificationsStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/NotificationsStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/OnlineStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/OnlineStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/OnlineStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/OnlineStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/PeerStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/PeerStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/PeerStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/PeerStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/PeopleStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/PeopleStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/PeopleStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/PeopleStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/PreferencesStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/PreferencesStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/PreferencesStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/PreferencesStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ProfileStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/ProfileStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/ProfileStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/ProfileStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/QuickSearchStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/QuickSearchStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/QuickSearchStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/QuickSearchStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/SearchMessagesStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/SearchMessagesStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/SearchMessagesStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/SearchMessagesStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/SearchStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/SearchStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/SearchStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/SearchStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/TypingStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/TypingStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/TypingStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/TypingStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/UserStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/UserStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/UserStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/UserStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/VisibilityStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/VisibilityStore.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/stores/VisibilityStore.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/stores/VisibilityStore.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/styles/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/styles/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/ActorClient.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/ActorClient.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/ActorClient.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/ActorClient.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/ComposeUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/ComposeUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/ComposeUtils.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/ComposeUtils.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/DelegateContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/DelegateContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/DelegateContainer.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/DelegateContainer.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/EmojiUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/EmojiUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/EmojiUtils.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/EmojiUtils.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/GroupUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/GroupUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/GroupUtils.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/GroupUtils.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/HotkeyUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/HotkeyUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/HotkeyUtils.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/HotkeyUtils.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/ImageUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/ImageUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/ImageUtils.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/ImageUtils.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/Inputs.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/Inputs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/Inputs.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/Inputs.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/LocationContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/LocationContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/LocationContainer.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/LocationContainer.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/MessageUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/MessageUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/MessageUtils.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/MessageUtils.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/PeerUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/PeerUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/PeerUtils.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/PeerUtils.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/RouterHooks.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/RouterHooks.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/RouterHooks.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/RouterHooks.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/SearchUtils.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/SearchUtils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/SearchUtils.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/SearchUtils.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/SharedContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/SharedContainer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/SharedContainer.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/SharedContainer.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/alert.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/alert.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/alert.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/alert.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/blobToFile.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/blobToFile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/blobToFile.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/blobToFile.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/confirm.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/confirm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/confirm.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/confirm.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/convertImage.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/convertImage.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/convertImage.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/convertImage.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/createTimer.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/createTimer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/createTimer.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/createTimer.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/defaultLogHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/defaultLogHandler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/defaultLogHandler.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/defaultLogHandler.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/history.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/history.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/history.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/history.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/humanFileSize.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/humanFileSize.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/humanFileSize.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/humanFileSize.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/isInside.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/isInside.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/isInside.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/isInside.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/isMobile.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/isMobile.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/utils/isMobile.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/utils/isMobile.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/canvasBlurRect.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/vendor/libwebp-0.2.0.min.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/workers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/workers/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/workers/index.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/workers/index.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/workers/offline-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/workers/offline-worker.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/workers/offline-worker.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/workers/offline-worker.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/workers/serviceworker-cache-polyfill.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/workers/serviceworker-cache-polyfill.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/workers/serviceworker-cache-polyfill.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/workers/serviceworker-cache-polyfill.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/devapp/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/devapp/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/LoginActionCreators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/LoginActionCreators.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Login.react.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Login.react.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/constants/ActorAppConstants.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/constants/ActorAppConstants.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/stores/LoginStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/stores/LoginStore.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -677,23 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Document.react.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/dialog/messages/Document.react.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1258">
-              <caret line="78" column="12" selection-start-line="78" selection-start-column="12" selection-end-line="78" selection-end-column="12" />
-              <folding>
-                <element signature="e#65#117#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/devapp/index.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
-              <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+              <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -711,16 +40,7 @@
         <entry file="file://$PROJECT_DIR$/src/constants/ActorAppConstants.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="320">
-              <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ActorClient.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/utils/ActorClient.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="200" column="20" selection-start-line="200" selection-start-column="2" selection-end-line="200" selection-end-column="20" />
+              <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -741,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/src/components/Login.react.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-1836">
-              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+              <caret line="89" selection-start-line="89" selection-end-line="89" />
               <folding>
                 <element signature="e#65#117#0" expanded="true" />
               </folding>
@@ -749,13 +69,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gulpfile.babel.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gulpfile.babel.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="138">
-              <caret line="62" column="31" lean-forward="true" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="42" />
+            <state relative-caret-position="187">
+              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+              <folding>
+                <element signature="e#15#62#0" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="canvasBlurRect.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/vendor/canvasBlurRect.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-5550">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="canvasBlurRect.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build/vendor/canvasBlurRect.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="LoginActionCreators.js" pinned="false" current-in-tab="false">
@@ -783,7 +122,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>INVITE_USER_BY_LINK_MODAL_SHOW</find>
       <find>inviteUrl</find>
       <find>Uploading</find>
       <find>upload</find>
@@ -813,6 +151,7 @@
       <find>start</find>
       <find>handleFocus</find>
       <find>onSendCode</find>
+      <find>vendor</find>
     </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$/src/actions</dir>
@@ -1012,6 +351,21 @@
               <item name="ActorSDK-Web" type="b2602c69:ProjectViewProjectNode" />
               <item name="ActorSDK-Web" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="ActorSDK-Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ActorSDK-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="assets" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ActorSDK-Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ActorSDK-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="build" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="ActorSDK-Web" type="b2602c69:ProjectViewProjectNode" />
+              <item name="ActorSDK-Web" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -1174,12 +528,12 @@
       <workItem from="1522533058499" duration="599000" />
       <workItem from="1524438468459" duration="469000" />
       <workItem from="1524674379698" duration="2613000" />
-      <workItem from="1524741477824" duration="4964000" />
+      <workItem from="1524741477824" duration="7941000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="289334000" />
+    <option name="totallyTimeSpent" value="292311000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -1189,7 +543,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Run" order="2" sideWeight="0.6388889" weight="0.18942732" />
       <window_info id="npm" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.8259494" visible="true" weight="0.5194805" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" sideWeight="0.8259494" visible="true" weight="0.254329" />
       <window_info id="Gulp" order="4" sideWeight="0.5054602" side_tool="true" weight="0.22845088" />
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49453977" visible="true" weight="0.19020021" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
@@ -1249,30 +603,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/components/SmallCall.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1454" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Archive.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1998">
-          <caret line="125" column="24" selection-start-line="125" selection-start-column="24" selection-end-line="125" selection-end-column="87" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Toolbar.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-98">
-          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/App.react.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-230" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/dialog/ComposeSection.react.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="324">
@@ -1570,14 +900,14 @@
     <entry file="file://$PROJECT_DIR$/src/constants/ActorAppConstants.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
-          <caret line="34" column="26" lean-forward="true" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
+          <caret line="34" column="26" selection-start-line="34" selection-start-column="26" selection-end-line="34" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/devapp/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
-          <caret line="20" column="6" lean-forward="true" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
+          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
         </state>
       </provider>
     </entry>
@@ -1601,19 +931,44 @@
     <entry file="file://$PROJECT_DIR$/src/components/Login.react.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1836">
-          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+          <caret line="89" selection-start-line="89" selection-end-line="89" />
           <folding>
             <element signature="e#65#117#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
+    <entry file="file://$PROJECT_DIR$/build/utils/ImageUtils.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="62" column="31" lean-forward="true" selection-start-line="62" selection-start-column="29" selection-end-line="62" selection-end-column="42" />
+        <state relative-caret-position="136">
+          <caret line="8" column="33" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="33" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/gulpfile.babel.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding>
+            <element signature="e#15#62#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/vendor/canvasBlurRect.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5550">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build/vendor/canvasBlurRect.js">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
 </project>
